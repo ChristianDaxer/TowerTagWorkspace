@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RopeTessMaterial
+  m_Shader: {fileID: 4800000, guid: 06c5c51ee8c5350448c76efdaaa14cf1, type: 3}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 57936e3054e724a4bac0c9203e1df52f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PlasmaMap1:
+        m_Texture: {fileID: 2800000, guid: 59d0ca8c591cd5848bc26061f6a07ab7, type: 3}
+        m_Scale: {x: 0.5, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PlasmaMap2:
+        m_Texture: {fileID: 2800000, guid: 59d0ca8c591cd5848bc26061f6a07ab7, type: 3}
+        m_Scale: {x: 0.5, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BlendTexFactor: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - _dummy: 1
+    - _fadeInSlope: 0
+    - _ropeHullWidth: 0.02
+    - _ropeWidth: 0.01
+    - _tessX: 5
+    - _tessY: 20
+    - _tess_IN: 20
+    m_Colors:
+    - _Clamps: {r: 1, g: 1.58, b: 0, a: 0.64}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _S1: {r: 0, g: 0, b: 0, a: 0.20129861}
+    - _S1_pl: {r: 0, g: 0, b: 0, a: -0.005319964}
+    - _S1_time: {r: 0, g: 0, b: 0, a: 0.0026102662}
+    - _S2: {r: -4.3098345, g: 6.598282, b: -2.1360915, a: 0.21124318}
+    - _S2_pl: {r: -1346.3419, g: 122.16906, b: -0.037702583, a: -0.005319932}
+    - _S2_time: {r: -0.7526856, g: 1.2500807, b: -0.03749345, a: 0.0026102662}
+    - _S3: {r: 0.045285303, g: 0.17328645, b: -0.17982927, a: 0.041612305}
+    - _S3_pl: {r: -519.75073, g: 153.07034, b: -6.4478326, a: 0.14874306}
+    - _S3_time: {r: -8580.082, g: 24816.965, b: -23908.096, a: 7672.2026}
+    - _S4: {r: 0.8155054, g: -1.1414642, b: 0.5363186, a: -0.08460408}
+    - _S4_pl: {r: 1.0284896, g: -1.5206292, b: 0.60659117, a: 0.8588633}
+    - _S4_time: {r: 0, g: 0, b: 0, a: 1.0240974}
+    - _S5: {r: -9.653977, g: 29.197605, b: -27.124058, a: 8.012948}
+    - _S5_pl: {r: 0, g: 0, b: 0, a: 0.97331494}
+    - _S5_time: {r: 0, g: 0, b: 0, a: 1.0240974}
+    - _TintColor: {r: 1, g: 0.8705883, b: 0.44705886, a: 1}
+    - _plasmaMapVelocities: {r: 0.3, g: 0, b: 0.35, a: 0.01}
+    - _sheenColor: {r: 1, g: 0.9655172, b: 0.85294116, a: 0.5}
+    - _ts: {r: 0.004724234, g: 0.18828309, b: 0.45142877, a: 0.7370476}
+    - _ts_plasma_ramp: {r: 0.00000085658394, g: 0.039886065, b: 0.17158116, a: 1}
+    - _ts_time_ramp: {r: 0, g: 0.9480529, b: 0.98468834, a: Infinity}
