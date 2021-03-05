@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485343dfbf0f49a7af3552e34f93ec4f, type: 3}
+  m_Name: TeamMaterialManager_steamvr
+  m_EditorClassIdentifier: 
+  _teamManager: {fileID: 11400000, guid: ca324e26956ef60408c336d108f45413, type: 2}
+  _holoFire: {fileID: 2100000, guid: a0b45cea3f9685d4d806687f089844db, type: 2}
+  _holoIce: {fileID: 2100000, guid: 6f5d2593b216551468bec9612d621f32, type: 2}
+  _holoDefault: {fileID: 2100000, guid: 74112f8aab4f57b41b737f07135d149e, type: 2}
+  _holoAnimatedDefault: {fileID: 2100000, guid: eeceb944588d34b4ca73bb3b2d290797,
+    type: 2}
+  _holoAnimatedHighlight: {fileID: 2100000, guid: c66512002557884478af47a1d457da78,
+    type: 2}
+  _holoSeeThroughIce: {fileID: 2100000, guid: edeceeae0c4e45a4d8b6eefa82dd7c7a, type: 2}
+  _holoSeeThroughFire: {fileID: 2100000, guid: 2b5b9dfbb7ea9d44e8a7facd08c3f9ab, type: 2}
+  _holoTwoFacedIce: {fileID: 2100000, guid: a24ab85d865385341adceae9a8191df8, type: 2}
+  _holoTwoFacedFire: {fileID: 2100000, guid: 05f68faa268904d42bbceec6351e3202, type: 2}
+  _holoIceMedDark: {fileID: 2100000, guid: 3c4b3f8242093084cb7fe216872e5ad5, type: 2}
+  _holoIceDark: {fileID: 2100000, guid: 2a76b92e32f29994d8eb53b67553272a, type: 2}
+  _holoFireDark: {fileID: 2100000, guid: e35541f47f763764db7ba730ae7b4645, type: 2}
+  _holoDefaultDark: {fileID: 2100000, guid: b23b7b9a5a0fc0949b3463e07cf01983, type: 2}
+  _flatIce: {fileID: 2100000, guid: 192dff127156d5740b21bc1cb76b49f6, type: 2}
+  _flatFire: {fileID: 2100000, guid: 40c10ff5c3d645a4188508f1a612837d, type: 2}
+  _flatDefault: {fileID: 2100000, guid: ee87b51eaded76247af11014566d11c2, type: 2}
+  _flatIceMedDark: {fileID: 2100000, guid: 990a98651e05a86438e48da6612e67c3, type: 2}
+  _flatIceDark: {fileID: 2100000, guid: c2436906dd3461d4eb9efbc91940c3ff, type: 2}
+  _flatFireDark: {fileID: 2100000, guid: 5273ce18137e99d4687f35b3c5a910e2, type: 2}
+  _flatDefaultDark: {fileID: 2100000, guid: 59813387696645c45a1ad37b5c58b49a, type: 2}
+  _flatDisabled: {fileID: 2100000, guid: 7ff7528cb71aebf47ac7e1e2fd47f982, type: 2}
+  _dividerHighlightNeutral: {fileID: 2100000, guid: 700668c269c2e5b48bebb2ccf2351a8c,
+    type: 2}
+  _dividerHighlightIce: {fileID: 2100000, guid: 84534afa9d4d204479fae8e580193bf2,
+    type: 2}
+  _dividerHighlightFire: {fileID: 2100000, guid: 4324b6021545ad14c91b06224c274e45,
+    type: 2}
+  _holoPopUpIce: {fileID: 2100000, guid: e762602027440ed4d808df854cbaa5f9, type: 2}
+  _holoPopUpFire: {fileID: 2100000, guid: 5bdd86a902160eb4ba56ab012e88cd69, type: 2}
+  _holoPopUpDisabledIce: {fileID: 2100000, guid: 617721faaecd9594886c5b15499e339c,
+    type: 2}
+  _holoPopUpDisabledFire: {fileID: 2100000, guid: e4a3fa9f8855a644eadff6446db30eab,
+    type: 2}
+  _holoPopUpTextIce: {fileID: 2100000, guid: 0ca0a9deb8a5b0d4c91a6f278a650756, type: 2}
+  _holoPopUpTextFire: {fileID: 2100000, guid: 086869b4871aea648998c15a23be5854, type: 2}
+  _holoPopUpTextDisabledIce: {fileID: 2100000, guid: a602c40debffa8e4390d801f7152bb54,
+    type: 2}
+  _holoPopUpTextDisabledFire: {fileID: 2100000, guid: bf1c39f40de55e141898f7085263c4ab,
+    type: 2}
+  _uiDefaultTeam: 1
+  _uiHighlightTeam: 0

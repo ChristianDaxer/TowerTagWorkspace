@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d053427773233a3428f999754eb1aa70, type: 3}
+  m_Name: SteamVRDMCebitusSceneComposer
+  m_EditorClassIdentifier: 
+  compositionName: SteamVR_3v3_DM_Cebitus
+  scenes:
+  - {fileID: 102900000, guid: 6c4dfc675802b0540ae24aac2e93b773, type: 3}
+  - {fileID: 102900000, guid: 9ab38a3f92afd1b4e8d719f6f7944c86, type: 3}
+  - {fileID: 102900000, guid: 135612965ec990d4e9153b29772f16b7, type: 3}

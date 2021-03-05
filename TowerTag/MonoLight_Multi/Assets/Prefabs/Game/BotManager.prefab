@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7773538759467744311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7773538759467744305}
+  - component: {fileID: 7773538759467744304}
+  - component: {fileID: 4737772160508961543}
+  - component: {fileID: 8709572784061443875}
+  m_Layer: 0
+  m_Name: BotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7773538759467744305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773538759467744311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7773538759467744304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773538759467744311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecde06fb538c92047b3af1560e6f5961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _persistent: 1
+  _duplicatePolicy: 0
+  _sharedBotNames: {fileID: 11400000, guid: bf0d014d2f0ac394da5ebda737fb6277, type: 2}
+  _startingTimeout: 30
+  _botDefaultName: TowerTag Bot
+--- !u!114 &4737772160508961543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773538759467744311}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc62a7db070ab1428b95fdc7a5977e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visible: 0
+  _keyCode: 98
+  _viewRect:
+    serializedVersion: 2
+    x: 1410
+    y: 220
+    width: 500
+    height: 500
+  _fireColor: {r: 255, g: 162, b: 0, a: 255}
+  _iceColor: {r: 0, g: 255, b: 255, a: 255}
+--- !u!114 &8709572784061443875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773538759467744311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a51db210b72b34c9d4e70a81453af6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _botPrefab: {fileID: 3583, guid: ce0b1d180ae03e94185cf31b4e4671e9, type: 3}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4805fcaaf44f94845b41984404366ea8, type: 3}
+  m_Name: TeleportSequence_oculus
+  m_EditorClassIdentifier: 
+  _videoPrefab: {fileID: 7322963435106886421, guid: 3a5d1202d0d8e9e4291e8766883a0186,
+    type: 3}
+  _secondsUntilVideoSpawn: 1
+  _captureHint: {fileID: 8300000, guid: cdb2e9d838a0b5f4ebd7aea79c359d87, type: 3}
+  _usageHint: {fileID: 8300000, guid: cce5eb778d619fe46a2fcece3e44d115, type: 3}
+  _hintMixer: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+    type: 2}

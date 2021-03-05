@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d053427773233a3428f999754eb1aa70, type: 3}
+  m_Name: SteamVRMazeSceneComposer
+  m_EditorClassIdentifier: 
+  compositionName: SteamVR_2v2_EL_Maze
+  scenes:
+  - {fileID: 102900000, guid: a163f1df9b2f53148a52216270a8642f, type: 3}
+  - {fileID: 102900000, guid: 4ec67aa72e2684241aa8d54d04f35ff6, type: 3}
+  - {fileID: 102900000, guid: 5d9ba92991f318047a741965a33c2fe9, type: 3}

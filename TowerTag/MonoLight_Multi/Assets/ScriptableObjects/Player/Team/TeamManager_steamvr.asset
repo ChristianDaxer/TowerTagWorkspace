@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7474a5c6abf4c5bac9e73ec767719d2, type: 3}
+  m_Name: TeamManager_steamvr
+  m_EditorClassIdentifier: 
+  _teamNeutral: {fileID: 11400000, guid: ed3381c663b2dd64a98f90aa88b9ce64, type: 2}
+  _teamIce: {fileID: 11400000, guid: 58cb83a8c2b056c43ac32119242f6718, type: 2}
+  _teamFire: {fileID: 11400000, guid: df0083f7f7bbcf646851dcf54a12252c, type: 2}
+  _teamMaterialManager: {fileID: 11400000, guid: ee6831d5d8b176a4dbe5045638db444d,
+    type: 2}
+  _teamColorManager: {fileID: 11400000, guid: fcd471438ae4d3a42a6fd97911a26fbc, type: 2}

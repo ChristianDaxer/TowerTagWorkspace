@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15283b415325cfe42ad870f69b828eb6, type: 3}
+  m_Name: OculusPlatformConfig
+  m_EditorClassIdentifier: 
+  _homeType: 3
+  _showTaskDescription: 0
+  reconfigureTasks:
+  - {fileID: 11400000, guid: 56c02fbccd960e64f8024fefb5fb4f74, type: 2}
+  - {fileID: 11400000, guid: 7c83a5959a849da46821524691ba0908, type: 2}
+  - {fileID: 11400000, guid: 70ad5a8688c2b3d429fe68ca85362451, type: 2}
+  - {fileID: 11400000, guid: c56c4d1285df13a4396f7c4ae3482a29, type: 2}
+  - {fileID: 11400000, guid: 3fdfb13f862d97342941c8d027a919b1, type: 2}
+  - {fileID: 11400000, guid: 0836a1fc5860351499c67a04f5b1d5a0, type: 2}
+  - {fileID: 11400000, guid: 9a0376eb4424ac3458b07e67dc23ed0d, type: 2}

@@ -1,0 +1,491 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: Cebitus
+  m_EditorClassIdentifier: 
+  version: 3252
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: ed0962979192cde4ba57b69f4aae228b, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.00024414062
+      width: 0.25
+      height: 0.25
+    srcObjName: Wall_1
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01
+      y: 0.06113684
+      width: 0.97999996
+      height: 0.92886317
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 029bffae500151348b7cad5ab91629bd, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.25073242
+      y: 0.00024414062
+      width: 0.25
+      height: 0.25
+    srcObjName: Pillar
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01609045
+      y: 0.011582017
+      width: 0.9653732
+      height: 0.97023255
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 99927a4679d68dd4686c45574c48a3c5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.5012207
+      y: 0.00024414062
+      width: 0.25
+      height: 0.25
+    srcObjName: Platform
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.2525
+      y: 0.06773031
+      width: 0.245
+      height: 0.4272697
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c154ccac0622f9c42820bee4a433aee0, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.25073242
+      width: 0.25
+      height: 0.25
+    srcObjName: Sockel
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0031194254
+      y: 0.0033714175
+      width: 0.23996522
+      height: 0.4882452
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 99927a4679d68dd4686c45574c48a3c5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.751709
+      width: 0.25
+      height: 0.1550293
+    srcObjName: Frame
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.2525
+      y: 0.8398385
+      width: 0.245
+      height: 0.1551615
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b93307b9fa4caa6478d03d6685ae0bf9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.5012207
+      width: 0.25
+      height: 0.25
+    srcObjName: ScreenHolder_Fire (1)
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: -1
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: -0.82442915
+      width: 0.99
+      height: 0.82442915
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b655517c016b29e458e2bea7659149a1, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.751709
+      y: 0.00024414062
+      width: 0.00048828125
+      height: 0.00048828125
+    srcObjName: ScreenHolder_Fire (1)
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.02803894
+      y: 0.27625573
+      width: 0.7359793
+      height: 0.6175342
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 84534afa9d4d204479fae8e580193bf2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.75268555
+      y: 0.00024414062
+      width: 0.00048828125
+      height: 0.00048828125
+    srcObjName: DividerModul_small Front
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01
+      y: 0.00999999
+      width: 0.8612477
+      height: 0.9589638
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 700668c269c2e5b48bebb2ccf2351a8c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.75268555
+      y: 0.00024414062
+      width: 0.00048828125
+      height: 0.00048828125
+    srcObjName: DividerModul_small Front
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01
+      y: 0.00999999
+      width: 0.8612477
+      height: 0.9589638
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4324b6021545ad14c91b06224c274e45, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.75268555
+      y: 0.00024414062
+      width: 0.00048828125
+      height: 0.00048828125
+    srcObjName: DividerModul_small Front
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01
+      y: 0.00999999
+      width: 0.8612477
+      height: 0.9589638
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 84534afa9d4d204479fae8e580193bf2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7536621
+      y: 0.00024414062
+      width: 0.00048828125
+      height: 0.00048828125
+    srcObjName: DividerModul_big Front
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01
+      y: 0.036410987
+      width: 0.9207666
+      height: 0.9415376
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4324b6021545ad14c91b06224c274e45, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7536621
+      y: 0.00024414062
+      width: 0.00048828125
+      height: 0.00048828125
+    srcObjName: DividerModul_big Front
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01
+      y: 0.036410987
+      width: 0.9207666
+      height: 0.9415376
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 5b937c9ec958a3c4e8b6c8dcc17ca621, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.0009765625
+      width: 0.4897461
+      height: 0.89746094
+    srcObjName: DividerModul_small Front
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01
+      y: 0.09243417
+      width: 0.9795976
+      height: 0.89756584
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 151f237d91bbac64d81c4a12868115cf, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49121094
+      y: 0.0009765625
+      width: 0.4897461
+      height: 0.89746094
+    srcObjName: DividerModul_big Front
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01
+      y: 0.09245992
+      width: 0.98
+      height: 0.8975401
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b5f6ffc176a89d245b40e0909152ee42, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    srcObjName: DividerModul_small Front
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 2
+      height: 2
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 4
+  - material: {fileID: 2100000, guid: d21c846dc0b7d354990b319f1801afe1, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    srcObjName: PillarLights
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: -0.02
+      y: 0
+      width: 80
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 4
+  resultMaterials:
+  - combinedMaterial: {fileID: 2100000, guid: 800f86c3938ee13479693924cfaf5733, type: 2}
+    considerMeshUVs: 1
+    sourceMaterials:
+    - {fileID: 2100000, guid: 99927a4679d68dd4686c45574c48a3c5, type: 2}
+    - {fileID: 2100000, guid: b93307b9fa4caa6478d03d6685ae0bf9, type: 2}
+    - {fileID: 2100000, guid: c154ccac0622f9c42820bee4a433aee0, type: 2}
+    - {fileID: 2100000, guid: 84534afa9d4d204479fae8e580193bf2, type: 2}
+    - {fileID: 2100000, guid: 4324b6021545ad14c91b06224c274e45, type: 2}
+    - {fileID: 2100000, guid: 700668c269c2e5b48bebb2ccf2351a8c, type: 2}
+    - {fileID: 2100000, guid: b655517c016b29e458e2bea7659149a1, type: 2}
+    - {fileID: 2100000, guid: 029bffae500151348b7cad5ab91629bd, type: 2}
+    - {fileID: 2100000, guid: ed0962979192cde4ba57b69f4aae228b, type: 2}
+  - combinedMaterial: {fileID: 2100000, guid: 6755db5c2b48fff40934bbe705570571, type: 2}
+    considerMeshUVs: 1
+    sourceMaterials:
+    - {fileID: 2100000, guid: 151f237d91bbac64d81c4a12868115cf, type: 2}
+    - {fileID: 2100000, guid: 5b937c9ec958a3c4e8b6c8dcc17ca621, type: 2}
+  - combinedMaterial: {fileID: 2100000, guid: efe7227a9affc3540bfac6952410a4ed, type: 2}
+    considerMeshUVs: 0
+    sourceMaterials:
+    - {fileID: 2100000, guid: b5f6ffc176a89d245b40e0909152ee42, type: 2}
+  - combinedMaterial: {fileID: 2100000, guid: de73bbc71b8cc20448765bc3b050ec93, type: 2}
+    considerMeshUVs: 0
+    sourceMaterials:
+    - {fileID: 2100000, guid: d21c846dc0b7d354990b319f1801afe1, type: 2}
+  doMultiMaterial: 1

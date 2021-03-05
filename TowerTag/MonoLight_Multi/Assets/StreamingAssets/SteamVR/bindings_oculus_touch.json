@@ -1,0 +1,143 @@
+{
+  "app_key": "application.generated.unity.towertag.exe",
+  "bindings": {
+    "/actions/default": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    },
+    "/actions/towertag": {
+      "chords": [],
+      "poses": [
+        {
+          "output": "/actions/towertag/in/pose",
+          "path": "/user/hand/left/pose/raw"
+        },
+        {
+          "output": "/actions/towertag/in/pose",
+          "path": "/user/hand/right/pose/raw"
+        }
+      ],
+      "haptics": [
+        {
+          "output": "/actions/towertag/out/haptic",
+          "path": "/user/hand/left/output/haptic"
+        },
+        {
+          "output": "/actions/towertag/out/haptic",
+          "path": "/user/hand/right/output/haptic"
+        }
+      ],
+      "sources": [
+        {
+          "path": "/user/hand/left/input/trigger",
+          "mode": "trigger",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/towertag/in/triggerbutton"
+            },
+            "pull": {
+              "output": "/actions/towertag/in/triggerpull"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/joystick",
+          "mode": "joystick",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/towertag/in/trackpadbutton"
+            },
+            "position": {
+              "output": "/actions/towertag/in/trackpadtouch"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/grip",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/towertag/in/gripbutton"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/x",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/towertag/in/menubutton"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/grip",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/towertag/in/gripbutton"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/joystick",
+          "mode": "joystick",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/towertag/in/trackpadbutton"
+            },
+            "position": {
+              "output": "/actions/towertag/in/trackpadtouch"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trigger",
+          "mode": "trigger",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/towertag/in/triggerbutton"
+            },
+            "pull": {
+              "output": "/actions/towertag/in/triggerpull"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/x",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/towertag/in/menubutton"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/a",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/towertag/in/menubutton"
+            }
+          }
+        }
+      ],
+      "skeleton": []
+    }
+  },
+  "controller_type": "oculus_touch",
+  "description": "withdefault",
+  "name": "OculusBinding"
+}

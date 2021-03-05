@@ -1,0 +1,1720 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ShaderVariants
+  m_Shaders:
+  - first: {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON _ALPHAPREMULTIPLY_ON _EMISSION
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _ALPHAPREMULTIPLY_ON
+          _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP LIGHTMAP_ON _ALPHAPREMULTIPLY_ON
+          _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON _ALPHAPREMULTIPLY_ON _EMISSION
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON _ALPHAPREMULTIPLY_ON
+          _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _ALPHAPREMULTIPLY_ON
+          _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _ALPHAPREMULTIPLY_ON _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _ALPHAPREMULTIPLY_ON
+          _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _ALPHAPREMULTIPLY_ON
+          _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _ALPHAPREMULTIPLY_ON _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON _NORMALMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _NORMALMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON _NORMALMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _NORMALMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _NORMALMAP
+          _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _NORMALMAP
+          _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _NORMALMAP
+          _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _NORMALMAP
+          _PARALLAXMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP LIGHTMAP_ON _NORMALMAP
+          _PARALLAXMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON _NORMALMAP
+          _PARALLAXMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _NORMALMAP
+          _PARALLAXMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: DIRECTIONAL _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHAPREMULTIPLY_ON _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT _ALPHAPREMULTIPLY_ON _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL _SPECGLOSSMAP
+        passType: 5
+      - keywords: DIRECTIONAL _NORMALMAP _SPECGLOSSMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT _NORMALMAP _SPECGLOSSMAP
+        passType: 5
+      - keywords: DIRECTIONAL _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: SHADOWS_CUBE
+        passType: 8
+      - keywords: SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHAPREMULTIPLY_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH _SPECGLOSSMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO _SPECGLOSSMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH _PARALLAXMAP _SPECGLOSSMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO _PARALLAXMAP _SPECGLOSSMAP
+        passType: 8
+  - first: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP LIGHTMAP_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL UNITY_SINGLE_PASS_STEREO _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHATEST_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHATEST_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHATEST_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _ALPHATEST_ON
+          _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHABLEND_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHABLEND_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHABLEND_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _ALPHABLEND_ON
+          _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON _ALPHAPREMULTIPLY_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON _ALPHAPREMULTIPLY_ON
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _ALPHAPREMULTIPLY_ON
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _ALPHAPREMULTIPLY_ON
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP LIGHTMAP_ON _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP LIGHTPROBE_SH _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EMISSION _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP LIGHTMAP_ON _EMISSION
+          _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH _EMISSION _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN UNITY_SINGLE_PASS_STEREO
+          _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _EMISSION _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _EMISSION
+          _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _EMISSION
+          _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO VERTEXLIGHT_ON
+          _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN UNITY_SINGLE_PASS_STEREO
+          VERTEXLIGHT_ON _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _METALLICGLOSSMAP _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _METALLICGLOSSMAP _NORMALMAP
+          _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON _METALLICGLOSSMAP
+          _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+          _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+          _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON _EMISSION _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON _EMISSION
+          _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP LIGHTMAP_ON _EMISSION
+          _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON _EMISSION _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON _EMISSION
+          _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _EMISSION
+          _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _EMISSION _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _EMISSION
+          _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO _EMISSION
+          _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON UNITY_SINGLE_PASS_STEREO
+          _EMISSION _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP _PARALLAXMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _METALLICGLOSSMAP _NORMALMAP
+          _PARALLAXMAP
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: POINT
+        passType: 5
+      - keywords: DIRECTIONAL FOG_LINEAR
+        passType: 5
+      - keywords: FOG_LINEAR POINT
+        passType: 5
+      - keywords: POINT UNITY_SINGLE_PASS_STEREO
+        passType: 5
+      - keywords: FOG_LINEAR POINT UNITY_SINGLE_PASS_STEREO
+        passType: 5
+      - keywords: FOG_EXP2 POINT UNITY_SINGLE_PASS_STEREO
+        passType: 5
+      - keywords: DIRECTIONAL _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHATEST_ON
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHABLEND_ON
+        passType: 5
+      - keywords: FOG_LINEAR POINT _ALPHABLEND_ON
+        passType: 5
+      - keywords: FOG_LINEAR POINT UNITY_SINGLE_PASS_STEREO _ALPHABLEND_ON
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHAPREMULTIPLY_ON
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHAPREMULTIPLY_ON _NORMALMAP
+        passType: 5
+      - keywords: POINT _ALPHAPREMULTIPLY_ON _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT _ALPHAPREMULTIPLY_ON _NORMALMAP
+        passType: 5
+      - keywords: POINT UNITY_SINGLE_PASS_STEREO _ALPHAPREMULTIPLY_ON _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT UNITY_SINGLE_PASS_STEREO _ALPHAPREMULTIPLY_ON
+          _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: POINT _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL FOG_LINEAR _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP POINT _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 POINT _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: POINT UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL FOG_LINEAR UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 POINT UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL _METALLICGLOSSMAP _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 5
+      - keywords: POINT _METALLICGLOSSMAP _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 5
+      - keywords: FOG_LINEAR POINT _METALLICGLOSSMAP _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 5
+      - keywords: POINT UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 5
+      - keywords: FOG_LINEAR POINT UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP _NORMALMAP
+          _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 5
+      - keywords: DIRECTIONAL _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: FOG_LINEAR POINT _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: DIRECTIONAL _NORMALMAP _PARALLAXMAP
+        passType: 5
+      - keywords: DIRECTIONAL _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
+        passType: 5
+      - keywords: DIRECTIONAL _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: INSTANCING_ON SHADOWS_DEPTH
+        passType: 8
+      - keywords: SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHATEST_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO _ALPHATEST_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHABLEND_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHAPREMULTIPLY_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH _METALLICGLOSSMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH _METALLICGLOSSMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 8
+      - keywords: SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 8
+      - keywords: SHADOWS_DEPTH _PARALLAXMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH _METALLICGLOSSMAP _PARALLAXMAP
+        passType: 8
+      - keywords: INSTANCING_ON SHADOWS_DEPTH _METALLICGLOSSMAP _PARALLAXMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 8
+      - keywords: _METALLICGLOSSMAP
+        passType: 11
+      - keywords: _METALLICGLOSSMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+        passType: 11
+  - first: {fileID: 64, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: SHADOWS_SPLIT_SPHERES
+        passType: 0
+      - keywords: SHADOWS_SPLIT_SPHERES UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 2, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 3, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 10, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 11, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 20, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 34, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 1
+  - first: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 8, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 9, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 101, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 103, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 104, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 105, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: _SUNDISK_SIMPLE
+        passType: 0
+      - keywords: _SUNDISK_HIGH_QUALITY
+        passType: 0
+  - first: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: SOFTPARTICLES_ON
+        passType: 0
+      - keywords: FOG_LINEAR SOFTPARTICLES_ON
+        passType: 0
+      - keywords: FOG_EXP SOFTPARTICLES_ON
+        passType: 0
+      - keywords: FOG_EXP2 SOFTPARTICLES_ON
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 202, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: SOFTPARTICLES_ON
+        passType: 0
+      - keywords: FOG_LINEAR SOFTPARTICLES_ON
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_LINEAR SOFTPARTICLES_ON
+        passType: 0
+      - keywords: FOG_EXP SOFTPARTICLES_ON
+        passType: 0
+      - keywords: FOG_EXP2 SOFTPARTICLES_ON
+        passType: 0
+  - first: {fileID: 207, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: SOFTPARTICLES_ON
+        passType: 0
+      - keywords: SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 43, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9001, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9002, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9003, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9004, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9006, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 10701, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 1
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 10703, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+  - first: {fileID: 10720, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: ETC1_EXTERNAL_ALPHA
+        passType: 0
+  - first: {fileID: 10755, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: UNITY_UI_ALPHACLIP
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO UNITY_UI_ALPHACLIP
+        passType: 0
+  - first: {fileID: 4800000, guid: 936bd00b0f168d949b0c27d2be40615a, type: 3}
+    second:
+      variants:
+      - keywords: VLB_ALPHA_AS_BLACK VLB_DEPTH_BLEND VLB_NOISE_3D
+        passType: 0
+      - keywords: FOG_LINEAR VLB_ALPHA_AS_BLACK VLB_DEPTH_BLEND VLB_NOISE_3D
+        passType: 0
+      - keywords: FOG_EXP VLB_ALPHA_AS_BLACK VLB_DEPTH_BLEND VLB_NOISE_3D
+        passType: 0
+      - keywords: FOG_EXP2 VLB_ALPHA_AS_BLACK VLB_DEPTH_BLEND VLB_NOISE_3D
+        passType: 0
+      - keywords: VLB_ALPHA_AS_BLACK VLB_CLIPPING_PLANE VLB_DEPTH_BLEND VLB_NOISE_3D
+        passType: 0
+      - keywords: FOG_EXP VLB_ALPHA_AS_BLACK VLB_CLIPPING_PLANE VLB_DEPTH_BLEND VLB_NOISE_3D
+        passType: 0
+      - keywords: FOG_EXP2 VLB_ALPHA_AS_BLACK VLB_CLIPPING_PLANE VLB_DEPTH_BLEND
+          VLB_NOISE_3D
+        passType: 0
+  - first: {fileID: 4800000, guid: 85a88efa8c871af4a9d17c64791b6f4f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 06c5c51ee8c5350448c76efdaaa14cf1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 0806d638f118c844b9909f0a153b6bf7, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 0c1cf10ea69e60e4f9eb8955749f88ec, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 0c3b4b6bfd9145744bbe998e50927545, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 11bef2a90eac9c049b60ad0a773814df, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 122fdbba052479a4d894b9f2aab2c9e1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 143b6f2ea133e9945800c55e8a5cc06e, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON INSTANCING_ON
+        passType: 4
+      - keywords: DIRECTIONAL INSTANCING_ON LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR INSTANCING_ON LIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON FOG_LINEAR
+          INSTANCING_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR INSTANCING_ON LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP INSTANCING_ON LIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 INSTANCING_ON LIGHTMAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON INSTANCING_ON
+          UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_LINEAR INSTANCING_ON LIGHTMAP_ON
+          UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON FOG_LINEAR
+          INSTANCING_ON UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR INSTANCING_ON LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 INSTANCING_ON LIGHTMAP_ON
+          UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: POINT
+        passType: 5
+      - keywords: FOG_LINEAR POINT
+        passType: 5
+      - keywords: FOG_EXP POINT
+        passType: 5
+      - keywords: POINT UNITY_SINGLE_PASS_STEREO
+        passType: 5
+      - keywords: FOG_LINEAR POINT UNITY_SINGLE_PASS_STEREO
+        passType: 5
+      - keywords: FOG_EXP2 POINT UNITY_SINGLE_PASS_STEREO
+        passType: 5
+      - keywords: INSTANCING_ON SHADOWS_DEPTH
+        passType: 8
+      - keywords: INSTANCING_ON SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO
+        passType: 8
+      - keywords: 
+        passType: 11
+  - first: {fileID: 4800000, guid: 18a3bebe778ebea40809a79a3bc6c892, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO VERTEXLIGHT_ON
+          _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+  - first: {fileID: 4800000, guid: 1b86f5e1a0d6cc84e8333c2185d1b7ca, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_VERTEXNORMAL _EMISSION
+          _METALLICGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL _DISPLACEMENTVARIANT_VERTEXNORMAL _METALLICGLOSSMAP
+        passType: 5
+      - keywords: SHADOWS_DEPTH _METALLICGLOSSMAP
+        passType: 8
+  - first: {fileID: 4800000, guid: 1ccecd9b89b8a4f14bfb64f29ddfcc81, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 4800000, guid: 2358a22fab67733489c61704ce0d3a0c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: FOG_LINEAR SOFTPARTICLES_ON
+        passType: 0
+      - keywords: FOG_EXP SOFTPARTICLES_ON
+        passType: 0
+      - keywords: FOG_EXP2 SOFTPARTICLES_ON
+        passType: 0
+      - keywords: FOG_LINEAR SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 2440e85ca4fd9e5409909f92240c9c12, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 259dfe350d9fe8845abd046b36cd5caf, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 2d9a4ca4b2730b64e8aade7030f8caeb, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 1
+      - keywords: FOG_LINEAR POINT UNITY_SINGLE_PASS_STEREO
+        passType: 1
+      - keywords: FOV_SCALING_OFF
+        passType: 1
+      - keywords: FOV_SCALING_OFF UNITY_SINGLE_PASS_STEREO
+        passType: 1
+  - first: {fileID: 4800000, guid: 2f2f99c2c299dac4dbd2c73e1fd09614, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 322757b6fd877a14e9c31533273514ed, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 34648ae8f2e85654a86efaa468ce59f1, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_VERTEXNORMAL _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_VERTEXNORMAL _EMISSION
+          _METALLICGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _EMISSION _METALLICGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _EMISSION _METALLICGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _EMISSION _METALLICGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH SHADOWS_SCREEN UNITY_SINGLE_PASS_STEREO
+          _DISPLACEMENTVARIANT_VERTEXNORMAL _EMISSION _METALLICGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHABLEND_ON _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHABLEND_ON _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _EMISSION _METALLICGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL _DISPLACEMENTVARIANT_VERTEXNORMAL
+        passType: 5
+      - keywords: POINT _DISPLACEMENTVARIANT_VERTEXNORMAL
+        passType: 5
+      - keywords: FOG_LINEAR POINT _DISPLACEMENTVARIANT_VERTEXNORMAL
+        passType: 5
+      - keywords: FOG_LINEAR POINT UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_VERTEXNORMAL
+        passType: 5
+      - keywords: DIRECTIONAL _DISPLACEMENTVARIANT_VERTEXNORMAL _METALLICGLOSSMAP
+        passType: 5
+      - keywords: POINT _DISPLACEMENTVARIANT_VERTEXNORMAL _METALLICGLOSSMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT _DISPLACEMENTVARIANT_VERTEXNORMAL _METALLICGLOSSMAP
+        passType: 5
+      - keywords: DIRECTIONAL FOG_LINEAR UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _METALLICGLOSSMAP
+        passType: 5
+      - keywords: FOG_LINEAR POINT UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_VERTEXNORMAL
+          _METALLICGLOSSMAP
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHABLEND_ON _DISPLACEMENTVARIANT_VERTEXNORMAL
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHABLEND_ON _DISPLACEMENTVARIANT_VERTEXNORMAL _METALLICGLOSSMAP
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO
+        passType: 8
+      - keywords: SHADOWS_DEPTH _METALLICGLOSSMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH UNITY_SINGLE_PASS_STEREO _METALLICGLOSSMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHABLEND_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHABLEND_ON _METALLICGLOSSMAP
+        passType: 8
+  - first: {fileID: 4800000, guid: 35e778fba8b2b49a198d8d7cfced67eb, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 3836de7376f9e0c4ea3a715637b71ae7, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 3954501323f24464f9e4418c78d8e8ce, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 4bc825f87622481ebc279aac6d670399, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKSOFTBORDERS_ON
+          _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKSOFTBORDERS_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKAPPEARUSEWORLDPOSITION_ON _MASKSOFTBORDERS_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARNOISETRIPLANAR_ON
+          _MASKSOFTBORDERS_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKAPPEARNOISETRIPLANAR_ON _MASKSOFTBORDERS_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKAPPEARNOISETRIPLANAR_ON _MASKAPPEARUSEWORLDPOSITION_ON _MASKSOFTBORDERS_ON
+          _NOISEDISTORTIONENABLED_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: 4cf72c0825a17ff4ca58456850ede922, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 2
+      - keywords: DIRECTIONAL
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO VERTEXLIGHT_ON
+          _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+      - keywords: DIRECTIONAL _DISPLACEMENTVARIANT_VERTEXNORMAL
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_VERTEXCOLOR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON _DISPLACEMENTVARIANT_VERTEXCOLOR
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_VERTEXCOLOR
+        passType: 4
+      - keywords: DIRECTIONAL _DISPLACEMENTVARIANT_DISPVECTOR _USEADDITIVE_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_DISPVECTOR _USEADDITIVE_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON _DISPLACEMENTVARIANT_DISPVECTOR
+          _USEADDITIVE_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_DISPVECTOR
+          _USEADDITIVE_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO VERTEXLIGHT_ON
+          _DISPLACEMENTVARIANT_DISPVECTOR _USEADDITIVE_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_VERTEXCOLOR _USEADDITIVE_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: 4f39db24ff9a0484c9ea5c2fa1c86c1b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: AB_HIGH_PRECISION
+        passType: 0
+  - first: {fileID: 4800000, guid: 5195438ecbaead24e8dd3e03bca1cfa1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 521323deb7e76dd4d9df45339334b534, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH UNITY_PASS_SHADOWCASTER
+        passType: 8
+  - first: {fileID: 4800000, guid: 55ba34526f95e894d88169686758bfa6, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 58eb399dc6162a041b5fe246273661bb, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: SOFTPARTICLES_ON
+        passType: 0
+      - keywords: SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 59b740912539f01408adc12beb344a9d, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 59bdc435604fa07428ebe3ec1236d012, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 5cdbfa3dede94fe1b51278b4ab12beca, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKDEPTHFADEENABLED_ON
+          _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKDEPTHFADEENABLED_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _CUBEMAPREFLECTIONENABLED_ON _LOCALNOISEPOSITION_ON
+          _MASKAPPEARINVERT_ON _MASKDEPTHFADEENABLED_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARNOISETRIPLANAR_ON
+          _MASKDEPTHFADEENABLED_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKAPPEARNOISETRIPLANAR_ON _MASKAPPEARUSEWORLDPOSITION_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKAPPEARNOISETRIPLANAR_ON _MASKDEPTHFADEENABLED_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _CUBEMAPREFLECTIONENABLED_ON _LOCALNOISEPOSITION_ON
+          _MASKDEPTHFADEENABLED_ON _NOISE02ENABLED_ON _NOISEDISTORTIONENABLED_ON
+          _RAMPFLIP_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: 5eea6119ccc6a024099c68f352363a23, type: 3}
+    second:
+      variants:
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 60463fd55f24b604dbae59e4bea010d2, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 614fd2c73489b864faad51ccdd7a4656, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 62ea2efaa971044a595e252df8c5aa04, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH UNITY_PASS_SHADOWCASTER
+        passType: 8
+  - first: {fileID: 4800000, guid: 652c2a99c6cba874ca99f3e5bd619e1c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 67fd57f591ea3554494173cb2f22ef07, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH UNITY_PASS_SHADOWCASTER
+        passType: 8
+  - first: {fileID: 4800000, guid: 68b3c2e8a08acdb419e89d8eaa4fb883, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: UNITY_UI_CLIP_RECT
+        passType: 0
+  - first: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
+    second:
+      variants:
+      - keywords: OUTLINE_ON
+        passType: 0
+      - keywords: OUTLINE_ON UNDERLAY_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: 6b34d6785f929904683c682139c8450f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 6c4912886dfcd564da449dd941df9045, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 6e4f40cfbd18b3b469b5079288cea652, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: AB_HIGH_PRECISION
+        passType: 0
+  - first: {fileID: 4800000, guid: 6ea91f45c2634bf49b127eb59242ba65, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 7682ab5e936afcb469d7fef4d5adf6eb, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 7730abb49bfb90c4b93ffe71beb7212b, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_DISPVECTOR
+        passType: 4
+  - first: {fileID: 4800000, guid: 777daed654e50c048be3ecf97fac28e2, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 787d7485aa6482341a9f55fa37fb84f1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 791dee6ce4b1f6a46922433884e3a731, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 79c8e83054f3f4a4b966864a6812dfce, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 7c645f10b3095d04985dda104336d11b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 82881a2d011b0964696411c822cdd00b, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL _ENABLEFOG_ON _ENABLEROTATION_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: 835b21104e8c1ca4f85b9df00fca695c, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 84cf8d63687679b4e96326697d05ea5a, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 86576f6edc098d54f9dbd6ff211892a9, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 88b29ffc45d98c1459753c4b9c7c861c, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: 892dc08828474f8f915d03e2836d47f5, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKSOFTBORDERS_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKSOFTBORDERS_ON
+          _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKSOFTBORDERS_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARNOISETRIPLANAR_ON
+          _MASKSOFTBORDERS_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKAPPEARNOISETRIPLANAR_ON _MASKSOFTBORDERS_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: 89815bbc9fb99b744887dfbe56123d31, type: 3}
+    second:
+      variants:
+      - keywords: FOV_SCALING_OFF
+        passType: 1
+  - first: {fileID: 4800000, guid: 898a04dba40def346a63a1abeb9e9726, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 8ef4d5815d2bdca4ebddfd2ea1415ef8, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 8f74d4832d139f64e93403020a27fe02, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 90d25f734d6b07d4bbec56337d239497, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 90f914c620c763a4cbf00c2e685d8ed3, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 9232474ccb8e2cb4faa57c2da9fd1be6, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 92bc231afc4c4711875711d190f6ad46, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKDEPTHFADEENABLED_ON
+          _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKDEPTHFADEENABLED_ON
+          _NOISE02ENABLED_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKDEPTHFADEENABLED_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARNOISETRIPLANAR_ON
+          _MASKDEPTHFADEENABLED_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _LOCALNOISEPOSITION_ON _MASKAPPEARINVERT_ON
+          _MASKAPPEARNOISETRIPLANAR_ON _MASKDEPTHFADEENABLED_ON _NOISEDISTORTIONENABLED_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: 95a45eed6cc24e5b8b4415de3e12b2f8, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH UNITY_PASS_SHADOWCASTER
+        passType: 8
+  - first: {fileID: 4800000, guid: 9975d8168680a8b4ebc0941cbb57bd17, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 9ced8be6686666e4a9d4fd03e4ba2439, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: SOFTPARTICLES_ON
+        passType: 0
+      - keywords: SOFTPARTICLES_ON UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: 9e11b3e5d6ceec94d9b90f59a84eefef, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: a12d88644f81e2944a179de21f99c1d9, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 4800000, guid: a3e4a63230246e746933d9b20b47608c, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _DISPLACEMENTVARIANT_DISPVECTOR _USEADDITIVE_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _DISPLACEMENTVARIANT_DISPVECTOR
+          _USEADDITIVE_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_DISPVECTOR
+          _USEADDITIVE_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO _DISPLACEMENTVARIANT_DISPVECTOR
+          _USEADDITIVE_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH UNITY_SINGLE_PASS_STEREO VERTEXLIGHT_ON
+          _DISPLACEMENTVARIANT_DISPVECTOR _USEADDITIVE_ON
+        passType: 4
+  - first: {fileID: 4800000, guid: a6da52637e12c6a44aa41d3744200721, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_EXP
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: a9cde6543f2604b4cbd3023847cb9c0b, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+  - first: {fileID: 4800000, guid: afbd9f0fb1c22d1409403fdef158479f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: b730eb25f15824dd0be1b0bc07276d87, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH UNITY_PASS_SHADOWCASTER
+        passType: 8
+  - first: {fileID: 4800000, guid: b7398052d9a97ac4f9b0758ca055043c, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: b8f211b039f720a479f98fec15c007c6, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: b91de4d65a1167d4abcd2aaf72067ccd, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: babd839f5efc0e543a855e20b7668b94, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: c0ace1ca4bc0718448acf798c93d52d9, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: c26db15b9a2ed4b2ebefefd26ce85ae1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: cb5963bc7e65a9a4799b3eafc252c11e, type: 3}
+    second:
+      variants:
+      - keywords: INVERSE_FRESNEL
+        passType: 0
+      - keywords: FOG_LINEAR INVERSE_FRESNEL
+        passType: 0
+      - keywords: FOG_EXP2 INVERSE_FRESNEL
+        passType: 0
+      - keywords: FOG_LINEAR INVERSE_FRESNEL UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: cfa7edf01005f4e338d973cea2f6eab3, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: dc08c5fb55ff8ba4c83ea0e233b10a92, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_LINEAR UNITY_SINGLE_PASS_STEREO
+        passType: 0
+      - keywords: FOG_EXP2 UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: dd89cf5b9246416f84610a006f916af7, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: de053fb214897cc439db35fc0361a282, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: e22b898f21fbf7141a49a400707c3d45, type: 3}
+    second:
+      variants:
+      - keywords: UNITY_UI_ALPHACLIP
+        passType: 0
+  - first: {fileID: 4800000, guid: e2df09453e3ddd34bb03148155dae5ae, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNITY_SINGLE_PASS_STEREO
+        passType: 0
+  - first: {fileID: 4800000, guid: e3b36c7226acbd34096371aea15f3d93, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: e4f83df1330e04ebfb51570e30bf2c46, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH UNITY_PASS_SHADOWCASTER
+        passType: 8
+  - first: {fileID: 4800000, guid: e9d25a5650a69be42b87a1ef7f42b6af, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: eb4f2df0f08a90d44bd8b39d9b7a09ca, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: eecae4dc88f416244a381f2c92199ab7, type: 3}
+    second:
+      variants:
+      - keywords: DISTORT_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: eee3cda0d133ba347b50bd9261c6b22b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: f33df407d9e2aaa4b8ed8aa9a6e4e724, type: 3}
+    second:
+      variants:
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 4800000, guid: f554a646bc6f4ff4fb126d3253dedb9b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: f94b735204971f144bacf9bd957a1b67, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: fdb7e96596117a842b8c17421a6b9b02, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9007, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0

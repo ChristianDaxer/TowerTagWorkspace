@@ -1,0 +1,86 @@
+{
+  "actions": [
+    {
+      "name": "/actions/TowerTag/in/TriggerButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/TowerTag/in/Pose",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/TowerTag/in/TriggerPull",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/TowerTag/in/GripButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/TowerTag/in/MenuButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/TowerTag/in/TrackPadButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/TowerTag/in/TrackPadTouch",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/TowerTag/out/Haptic",
+      "type": "vibration"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/TowerTag",
+      "usage": "single"
+    }
+  ],
+  "default_bindings": [
+    {
+      "controller_type": "vive_controller",
+      "binding_url": "bindings_vive_controller.json"
+    },
+    {
+      "controller_type": "oculus_touch",
+      "binding_url": "bindings_oculus_touch.json"
+    },
+    {
+      "controller_type": "knuckles",
+      "binding_url": "bindings_knuckles.json"
+    },
+    {
+      "controller_type": "holographic_controller",
+      "binding_url": "bindings_holographic_controller.json"
+    },
+    {
+      "controller_type": "vive",
+      "binding_url": "binding_vive.json"
+    },
+    {
+      "controller_type": "vive_pro",
+      "binding_url": "binding_vive_pro.json"
+    },
+    {
+      "controller_type": "rift",
+      "binding_url": "binding_rift.json"
+    },
+    {
+      "controller_type": "holographic_hmd",
+      "binding_url": "binding_holographic_hmd.json"
+    },
+    {
+      "controller_type": "vive_tracker_camera",
+      "binding_url": "binding_vive_tracker_camera.json"
+    }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/TowerTag/out/Haptic": "Haptic"
+    }
+  ]
+}

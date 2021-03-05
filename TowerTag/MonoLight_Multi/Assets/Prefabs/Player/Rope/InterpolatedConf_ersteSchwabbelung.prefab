@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000011219343252}
+  m_IsPrefabParent: 1
+--- !u!1 &1000011219343252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011451509556}
+  - 114: {fileID: 114000012547998704}
+  m_Layer: 0
+  m_Name: InterpolatedConf_ersteSchwabbelung
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000011907719580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013986534370}
+  - 114: {fileID: 114000010134859530}
+  m_Layer: 0
+  m_Name: boioioing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!1 &1000013865503102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012270064604}
+  - 114: {fileID: 114000011525665700}
+  m_Layer: 0
+  m_Name: base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &4000011451509556
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011219343252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.17228831, y: 3.3061676, z: 2.2322264}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000012270064604}
+  - {fileID: 4000013986534370}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &4000012270064604
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013865503102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000011451509556}
+  m_RootOrder: 0
+--- !u!4 &4000013986534370
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011907719580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000011451509556}
+  m_RootOrder: 1
+--- !u!114 &114000010134859530
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011907719580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb73205525d56f44d8e1d6fe13d15731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rest_length: 0.41364595
+  rest_length_scale: 0.25
+  innerForceScale: 10
+  angularForceScale: 20
+  gravity: {x: 0, y: -0, z: 0}
+  inerta_damp_factor: 0.8
+  GunCPLengthFactor: 0.1
+  HookCPLengthFactor: 0.3
+  DT: 0.03
+  maxN: 30
+  eps: 0.0001
+  DBG_phys: 0
+  DBG_spline: 0
+--- !u!114 &114000011525665700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013865503102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb73205525d56f44d8e1d6fe13d15731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rest_length: 0.82098705
+  rest_length_scale: 0.5
+  innerForceScale: 4.65
+  angularForceScale: 10
+  gravity: {x: 0, y: -0.1, z: 0}
+  inerta_damp_factor: 0.6
+  GunCPLengthFactor: 0.1
+  HookCPLengthFactor: 0.3
+  DT: 0.03
+  maxN: 30
+  eps: 0.0001
+  DBG_phys: 0
+  DBG_spline: 0
+--- !u!114 &114000012547998704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011219343252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff93fbac1d616411aa3ab342e59f88b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rest_length: 0.82098705
+  rest_length_scale: 1
+  innerForceScale: 4.65
+  angularForceScale: 10
+  gravity: {x: 0, y: -0.1, z: 0}
+  inerta_damp_factor: 0.6
+  GunCPLengthFactor: 0.1
+  HookCPLengthFactor: 0.3
+  DT: 0.03
+  maxN: 30
+  eps: 0.0001
+  DBG_phys: 1
+  DBG_spline: 0
+  _T: 0
+  baseConf: {fileID: 114000011525665700}
+  otherConf: {fileID: 114000010134859530}

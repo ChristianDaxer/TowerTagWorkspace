@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6569996962646465578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6569996962646465583}
+  m_Layer: 0
+  m_Name: HoloLightRays
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6569996962646465583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569996962646465578}
+  m_LocalRotation: {x: -0, y: 0.8552947, z: 0.5181418, w: 0}
+  m_LocalPosition: {x: 0.003605431, y: -0.55, z: 0.311}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7213169948814468554}
+  - {fileID: 6795637616262572171}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 297.585, y: -179.99998, z: 0}
+--- !u!1001 &6468379718560354144
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6569996962646465583}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5220519
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.47786844
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5058249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49319854
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 178.194
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -270.103
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 86.743
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19035901
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fbeb9abbeb345b944b6e2146093d9905, type: 2}
+    - target: {fileID: 919132149155446097, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_Name
+      value: HoloRaysCylinderMesh (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac29f2631f76b074a935c8ffbe7f12af, type: 3}
+--- !u!4 &6795637616262572171 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+    type: 3}
+  m_PrefabInstance: {fileID: 6468379718560354144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7174492198797738529
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6569996962646465583}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6867336
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7269092
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 266.74402
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2411214
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19035901
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2411214
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fbeb9abbeb345b944b6e2146093d9905, type: 2}
+    - target: {fileID: 919132149155446097, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_Name
+      value: HoloRaysCylinderMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac29f2631f76b074a935c8ffbe7f12af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac29f2631f76b074a935c8ffbe7f12af, type: 3}
+--- !u!4 &7213169948814468554 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ac29f2631f76b074a935c8ffbe7f12af,
+    type: 3}
+  m_PrefabInstance: {fileID: 7174492198797738529}
+  m_PrefabAsset: {fileID: 0}

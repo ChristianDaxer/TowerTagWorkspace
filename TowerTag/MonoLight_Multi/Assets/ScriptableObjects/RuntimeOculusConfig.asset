@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b12ec25a28906a43b7b93fd39aa6b11, type: 3}
+  m_Name: RuntimeOculusConfig
+  m_EditorClassIdentifier: 
+  configuration:
+    _controllerType: 
+    _teamID: 0
+    _room: 35f56518-ad42-4e17-9cc0-7a29bfeaa276
+    _preferredRegion: usw
+    _playInLocalNetwork: 0
+    _serverIp: 127.0.0.1
+    _serverPort: 5055
+    _enableRumbleController: 0
+    _arduinoComPortName: COM9
+    _pillarPositionOffsetX: 0.4135273
+    _pillarPositionOffsetY: 0
+    _pillarPositionOffsetZ: 0.08070598
+    _pillarRotationOffsetAngle: 10.0278845
+    _ingamePillarOffset: 1
+    _teamVoiceChatEnableVoiceChat: 1
+    _teamVoiceChatMicrophone: 
+    _teamVoiceChatVoiceDetectionThreshold: 0.01
+    _teamVoiceChatUsePushToTalk: 0
+    _enableHapticHitFeedback: 0
+    _enableHapticShootFeedback: 0
+    _masterVolume: 0.8
+    _musicVolume: 0.1
+    _soundFxVolume: 0.1
+    _announcerVolume: 0.15
+    _teammatesVolume: 1
+    _screenShotResolution: 5
+    _locationName: 
+    _customizeColors: 0
+    _fireHue: 0
+    _iceHue: 0
+    _customizeLogo: 0
+    _controllerVariant: 
+    _singleButtonControl: 0
+    _smallPlayArea: 1
+    _invertSmallPlayArea: 0
+    _showShotsPerSecond: 0
+    _foveatedRenderingLevel: 3

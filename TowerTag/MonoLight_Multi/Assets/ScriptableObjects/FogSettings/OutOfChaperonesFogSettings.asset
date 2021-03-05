@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d23ad96dd41294ebf4cc8db06483ab, type: 3}
+  m_Name: OutOfChaperonesFogSettings
+  m_EditorClassIdentifier: 
+  _getFromSceneOnLoad: 0
+  _fogSettings:
+    _fogEnabled: 1
+    _fogMode: 1
+    _fogStartDistance: 10
+    _fogEndDistance: 15
+    _fogColor: {r: 0.027032875, g: 0.06968143, b: 0.07352942, a: 1}
+    _fogDensity: 0.01
+    _skyBox: {fileID: 2100000, guid: cfa822f68610855438141cda47ca06b2, type: 2}

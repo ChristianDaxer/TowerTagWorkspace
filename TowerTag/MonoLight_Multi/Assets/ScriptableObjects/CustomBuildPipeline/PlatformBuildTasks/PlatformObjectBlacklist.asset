@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef72b08e245d2743b1a92a664112b41, type: 3}
+  m_Name: PlatformObjectBlacklist
+  m_EditorClassIdentifier: 
+  serializedBlacklistedTypeNames:
+  - UnityEngine.RectTransform
+  - UnityEngine.Transform
+  - UnityEngine.Rigidbody
+  - UnityEngine.Rigidbody2D
+  - UnityEngine.HingeJoint
+  - UnityEngine.HingeJoint2D
+  - UnityEngine.LightProbeGroup
+  - TowerTag.Divider.DividerGroup
+  - TowerTag.Divider.DividerHighlight
+  - MapManager
+  - UnityEngine.Collider
+  - UnityEngine.MeshFilter
+  - UnityEngine.MeshCollider
+  - UnityEngine.BoxCollider
+  - UnityEngine.CanvasRenderer
+  - UnityEngine.SphereCollider
+  - UnityEngine.Light
+  - UnityEngine.Shader

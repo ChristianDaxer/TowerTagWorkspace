@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d937409ec204b428ce97306789bfb7, type: 3}
+  m_Name: Balancing Configuration
+  m_EditorClassIdentifier: 
+  _allowAntiClaim: 0
+  _autoStart: 0
+  _autoStartSceneName: 
+  _bulletWallHitForceMultiplier: 80
+  _chargerBeamLength: 25
+  _claimRollbackSpeed: 1
+  _claimRollbackTimeout: 1
+  _countdownDelay: 2
+  _energyRegenerationTimeout: 0
+  _energyRegenerationPerSecond: 0.25
+  _energyToChargePerSecond: 0.1
+  _energyToHealPlayerPerSecond: 0.05
+  _energyToFireProjectile: 0.05
+  _energyToTeleport: 0
+  _fireProjectileTimeOut: 0.15
+  _gameMode: 2
+  _goalPillarClaimTimeFactor: 3
+  _goalPillarPercentageValue: 1
+  _goalPillarPercentageValueMode: 0
+  _hubButtonTimeout: 1
+  _matchAutoStart: 0
+  _matchStartCountdownTimeInSec: 5
+  _matchTimeInSeconds: 180
+  _initialMatchTimeInSeconds: 300
+  _maxTeleportDuration: 1
+  _noEnergyMultiplier: 2
+  _pillarClaimTimeIfNotOwnedByATeam: 1
+  _pillarClaimTimeIfOwnedByATeam: 2
+  _projectileSpeed: 35
+  _respawnTeleportSpeed: 100
+  _resumeFromPauseCountdownTime: 5
+  _roundStartCountdownTimeInSec: 3
+  _showHubButton: 0
+  _showMatchStatsTimeoutInSec: 3
+  _showRoundStatsTimeoutInSec: 5
+  _teamDeathMatchRespawnTimeoutInSec: 5
+  _goalPillarRespawnTimeout: 3
+  _teleportCurveStrength: 0.5
+  _teleportHeightFactor: 3
+  _teleportSpeed: 50
+  _teleportTriggerSpeed: 2
+  _useFadeBlackWhenDie: 1
+  _useGlitchEffectWhenDie: 1
+  _wallDamagePerHitMultiplier: 0.10001

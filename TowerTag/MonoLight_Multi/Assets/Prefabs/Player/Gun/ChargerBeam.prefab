@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7817693119276229553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7817693119276229824}
+  - component: {fileID: 7817693119276231708}
+  - component: {fileID: 7817693119276231840}
+  m_Layer: 8
+  m_Name: ChargerBeam
+  m_TagString: Dec_Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7817693119276229824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817693119276229553}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7817693119276231708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817693119276229553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1dc99dd65d1fba4c9554fb3080acaac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tensionSoundName: 18_rope_tension
+  _chargeSoundNamePillar: 20_claim_process
+  _chargeSoundNamePlayer: 29_chargePlayer
+  _shotSoundName: 16_rope_shot
+  _abortChargeSoundName: 21_claim_process_aborted
+  _finishedChargeSoundName: 35_claim_process_finished
+  _hitSoundNamePlayer: 28_ropeHitsPlayer
+  _hitSoundNamePillar: 17_ropeHitsPillar
+  _ropeGameAction: {fileID: 11400000, guid: c7723e4429063a44aa0b516d7fe63b87, type: 2}
+--- !u!114 &7817693119276231840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817693119276229553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b05b0a824ab194092e97ec75321fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collisionMask:
+    serializedVersion: 2
+    m_Bits: 1281
+  _curveSampleCount: 2
+  _curveSampleCountFallOffFactor: 2
+  _ropeRadius: 0.075
+  _spawnBeamAnchor: {fileID: 0}
+  _useSimpleCollisionCalculations: 1
+  _directionThreshold: 0.75
+  _decalCount: 20
+  _projectorDecalPrefab: {fileID: 1682429438971168, guid: 97502b4c97e98834b88ae988d5b3beb1,
+    type: 3}
+  _decalMaterialColorRampPropertyName: _ColorRamp
+  _decalPrefabMaterial: {fileID: 2100000, guid: 1f89984a5f874f74e90353e107011b84,
+    type: 2}
+  ropePrefab: {fileID: 3137765076080956799, guid: c531be142d3584b41ba6ea8ae7494484,
+    type: 3}
+  _particlePrefab: {fileID: 1400249714426116, guid: f5b8482bf6a1fbc4a87ddb9e06f0402e,
+    type: 3}
+  _ropeRadiusFactorForParticleStrength: 0.5
+  _minDistanceBetweenDecals: 0.025
+  _hullCollisionOffset: 0.001

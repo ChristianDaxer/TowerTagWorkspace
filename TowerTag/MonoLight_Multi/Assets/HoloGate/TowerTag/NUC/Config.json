@@ -1,0 +1,104 @@
+{
+    "label": "towertag",
+    "name": "Tower Tag",
+    "name2": "Tower<br>Tag",
+    "active": "x",
+    "comingsoon": "n",
+    "image": "towertag",
+    "program": "TowerTag\\Game\\TowerTag.exe -fullscreen",
+    "connectMultiple": false,
+    "running": 3,
+	"level": [
+		{
+			"label": "3",
+			"name": "Cebitus<br>Deathmatch",
+			"type": "teamx",
+			"active": "x",
+			"multiple": false
+		},
+		{
+			"label": "6",
+			"name": "Shield<br>Deathmatch",
+			"type": "teamx",
+			"active": "x",
+			"multiple": false
+		},
+		{
+			"label": "2",
+			"name": "Millerntor<br>GoalTower",
+			"type": "teamx",
+			"active": "x",
+			"multiple": false
+		},
+		{
+			"label": "9",
+			"name": "Sneaky<br>GoalTower",
+			"type": "teamx",
+			"active": "x",
+			"multiple": false
+		},
+		{
+			"label": "1",
+			"name": "Maze<br>Elimination",
+			"type": "teamx",
+			"active": "x",
+			"multiple": false
+		},
+		{
+			"label": "4",
+			"name": "Cebitus<br>Elimination",
+			"type": "teamx",
+			"active": "x",
+			"multiple": false
+		},
+		{
+			"label": "7",
+			"name": "Elbtunnel<br>Elimination",
+			"type": "teamx",
+			"active": "x",
+			"multiple": false
+		}
+	],
+    "settings": [
+        {
+            "label": "gamelength",
+            "name": "Game Length",
+            "kind": "choose",
+            "action": "setgamelength",
+            "value": "300",
+            "values": [
+                {
+                    "label": "300",
+                    "name": "5 min"
+                },
+                {
+                    "label": "480",
+                    "name": "8 min"
+                },
+                {
+                    "label": "600",
+                    "name": "10 min"
+                }
+            ]
+        }
+    ],
+    "language": [
+        {
+            "label": "en",
+            "name": "english",
+            "active": "x"
+        }
+    ],
+    "tutorial": [
+        {
+            "label": "on",
+            "name": "ON",
+            "active": "x"
+        },
+        {
+            "label": "off",
+            "name": "OFF",
+            "active": "x"
+        }
+    ]
+}

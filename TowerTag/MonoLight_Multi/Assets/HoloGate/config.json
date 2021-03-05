@@ -1,0 +1,112 @@
+{
+    "label": "towertag",
+    "name": "Tower Tag",
+    "name2": "Tower<br>Tag",
+    "active": "x",
+    "comingsoon": "x",
+    "image": "towertag",
+    "program": "TowerTag\\Game\\TowerTag.exe -fullscreen",
+    "connectMultiple": false,
+    "running": 1,
+    "level": [
+    {
+        "label": "1",
+        "name": "Cebitus<br>DM",
+        "type": "teamx",
+        "active": "x",
+        "multiple": false,
+        "difficulty": "1"
+    },
+    {
+        "label": "2",
+        "name": "Shield<br>DM",
+        "type": "teamx",
+        "active": "x",
+        "multiple": false,
+        "difficulty": "3"
+    },
+    {
+        "label": "3",
+        "name": "Sneaky<br>GT",
+        "type": "teamx",
+        "active": "x",
+        "multiple": false,
+        "difficulty": 3
+    },
+    {
+        "label": "4",
+        "name": "Elbtunnel<br>EL",
+        "type": "teamx",
+        "active": "x",
+        "multiple": false,
+        "difficulty": 4
+    },
+    {
+        "label": "5",
+        "name": "Everest<br>EL",
+        "type": "teamx",
+        "active": "x",
+        "multiple": false,
+        "difficulty": 1
+    }
+    ],
+    "settings": [
+        {
+            "label": "gamelength",
+            "name": "Game Length",
+            "kind": "choose",
+            "action": "setgamelength",
+            "value": "300",
+            "values": [
+                {
+                    "label": "300",
+                    "name": "5 min"
+                },
+                {
+                    "label": "480",
+                    "name": "8 min"
+                },
+                {
+                    "label": "600",
+                    "name": "10 min"
+                }
+            ]
+        },
+        {
+            "label": "blockspectator",
+            "name": "Spectator Screen",
+            "kind": "choose",
+            "action": "setblockspectator",
+            "value": "off",
+            "values": [
+            {
+                "label": "off",
+                "name": "Free"
+                },
+                {
+                "label": "on",
+                "name": "Blocked"
+                }
+            ]
+        }
+    ],
+    "language": [
+        {
+            "label": "en",
+            "name": "english",
+            "active": "x"
+        }
+    ],
+    "tutorial": [
+        {
+            "label": "on",
+            "name": "ON",
+            "active": "x"
+        },
+        {
+            "label": "off",
+            "name": "OFF",
+            "active": "x"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+--INFO ABOUT THE MINIMAP PREFABS--
+**********************************************************
+
+MiniMapCamera has to be part of the map (at 0,0,0)
+
+**********************************************************
+
+MiniMapIcon has do be part of the current RemoteClientPrefab
+Prefab->AvatarAnchors->Head->Canvas->MiniMapIcon
+The parent "Head" as Transform for the FaceMiniMapCam Script
+
+**********************************************************
+
+MiniMapImage has to be on the SpecatatorCanvas of the current Admin
+
+**********************************************************

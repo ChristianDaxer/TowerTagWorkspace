@@ -1,0 +1,1561 @@
+#if !UNITY_ANDROID
+using System;
+using System.Runtime.InteropServices;
+using System.Text;
+
+namespace Cryptlex {
+    public static class LexActivator {
+        private const string DLL_FILE_NAME = "LexActivator";
+        private const string DLL_FILE_NAME_OLD = "LexActivatorV2";
+
+        /*
+            In order to use "Any CPU" configuration, rename 64 bit LexActivator.dll to LexActivator64.dll and add "LA_ANY_CPU"
+	        conditional compilation symbol in your project properties.
+        */
+#if LA_ANY_CPU
+        private const string DLL_FILE_NAME_X64 = "LexActivator64.dll";
+#endif
+        public enum PermissionFlags : uint {
+            LA_USER = 1,
+            LA_SYSTEM = 2,
+        }
+
+        /*
+            FUNCTION: SetProductFile()
+            PURPOSE: Sets the absolute path of the Product.dat file.
+            This function must be called on every start of your program
+            before any other functions are called.
+            PARAMETERS:
+            * filePath - absolute path of the product file (Product.dat)
+            RETURN CODES: LA_OK, LA_E_FILE_PATH, LA_E_PRODUCT_FILE
+            NOTE: If this function fails to set the path of product file, none of the
+            other functions will work.
+        */
+        public static int SetProductFile(string filePath) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetProductFile_x64(filePath) : Native.SetProductFile(filePath);
+#else
+            return Native.SetProductFile(filePath);
+#endif
+        }
+
+        /*
+            FUNCTION: SetProductData()
+            PURPOSE: Embeds the Product.dat file in the application.
+            It can be used instead of SetProductFile() in case you want
+            to embed the Product.dat file in your application.
+            This function must be called on every start of your program
+            before any other functions are called.
+            PARAMETERS:
+            * productData - content of the Product.dat file
+            RETURN CODES: LA_OK, LA_E_PRODUCT_DATA
+            NOTE: If this function fails to set the product data, none of the
+            other functions will work.
+        */
+        public static int SetProductData(string productData) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetProductData_x64(productData) : Native.SetProductData(productData);
+#else
+            return Native.SetProductData(productData);
+#endif
+        }
+
+        /*
+            FUNCTION: SetProductId()
+            PURPOSE: Sets the product id of your application.
+            This function must be called on every start of your program before
+            any other functions are called, with the exception of SetProductFile()
+            or SetProductData() function.
+            PARAMETERS:
+            * productId - the unique product id of your application as mentioned
+            on the product page in the dashboard.
+            * flags - depending upon whether your application requires admin/root
+            permissions to run or not, this parameter can have one of the following
+            values: LA_SYSTEM, LA_USER
+            RETURN CODES: LA_OK, LA_E_WMIC, LA_E_PRODUCT_FILE, LA_E_PRODUCT_DATA, LA_E_PRODUCT_ID,
+            LA_E_SYSTEM_PERMISSION
+            NOTE: If this function fails to set the product id, none of the other
+            functions will work.
+        */
+        public static int SetProductId(string productId, PermissionFlags flags) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetProductId_x64(productId, flags) : Native.SetProductId(productId, flags);
+#else
+            return Native.SetProductId(productId, flags);
+#endif
+        }
+
+        /*
+            FUNCTION: SetLicenseKey()
+            PURPOSE: Sets the license key required to activate the license.
+            PARAMETERS:
+            * licenseKey - a valid license key.
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_LICENSE_KEY
+        */
+        public static int SetLicenseKey(string licenseKey) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetLicenseKey_x64(licenseKey) : Native.SetLicenseKey(licenseKey);
+#else
+            return Native.SetLicenseKey(licenseKey);
+#endif
+        }
+
+        /*
+            FUNCTION: SetLicenseCallback()
+            PURPOSE: Sets server sync callback function.
+            Whenever the server sync occurs in a separate thread, and server returns the response,
+            license callback function gets invoked with the following status codes:
+            LA_OK, LA_EXPIRED, LA_SUSPENDED,
+            LA_E_REVOKED, LA_E_ACTIVATION_NOT_FOUND, LA_E_MACHINE_FINGERPRINT
+            LA_E_COUNTRY, LA_E_INET, LA_E_SERVER, LA_E_RATE_LIMIT, LA_E_IP
+            PARAMETERS:
+            * callback - name of the callback function
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_LICENSE_KEY
+        */
+        public static int SetLicenseCallback(CallbackType callback) {
+            var wrappedCallback = callback;
+#if !UNITY_ANDROID
+            var syncTarget = callback.Target as System.Windows.Forms.Control;
+            if (syncTarget != null) {
+                wrappedCallback = (v) => syncTarget.Invoke(callback, new object[] { v });
+            }
+#endif
+#if LF_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetLicenseCallback_x64(wrappedCallback) : Native.SetLicenseCallback(wrappedCallback);
+#else
+            return Native.SetLicenseCallback(wrappedCallback);
+#endif
+
+        }
+
+        /*
+            FUNCTION: SetActivationMetadata()
+            PURPOSE: Sets the activation metadata.
+            The  metadata appears along with the activation details of the license
+            in dashboard.
+            PARAMETERS:
+            * key - string of maximum length 256 characters with utf-8 encoding.
+            * value - string of maximum length 256 characters with utf-8 encoding.
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_LICENSE_KEY, LA_E_METADATA_KEY_LENGTH,
+            LA_E_METADATA_VALUE_LENGTH, LA_E_ACTIVATION_METADATA_LIMIT
+        */
+        public static int SetActivationMetadata(string key, string value) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetActivationMetadata_x64(key, value) : Native.SetActivationMetadata(key, value);
+#else
+            return Native.SetActivationMetadata(key, value);
+#endif
+        }
+
+        /*
+            FUNCTION: SetTrialActivationMetadata()
+            PURPOSE: Sets the trial activation metadata.
+            The  metadata appears along with the trial activation details of the product
+            in dashboard.
+            PARAMETERS:
+            * key - string of maximum length 256 characters with utf-8 encoding.
+            * value - string of maximum length 256 characters with utf-8 encoding.
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_METADATA_KEY_LENGTH,
+            LA_E_METADATA_VALUE_LENGTH, LA_E_TRIAL_ACTIVATION_METADATA_LIMIT
+        */
+        public static int SetTrialActivationMetadata(string key, string value) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetTrialActivationMetadata_x64(key, value) : Native.SetTrialActivationMetadata(key, value);
+#else
+            return Native.SetTrialActivationMetadata(key, value);
+#endif
+
+        }
+
+        /*
+            FUNCTION: SetAppVersion()
+            PURPOSE: Sets the current app version of your application.
+            The app version appears along with the activation details in dashboard. It
+            is also used to generate app analytics.
+            PARAMETERS:
+            * appVersion - string of maximum length 256 characters with utf-8 encoding.
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_APP_VERSION_LENGTH
+        */
+        public static int SetAppVersion(string appVersion) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetAppVersion_x64(appVersion) : Native.SetAppVersion(appVersion);
+#else
+            return Native.SetAppVersion(appVersion);
+#endif
+        }
+
+        /*
+            FUNCTION: SetNetworkProxy()
+            PURPOSE: Sets the network proxy to be used when contacting Cryptlex servers.
+            The proxy format should be: [protocol://][username:password@]machine[:port]
+            Following are some examples of the valid proxy strings:
+                - http://127.0.0.1:8000/
+                - http://user:pass@127.0.0.1:8000/
+                - socks5://127.0.0.1:8000/
+            PARAMETERS:
+            * proxy - proxy string having correct proxy format
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_NET_PROXY
+            NOTE: Proxy settings of the computer are automatically detected. So, in most of the
+            cases you don't need to care whether your user is behind a proxy server or not.
+        */
+        public static int SetNetworkProxy(string proxy) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetNetworkProxy_x64(proxy) : Native.SetNetworkProxy(proxy);
+#else
+            return Native.SetNetworkProxy(proxy);
+#endif
+        }
+
+        /*
+            FUNCTION: GetProductMetadata()
+            PURPOSE: Gets the product metadata as set in the dashboard.
+            This is available for trial as well as license activations.
+            PARAMETERS:
+            * key - key to retrieve the value
+            * value - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the value parameter
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_METADATA_KEY_NOT_FOUND, LA_E_BUFFER_SIZE
+        */
+        public static int GetProductMetadata(string key, StringBuilder value, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetProductMetadata_x64(key, value, length) : Native.GetProductMetadata(key, value, length);
+#else
+            return Native.GetProductMetadata(key, value, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetLicenseMetadata()
+            PURPOSE: Gets the license metadata as set in the dashboard.
+            PARAMETERS:
+            * key - key to retrieve the value
+            * value - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the value parameter
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_METADATA_KEY_NOT_FOUND, LA_E_BUFFER_SIZE
+        */
+        public static int GetLicenseMetadata(string key, StringBuilder value, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetLicenseMetadata_x64(key, value, length) : Native.GetLicenseMetadata(key, value, length);
+#else
+            return Native.GetLicenseMetadata(key, value, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetLicenseKey()
+            PURPOSE: Gets the license key used for activation.
+            PARAMETERS:
+            * licenseKey - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the licenseKey parameter
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_BUFFER_SIZE
+        */
+        public static int GetLicenseKey(StringBuilder licenseKey, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetLicenseKey_x64(licenseKey, length) : Native.GetLicenseKey(licenseKey, length);
+#else
+            return Native.GetLicenseKey(licenseKey, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetLicenseExpiryDate()
+            PURPOSE: Gets the license expiry date timestamp.
+            PARAMETERS:
+            * expiryDate - pointer to the integer that receives the value
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME, LA_E_TIME_MODIFIED
+        */
+        public static int GetLicenseExpiryDate(ref uint expiryDate) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetLicenseExpiryDate_x64(ref expiryDate) : Native.GetLicenseExpiryDate(ref expiryDate);
+#else
+            return Native.GetLicenseExpiryDate(ref expiryDate);
+#endif
+        }
+
+        /*
+            FUNCTION: GetLicenseUserEmail()
+            PURPOSE: Gets the email associated with license user.
+            PARAMETERS:
+            * email - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the email parameter
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME, LA_E_TIME_MODIFIED,
+            LA_E_BUFFER_SIZE
+        */
+        public static int GetLicenseUserEmail(StringBuilder email, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetLicenseUserEmail_x64(email, length) : Native.GetLicenseUserEmail(email, length);
+#else
+            return Native.GetLicenseUserEmail(email, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetLicenseUserName()
+            PURPOSE: Gets the name associated with license user.
+            PARAMETERS:
+            * name - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the name parameter
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME, LA_E_TIME_MODIFIED,
+            LA_E_BUFFER_SIZE
+        */
+        public static int GetLicenseUserName(StringBuilder name, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetLicenseUserName_x64(name, length) : Native.GetLicenseUserName(name, length);
+#else
+            return Native.GetLicenseUserName(name, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetLicenseType()
+            PURPOSE: Gets the license type (node-locked or hosted-floating).
+            PARAMETERS:
+            * name - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the licenseType parameter
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME, LA_E_TIME_MODIFIED,
+            LA_E_BUFFER_SIZE
+        */
+        public static int GetLicenseType(StringBuilder licenseType, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetLicenseType_x64(licenseType, length) : Native.GetLicenseType(licenseType, length);
+#else
+            return Native.GetLicenseType(licenseType, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetActivationMetadata()
+            PURPOSE: Gets the activation metadata.
+            PARAMETERS:
+            * key - key to retrieve the value
+            * value - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the value parameter
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_METADATA_KEY_NOT_FOUND, LA_E_BUFFER_SIZE
+        */
+        public static int GetActivationMetadata(string key, StringBuilder value, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetActivationMetadata_x64(key, value, length) : Native.GetActivationMetadata(key, value, length);
+#else
+            return Native.GetActivationMetadata(key, value, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetTrialActivationMetadata()
+            PURPOSE: Gets the trial activation metadata.
+            PARAMETERS:
+            * key - key to retrieve the value
+            * value - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the value parameter
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID, LA_E_METADATA_KEY_NOT_FOUND, LA_E_BUFFER_SIZE
+        */
+        public static int GetTrialActivationMetadata(string key, StringBuilder value, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetTrialActivationMetadata_x64(key, value, length) : Native.GetTrialActivationMetadata(key, value, length);
+#else
+            return Native.GetTrialActivationMetadata(key, value, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetTrialExpiryDate()
+            PURPOSE: Gets the trial expiry date timestamp.
+            PARAMETERS:
+            * trialExpiryDate - pointer to the integer that receives the value
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME, LA_E_TIME_MODIFIED
+        */
+        public static int GetTrialExpiryDate(ref uint trialExpiryDate) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetTrialExpiryDate_x64(ref trialExpiryDate) : Native.GetTrialExpiryDate(ref trialExpiryDate);
+#else
+            return Native.GetTrialExpiryDate(ref trialExpiryDate);
+#endif
+        }
+
+        /*
+            FUNCTION: GetTrialId()
+            PURPOSE: Gets the trial activation id. Used in case of trial extension.
+            PARAMETERS:
+            * trialId - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the value parameter
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME, LA_E_TIME_MODIFIED,
+            LA_E_BUFFER_SIZE
+        */
+        public static int GetTrialId(StringBuilder trialId, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetTrialId_x64(trialId, length) : Native.GetTrialId(trialId, length);
+#else
+            return Native.GetTrialId(trialId, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetLocalTrialExpiryDate()
+            PURPOSE: Gets the trial expiry date timestamp.
+            PARAMETERS:
+            * trialExpiryDate - pointer to the integer that receives the value
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME_MODIFIED
+        */
+        public static int GetLocalTrialExpiryDate(ref uint trialExpiryDate) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetLocalTrialExpiryDate_x64(ref trialExpiryDate) : Native.GetLocalTrialExpiryDate(ref trialExpiryDate);
+#else
+            return Native.GetLocalTrialExpiryDate(ref trialExpiryDate);
+#endif
+        }
+
+        /*
+            FUNCTION: ActivateLicense()
+            PURPOSE: Activates the license by contacting the Cryptlex servers. It
+            validates the key and returns with encrypted and digitally signed token
+            which it stores and uses to activate your application.
+            This function should be executed at the time of registration, ideally on
+            a button click.
+            RETURN CODES: LA_OK, LA_EXPIRED, LA_SUSPENDED, LA_E_REVOKED, LA_FAIL, LA_E_PRODUCT_ID,
+            LA_E_INET, LA_E_VM, LA_E_TIME, LA_E_ACTIVATION_LIMIT, LA_E_SERVER, LA_E_CLIENT, LA_E_LICENSE_KEY,
+            LA_E_LICENSE_TYPE, LA_E_COUNTRY, LA_E_IP, LA_E_RATE_LIMIT
+        */
+        public static int ActivateLicense() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.ActivateLicense_x64() : Native.ActivateLicense();
+#else
+            return Native.ActivateLicense();
+#endif
+
+        }
+
+        /*
+            FUNCTION: ActivateLicenseOffline()
+            PURPOSE: Activates your licenses using the offline activation response file.
+            PARAMETERS:
+            * filePath - path of the offline activation response file.
+            RETURN CODES: LA_OK, LA_EXPIRED, LA_FAIL, LA_E_PRODUCT_ID, LA_E_LICENSE_KEY, LA_E_OFFLINE_RESPONSE_FILE
+            LA_E_VM, LA_E_TIME, LA_E_FILE_PATH, LA_E_OFFLINE_RESPONSE_FILE_EXPIRED
+        */
+        public static int ActivateLicenseOffline(string filePath) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.ActivateLicenseOffline_x64(filePath) : Native.ActivateLicenseOffline(filePath);
+#else
+            return Native.ActivateLicenseOffline(filePath);
+#endif
+        }
+
+        /*
+            FUNCTION: GenerateOfflineActivationRequest()
+            PURPOSE: Generates the offline activation request needed for generating
+            offline activation response in the dashboard.
+            PARAMETERS:
+            * filePath - path of the file for the offline request.
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_LICENSE_KEY, LA_E_FILE_PERMISSION
+        */
+        public static int GenerateOfflineActivationRequest(string filePath) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GenerateOfflineActivationRequest_x64(filePath) : Native.GenerateOfflineActivationRequest(filePath);
+#else
+            return Native.GenerateOfflineActivationRequest(filePath);
+#endif
+        }
+
+        /*
+            FUNCTION: DeactivateLicense()
+            PURPOSE: Deactivates the license activation and frees up the corresponding activation
+            slot by contacting the Cryptlex servers.
+            This function should be executed at the time of de-registration, ideally on
+            a button click.
+            RETURN CODES: LA_OK, LA_E_DEACTIVATION_LIMIT, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME
+            LA_E_LICENSE_KEY, LA_E_INET, LA_E_SERVER, LA_E_RATE_LIMIT, LA_E_TIME_MODIFIED
+        */
+        public static int DeactivateLicense() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.DeactivateLicense_x64() : Native.DeactivateLicense();
+#else
+            return Native.DeactivateLicense();
+#endif
+        }
+
+        /*
+            FUNCTION: GenerateOfflineDeactivationRequest()
+            PURPOSE: Generates the offline deactivation request needed for deactivation of
+            the license in the dashboard and deactivates the license locally.
+            A valid offline deactivation file confirms that the license has been successfully
+            deactivated on the user's machine.
+            PARAMETERS:
+            * filePath - path of the file for the offline request.
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_LICENSE_KEY, LA_E_FILE_PERMISSION,
+            LA_E_TIME, LA_E_TIME_MODIFIED
+        */
+        public static int GenerateOfflineDeactivationRequest(string filePath) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GenerateOfflineDeactivationRequest_x64(filePath) : Native.GenerateOfflineDeactivationRequest(filePath);
+#else
+            return Native.GenerateOfflineDeactivationRequest(filePath);
+#endif
+        }
+
+        /*
+            FUNCTION: IsLicenseGenuine()
+            PURPOSE: It verifies whether your app is genuinely activated or not. The verification is
+            done locally by verifying the cryptographic digital signature fetched at the time of
+            activation.
+            After verifying locally, it schedules a server check in a separate thread. After the
+            first server sync it periodically does further syncs at a frequency set for the license.
+            In case server sync fails due to network error, and it continues to fail for fixed
+            number of days (grace period), the function returns LA_GRACE_PERIOD_OVER instead of LA_OK.
+            This function must be called on every start of your program to verify the activation
+            of your app.
+            RETURN CODES: LA_OK, LA_EXPIRED, LA_SUSPENDED, LA_GRACE_PERIOD_OVER, LA_FAIL,
+            LA_E_PRODUCT_ID, LA_E_LICENSE_KEY, LA_E_TIME, LA_E_TIME_MODIFIED
+            NOTE: If application was activated offline using ActivateLicenseOffline() function, you
+            may want to set grace period to 0 to ignore grace period.
+        */
+        public static int IsLicenseGenuine() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.IsLicenseGenuine_x64() : Native.IsLicenseGenuine();
+#else
+            return Native.IsLicenseGenuine();
+#endif
+        }
+
+        /*
+            FUNCTION: IsLicenseValid()
+            PURPOSE: It verifies whether your app is genuinely activated or not. The verification is
+            done locally by verifying the cryptographic digital signature fetched at the time of
+            activation.
+            This is just an auxiliary function which you may use in some specific cases, when you
+            want to skip the server sync.
+            RETURN CODES: LA_OK, LA_EXPIRED, LA_SUSPENDED, LA_GRACE_PERIOD_OVER, LA_FAIL,
+            LA_E_PRODUCT_ID, LA_E_LICENSE_KEY, LA_E_TIME, LA_E_TIME_MODIFIED
+            NOTE: You may want to set grace period to 0 to ignore grace period.
+        */
+        public static int IsLicenseValid() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.IsLicenseValid_x64() : Native.IsLicenseValid();
+#else
+            return Native.IsLicenseValid();
+#endif
+        }
+
+        /*
+             FUNCTION: ActivateTrial()
+             PURPOSE: Starts the verified trial in your application by contacting the
+             Cryptlex servers.
+             This function should be executed when your application starts first time on
+             the user's computer, ideally on a button click.
+             RETURN CODES: LA_OK, LA_TRIAL_EXPIRED, LA_FAIL, LA_E_PRODUCT_ID, LA_E_INET,
+             LA_E_VM, LA_E_TIME, LA_E_SERVER, LA_E_CLIENT, LA_E_COUNTRY, LA_E_IP, LA_E_RATE_LIMIT
+         */
+        public static int ActivateTrial() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.ActivateTrial_x64() : Native.ActivateTrial();
+#else
+            return Native.ActivateTrial();
+#endif
+        }
+
+        /*
+            FUNCTION: ActivateTrialOffline()
+            PURPOSE: Activates your trial using the offline activation response file.
+            PARAMETERS:
+            * filePath - path of the offline activation response file.
+            RETURN CODES: LA_OK, LA_TRIAL_EXPIRED, LA_FAIL, LA_E_PRODUCT_ID, LA_E_OFFLINE_RESPONSE_FILE
+            LA_E_VM, LA_E_TIME, LA_E_FILE_PATH, LA_E_OFFLINE_RESPONSE_FILE_EXPIRED
+        */
+        public static int ActivateTrialOffline(string filePath) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.ActivateTrialOffline_x64(filePath) : Native.ActivateTrialOffline(filePath);
+#else
+            return Native.ActivateTrialOffline(filePath);
+#endif
+        }
+
+        /*
+            FUNCTION: GenerateOfflineTrialActivationRequest()
+            PURPOSE: Generates the offline trial activation request needed for generating
+            offline trial activation response in the dashboard.
+            PARAMETERS:
+            * filePath - path of the file for the offline request.
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_FILE_PERMISSION
+        */
+        public static int GenerateOfflineTrialActivationRequest(string filePath) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GenerateOfflineTrialActivationRequest_x64(filePath) : Native.GenerateOfflineTrialActivationRequest(filePath);
+#else
+            return Native.GenerateOfflineTrialActivationRequest(filePath);
+#endif
+        }
+
+        /*
+            FUNCTION: IsTrialGenuine()
+            PURPOSE: It verifies whether trial has started and is genuine or not. The
+            verification is done locally by verifying the cryptographic digital signature
+            fetched at the time of trial activation.
+            This function must be called on every start of your program during the trial period.
+            RETURN CODES: LA_OK, LA_TRIAL_EXPIRED, LA_FAIL, LA_E_TIME, LA_E_PRODUCT_ID,
+            LA_E_TIME_MODIFIED
+        */
+        public static int IsTrialGenuine() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.IsTrialGenuine_x64() : Native.IsTrialGenuine();
+#else
+            return Native.IsTrialGenuine();
+#endif
+        }
+
+        /*
+            FUNCTION: ActivateLocalTrial()
+            PURPOSE: Starts the local(unverified) trial.
+            This function should be executed when your application starts first time on
+            the user's computer.
+            PARAMETERS:
+            * trialLength - trial length in days
+            RETURN CODES: LA_OK, LA_LOCAL_TRIAL_EXPIRED, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME_MODIFIED
+            NOTE: The function is only meant for local(unverified) trials.
+        */
+        public static int ActivateLocalTrial(uint trialLength) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.ActivateLocalTrial_x64(trialLength) : Native.ActivateLocalTrial(trialLength);
+#else
+            return Native.ActivateLocalTrial(trialLength);
+#endif
+        }
+
+        /*
+            FUNCTION: IsLocalTrialGenuine()
+            PURPOSE: It verifies whether trial has started and is genuine or not. The
+            verification is done locally.
+            This function must be called on every start of your program during the trial period.
+            RETURN CODES: LA_OK, LA_LOCAL_TRIAL_EXPIRED, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME_MODIFIED
+            NOTE: The function is only meant for local(unverified) trials.
+        */
+        public static int IsLocalTrialGenuine() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.IsLocalTrialGenuine_x64() : Native.IsLocalTrialGenuine();
+#else
+            return Native.IsLocalTrialGenuine();
+#endif
+        }
+
+        /*
+            FUNCTION: ExtendLocalTrial()
+            PURPOSE: Extends the local trial.
+            PARAMETERS:
+            * trialExtensionLength - number of days to extend the trial
+            RETURN CODES: LA_OK, LA_FAIL, LA_E_PRODUCT_ID, LA_E_TIME_MODIFIED
+            NOTE: The function is only meant for local(unverified) trials.
+        */
+        public static int ExtendLocalTrial(uint trialExtensionLength) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.ExtendLocalTrial_x64(trialExtensionLength) : Native.ExtendLocalTrial(trialExtensionLength);
+#else
+            return Native.ExtendLocalTrial(trialExtensionLength);
+#endif
+        }
+
+        /*
+            FUNCTION: Reset()
+            PURPOSE: Resets the activation and trial data stored in the machine.
+            This function is meant for developer testing only.
+            RETURN CODES: LA_OK, LA_E_PRODUCT_ID
+            NOTE: The function does not reset local(unverified) trial data.
+        */
+        public static int Reset() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.Reset_x64() : Native.Reset();
+#else
+            return Native.Reset();
+#endif
+        }
+
+        //MANUALLY ADDED CODE FROM THE OLD LEXACTIVATOR SCRIPT
+        //----------------------------------------------------------------------------------------------------
+        /*
+        FUNCTION: SetVersionGUID()
+
+        PURPOSE: Sets the version GUID of your application. 
+
+        This function must be called on every start of your program before
+        any other functions are called, with the exception of SetProductFile()
+        function.
+
+        PARAMETERS:
+        * versionGUID - the unique version GUID of your application as mentioned
+          on the product version page of your application in the dashboard.
+
+        * flags - depending upon whether your application requires admin/root 
+          permissions to run or not, this parameter can have one of the following
+          values: LA_SYSTEM, LA_USER
+
+        RETURN CODES: LA_OK, LA_E_WMIC, LA_E_PFILE, LA_E_GUID, LA_E_PERMISSION
+
+        NOTE: If this function fails to set the version GUID, none of the other
+        functions will work.
+        */
+
+        public static int SetVersionGUID(string versionGUID, PermissionFlags flags) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetVersionGUID_x64(versionGUID, flags) : Native.SetVersionGUID(versionGUID, flags);
+#else
+            return NativeOLD.SetVersionGUID(versionGUID, flags);
+#endif
+        }
+
+        /*
+        FUNCTION: IsProductGenuine()
+
+        PURPOSE: It verifies whether your app is genuinely activated or not. The verification is
+        done locally by verifying the cryptographic digital signature fetched at the time of
+        activation.
+
+        After verifying locally, it schedules a server check in a separate thread on due dates.
+        The default interval for server check is 100 days and this can be changed if required.
+
+        In case server validation fails due to network error, it retries every 15 minutes. If it
+        continues to fail for fixed number of days (grace period), the function returns LA_GP_OVER
+        instead of LA_OK. The default length of grace period is 30 days and this can be changed if 
+        required.
+
+        This function must be called on every start of your program to verify the activation
+        of your app.
+
+        RETURN CODES: LA_OK, LA_EXPIRED, LA_REVOKED, LA_GP_OVER, LA_FAIL, LA_E_GUID, LA_E_PKEY
+
+        NOTE: If application was activated offline using ActivateProductOffline() function, you
+        may want to set grace period to 0 to ignore grace period.
+        */
+
+        public static int IsProductGenuine() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.IsProductGenuine_x64() : Native.IsProductGenuine();
+#else
+            return NativeOLD.IsProductGenuine();
+#endif
+        }
+
+
+        /*
+            FUNCTION: GetCustomLicenseField()
+
+            PURPOSE: Gets the value of the custom field associated with the product key.
+
+            PARAMETERS:
+            * fieldId - id of the custom field whose value you want to get
+            * fieldValue - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the fieldValue parameter
+
+            RETURN CODES: LA_OK, LA_E_CUSTOM_FIELD_ID, LA_E_GUID, LA_E_BUFFER_SIZE
+        */
+
+        public static int GetCustomLicenseField(string fieldId, StringBuilder fieldValue, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetCustomLicenseField_x64(fieldId, fieldValue, length) : Native.GetCustomLicenseField(fieldId, fieldValue, length);
+#else
+            return NativeOLD.GetCustomLicenseField(fieldId, fieldValue, length);
+#endif
+        }
+
+        /*
+            FUNCTION: GetProductKey()
+
+            PURPOSE: Gets the stored product key which was used for activation.
+
+            PARAMETERS:
+            * productKey - pointer to a buffer that receives the value of the string
+            * length - size of the buffer pointed to by the productKey parameter
+
+            RETURN CODES: LA_OK, LA_E_PKEY, LA_E_GUID, LA_E_BUFFER_SIZE
+        */
+
+        public static int GetProductKey(StringBuilder productKey, int length) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.GetProductKey_x64(productKey, length) : Native.GetProductKey(productKey, length);
+#else
+            return NativeOLD.GetProductKey(productKey, length);
+#endif
+        }
+
+        /*
+       FUNCTION: SetProductFile()
+
+       PURPOSE: Sets the path of the Product.dat file. This should be
+       used if your application and Product.dat file are in different
+       folders or you have renamed the Product.dat file.
+
+       If this function is used, it must be called on every start of
+       your program before any other functions are called.
+
+       PARAMETERS:
+       * filePath - path of the product file (Product.dat)
+
+       RETURN CODES: LA_OK, LA_E_FPATH, LA_E_PFILE
+
+       NOTE: If this function fails to set the path of product file, none of the
+       other functions will work.
+        */
+
+        public static int SetProductFileV2(string filePath) {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.SetProductFile_x64(filePath) : Native.SetProductFile(filePath);
+#else
+            return NativeOLD.SetProductFile(filePath);
+#endif
+
+        }
+
+        /*
+        FUNCTION: DeactivateProduct()
+
+        PURPOSE: Deactivates the application and frees up the correponding activation
+        slot by contacting the Cryptlex servers.
+
+        This function should be executed at the time of deregistration, ideally on
+        a button click. 
+
+        RETURN CODES: LA_OK, LA_EXPIRED, LA_REVOKED, LA_FAIL, LA_E_GUID, LA_E_PKEY,
+            LA_E_INET, LA_E_DEACT_LIMIT
+        */
+
+        public static int DeactivateProductV2() {
+#if LA_ANY_CPU
+            return IntPtr.Size == 8 ? Native.DeactivateProduct_x64() : Native.DeactivateProduct();
+#else
+            return NativeOLD.DeactivateProduct();
+#endif
+        }
+
+        //-----------------------------------------------------------------------------------------------------------------
+
+        public static class StatusCodes {
+            /*
+                CODE: LA_OK
+                MESSAGE: Success code.
+            */
+            public const int LA_OK = 0;
+
+            /*
+                CODE: LA_FAIL
+                MESSAGE: Failure code.
+            */
+            public const int LA_FAIL = 1;
+
+            /*
+                CODE: LA_EXPIRED
+                MESSAGE: The license has expired or system time has been tampered
+                with. Ensure your date and time settings are correct.
+            */
+            public const int LA_EXPIRED = 20;
+
+            /*
+                CODE: LA_SUSPENDED
+                MESSAGE: The license has been suspended.
+            */
+            public const int LA_SUSPENDED = 21;
+
+            /*
+                CODE: LA_GRACE_PERIOD_OVER
+                MESSAGE: The grace period for server sync is over.
+            */
+            public const int LA_GRACE_PERIOD_OVER = 22;
+
+            /*
+                CODE: LA_TRIAL_EXPIRED
+                MESSAGE: The trial has expired or system time has been tampered
+                with. Ensure your date and time settings are correct.
+            */
+            public const int LA_TRIAL_EXPIRED = 25;
+
+            /*
+                CODE: LA_LOCAL_TRIAL_EXPIRED
+                MESSAGE: The local trial has expired or system time has been tampered
+                with. Ensure your date and time settings are correct.
+            */
+            public const int LA_LOCAL_TRIAL_EXPIRED = 26;
+
+            /*
+                CODE: LA_E_FILE_PATH
+                MESSAGE: Invalid file path.
+            */
+            public const int LA_E_FILE_PATH = 40;
+
+            /*
+                CODE: LA_E_PRODUCT_FILE
+                MESSAGE: Invalid or corrupted product file.
+            */
+            public const int LA_E_PRODUCT_FILE = 41;
+
+            /*
+                CODE: LA_E_PRODUCT_DATA
+                MESSAGE: Invalid product data.
+            */
+            public const int LA_E_PRODUCT_DATA = 42;
+
+            /*
+                CODE: LA_E_PRODUCT_ID
+                MESSAGE: The product id is incorrect.
+            */
+            public const int LA_E_PRODUCT_ID = 43;
+
+            /*
+                CODE: LA_E_SYSTEM_PERMISSION
+                MESSAGE: Insufficent system permissions. Occurs when LA_SYSTEM flag is used
+                but application is not run with admin privileges.
+            */
+            public const int LA_E_SYSTEM_PERMISSION = 44;
+
+            /*
+                CODE: LA_E_FILE_PERMISSION
+                MESSAGE: No permission to write to file.
+            */
+            public const int LA_E_FILE_PERMISSION = 45;
+
+            /*
+                CODE: LA_E_WMIC
+                MESSAGE: Fingerprint couldn't be generated because Windows Management
+                Instrumentation (WMI) service has been disabled. This error is specific
+                to Windows only.
+            */
+            public const int LA_E_WMIC = 46;
+
+            /*
+                CODE: LA_E_TIME
+                MESSAGE: The difference between the network time and the system time is
+                more than allowed clock offset.
+            */
+            public const int LA_E_TIME = 47;
+
+            /*
+                CODE: LA_E_INET
+                MESSAGE: Failed to connect to the server due to network error.
+            */
+            public const int LA_E_INET = 48;
+
+            /*
+                CODE: LA_E_NET_PROXY
+                MESSAGE: Invalid network proxy.
+            */
+            public const int LA_E_NET_PROXY = 49;
+
+            /*
+                CODE: LA_E_HOST_URL
+                MESSAGE: Invalid Cryptlex host url.
+            */
+            public const int LA_E_HOST_URL = 50;
+
+            /*
+                CODE: LA_E_BUFFER_SIZE
+                MESSAGE: The buffer size was smaller than required.
+            */
+            public const int LA_E_BUFFER_SIZE = 51;
+
+            /*
+                CODE: LA_E_APP_VERSION_LENGTH
+                MESSAGE: App version length is more than 256 characters.
+            */
+            public const int LA_E_APP_VERSION_LENGTH = 52;
+
+            /*
+                CODE: LA_E_REVOKED
+                MESSAGE: The license has been revoked.
+            */
+            public const int LA_E_REVOKED = 53;
+
+            /*
+                CODE: LA_E_LICENSE_KEY
+                MESSAGE: Invalid license key.
+            */
+            public const int LA_E_LICENSE_KEY = 54;
+
+            /*
+                CODE: LA_E_LICENSE_TYPE
+                MESSAGE: Invalid license type. Make sure floating license
+                is not being used.
+            */
+            public const int LA_E_LICENSE_TYPE = 55;
+
+            /*
+                CODE: LA_E_OFFLINE_RESPONSE_FILE
+                MESSAGE: Invalid offline activation response file.
+            */
+            public const int LA_E_OFFLINE_RESPONSE_FILE = 56;
+
+            /*
+                CODE: LA_E_OFFLINE_RESPONSE_FILE_EXPIRED
+                MESSAGE: The offline activation response has expired.
+            */
+            public const int LA_E_OFFLINE_RESPONSE_FILE_EXPIRED = 57;
+
+            /*
+                CODE: LA_E_ACTIVATION_LIMIT
+                MESSAGE: The license has reached it's allowed activations limit.
+            */
+            public const int LA_E_ACTIVATION_LIMIT = 58;
+
+            /*
+                CODE: LA_E_ACTIVATION_NOT_FOUND
+                MESSAGE: The license activation was deleted on the server.
+            */
+            public const int LA_E_ACTIVATION_NOT_FOUND = 59;
+
+            /*
+                CODE: LA_E_DEACTIVATION_LIMIT
+                MESSAGE: The license has reached it's allowed deactivations limit.
+            */
+            public const int LA_E_DEACTIVATION_LIMIT = 60;
+
+            /*
+                CODE: LA_E_TRIAL_NOT_ALLOWED
+                MESSAGE: Trial not allowed for the product.
+            */
+            public const int LA_E_TRIAL_NOT_ALLOWED = 61;
+
+            /*
+                CODE: LA_E_TRIAL_ACTIVATION_LIMIT
+                MESSAGE: Your account has reached it's trial activations limit.
+            */
+            public const int LA_E_TRIAL_ACTIVATION_LIMIT = 62;
+
+            /*
+                CODE: LA_E_MACHINE_FINGERPRINT
+                MESSAGE: Machine fingerprint has changed since activation.
+            */
+            public const int LA_E_MACHINE_FINGERPRINT = 63;
+
+            /*
+                CODE: LA_E_METADATA_KEY_LENGTH
+                MESSAGE: Metadata key length is more than 256 characters.
+            */
+            public const int LA_E_METADATA_KEY_LENGTH = 64;
+
+            /*
+                CODE: LA_E_METADATA_VALUE_LENGTH
+                MESSAGE: Metadata value length is more than 256 characters.
+            */
+            public const int LA_E_METADATA_VALUE_LENGTH = 65;
+
+            /*
+                CODE: LA_E_ACTIVATION_METADATA_LIMIT
+                MESSAGE: The license has reached it's metadata fields limit.
+            */
+            public const int LA_E_ACTIVATION_METADATA_LIMIT = 66;
+
+            /*
+                CODE: LA_E_TRIAL_ACTIVATION_METADATA_LIMIT
+                MESSAGE: The trial has reached it's metadata fields limit.
+            */
+            public const int LA_E_TRIAL_ACTIVATION_METADATA_LIMIT = 67;
+
+            /*
+                CODE: LA_E_METADATA_KEY_NOT_FOUND
+                MESSAGE: The metadata key does not exist.
+            */
+            public const int LA_E_METADATA_KEY_NOT_FOUND = 68;
+
+            /*
+                CODE: LA_E_TIME_MODIFIED
+                MESSAGE: The system time has been tampered (backdated).
+            */
+            public const int LA_E_TIME_MODIFIED = 69;
+
+            /*
+                CODE: LA_E_VM
+                MESSAGE: Application is being run inside a virtual machine / hypervisor,
+                and activation has been disallowed in the VM.
+            */
+            public const int LA_E_VM = 80;
+
+            /*
+                CODE: LA_E_COUNTRY
+                MESSAGE: Country is not allowed.
+            */
+            public const int LA_E_COUNTRY = 81;
+
+            /*
+                CODE: LA_E_IP
+                MESSAGE: IP address is not allowed.
+            */
+            public const int LA_E_IP = 82;
+
+            /*
+                CODE: LA_E_RATE_LIMIT
+                MESSAGE: Rate limit for API has reached, try again later.
+            */
+            public const int LA_E_RATE_LIMIT = 90;
+
+            /*
+                CODE: LA_E_SERVER
+                MESSAGE: Server error.
+            */
+            public const int LA_E_SERVER = 91;
+
+            /*
+                CODE: LA_E_CLIENT
+                MESSAGE: Client error.
+            */
+            public const int LA_E_CLIENT = 92;
+        }
+
+        public class StatusCodesV2 {
+            public const int LA_OK = 0x00;
+
+            public const int LA_FAIL = 0x01;
+
+            /*
+                CODE: LA_EXPIRED
+        
+                MESSAGE: The product key has expired or system time has been tampered
+                with. Ensure your date and time settings are correct.
+            */
+
+            public const int LA_EXPIRED = 0x02;
+
+            /*
+                CODE: LA_REVOKED
+        
+                MESSAGE: The product key has been revoked.
+            */
+
+            public const int LA_REVOKED = 0x03;
+
+            /*
+                CODE: LA_GP_OVER
+        
+                MESSAGE: The grace period is over.
+            */
+
+            public const int LA_GP_OVER = 0x04;
+
+            /*
+                CODE: LA_E_INET
+        
+                MESSAGE: Failed to connect to the server due to network error.
+            */
+
+            public const int LA_E_INET = 0x05;
+
+            /*
+                CODE: LA_E_PKEY
+        
+                MESSAGE: Invalid product key.
+            */
+
+            public const int LA_E_PKEY = 0x06;
+
+            /*
+                CODE: LA_E_PFILE
+        
+                MESSAGE: Invalid or corrupted product file.
+            */
+
+            public const int LA_E_PFILE = 0x07;
+
+            /*
+                CODE: LA_E_FPATH
+        
+                MESSAGE: Invalid product file path.
+            */
+
+            public const int LA_E_FPATH = 0x08;
+
+            /*
+                CODE: LA_E_GUID
+        
+                MESSAGE: The version GUID doesn't match that of the product file.
+            */
+
+            public const int LA_E_GUID = 0x09;
+
+            /*
+                CODE: LA_E_OFILE
+        
+                MESSAGE: Invalid offline activation response file.
+            */
+
+            public const int LA_E_OFILE = 0x0A;
+
+            /*
+                CODE: LA_E_PERMISSION
+        
+                MESSAGE: Insufficent system permissions. Occurs when LA_SYSTEM flag is used
+                but application is not run with admin privileges.
+            */
+
+            public const int LA_E_PERMISSION = 0x0B;
+
+            /*
+                CODE: LA_E_EDATA_LEN
+        
+                MESSAGE: Extra activation data length is more than 256 characters.
+            */
+
+
+            public const int LA_E_EDATA_LEN = 0x0C;
+
+            /*
+                CODE: LA_E_TKEY
+        
+                MESSAGE: The trial key doesn't match that of the product file.
+            */
+
+            public const int LA_E_TKEY = 0x0D;
+
+            /*
+                CODE: LA_E_TIME
+        
+                MESSAGE: The system time has been tampered with. Ensure your date
+                and time settings are correct.
+            */
+
+            public const int LA_E_TIME = 0x0E;
+
+            /*
+                CODE: LA_E_VM
+        
+                MESSAGE: Application is being run inside a virtual machine / hypervisor,
+                and activation has been disallowed in the VM.
+                but
+            */
+
+            public const int LA_E_VM = 0x0F;
+
+            /*
+                CODE: LA_E_WMIC
+        
+                MESSAGE: Fingerprint couldn't be generated because Windows Management 
+                Instrumentation (WMI) service has been disabled. This error is specific
+                to Windows only.
+            */
+
+            public const int LA_E_WMIC = 0x10;
+
+            /*
+                CODE: LA_E_TEXT_KEY
+        
+                MESSAGE: Invalid trial extension key.
+            */
+
+            public const int LA_E_TEXT_KEY = 0x11;
+
+            /*
+                CODE: LA_E_TRIAL_LEN
+        
+                MESSAGE: The trial length doesn't match that of the product file.
+            */
+
+            public const int LA_E_TRIAL_LEN = 0x12;
+
+            /*
+                CODE: LA_T_EXPIRED
+        
+                MESSAGE: The trial has expired or system time has been tampered
+                with. Ensure your date and time settings are correct.
+            */
+
+            public const int LA_T_EXPIRED = 0x13;
+
+            /*
+                CODE: LA_TEXT_EXPIRED
+        
+                MESSAGE: The trial extension key being used has already expired or system
+                time has been tampered with. Ensure your date and time settings are correct.
+            */
+
+            public const int LA_TEXT_EXPIRED = 0x14;
+
+            /*
+                CODE: LA_E_BUFFER_SIZE
+        
+                MESSAGE: The buffer size was smaller than required.
+            */
+
+            public const int LA_E_BUFFER_SIZE = 0x15;
+
+            /*
+                CODE: LA_E_CUSTOM_FIELD_ID
+        
+                MESSAGE: Invalid custom field id.
+            */
+
+            public const int LA_E_CUSTOM_FIELD_ID = 0x16;
+
+            /*
+                CODE: LA_E_NET_PROXY
+        
+                MESSAGE: Invalid network proxy.
+            */
+
+            public const int LA_E_NET_PROXY = 0x17;
+
+            /*
+                CODE: LA_E_HOST_URL
+        
+                MESSAGE: Invalid Cryptlex host url.
+            */
+
+            public const int LA_E_HOST_URL = 0x18;
+
+            /*
+                CODE: LA_E_DEACT_LIMIT
+        
+                MESSAGE: Deactivation limit for key has reached.
+            */
+
+            public const int LA_E_DEACT_LIMIT = 0x19;
+
+            /*
+                CODE: LA_E_ACT_LIMIT
+        
+                MESSAGE: Activation limit for key has reached.
+            */
+
+            public const int LA_E_ACT_LIMIT = 0x1A;
+        }
+
+        [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+        public delegate void CallbackType(uint status);
+
+        /* To prevent garbage collection of delegate, need to keep a reference */
+        static CallbackType licenseCallback;
+
+        static class Native {
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetProductFile(string filePath);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetProductData(string productData);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetProductId(string productId, PermissionFlags flags);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetLicenseKey(string licenseKey);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetLicenseCallback(CallbackType callback);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetActivationMetadata(string key, string value);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetTrialActivationMetadata(string key, string value);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetAppVersion(string appVersion);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetNetworkProxy(string proxy);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetProductMetadata(string key, StringBuilder value, int length);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseMetadata(string key, StringBuilder value, int length);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseKey(StringBuilder licenseKey, int length);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseExpiryDate(ref uint expiryDate);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseUserEmail(StringBuilder email, int length);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseUserName(StringBuilder name, int length);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseType(StringBuilder licenseType, int length);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetActivationMetadata(string key, StringBuilder value, int length);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetTrialActivationMetadata(string key, StringBuilder value, int length);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetTrialExpiryDate(ref uint trialExpiryDate);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetTrialId(StringBuilder trialId, int length);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLocalTrialExpiryDate(ref uint trialExpiryDate);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateLicense();
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateLicenseOffline(string filePath);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GenerateOfflineActivationRequest(string filePath);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int DeactivateLicense();
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GenerateOfflineDeactivationRequest(string filePath);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int IsLicenseGenuine();
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int IsLicenseValid();
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateTrial();
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateTrialOffline(string filePath);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GenerateOfflineTrialActivationRequest(string filePath);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int IsTrialGenuine();
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateLocalTrial(uint trialLength);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int IsLocalTrialGenuine();
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ExtendLocalTrial(uint trialExtensionLength);
+
+            [DllImport(DLL_FILE_NAME, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int Reset();
+
+#if LA_ANY_CPU
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "SetProductFile", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetProductFile_x64(string filePath);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "SetProductData", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetProductData_x64(string productData);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "SetProductId", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetProductId_x64(string productId, PermissionFlags flags);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "SetLicenseKey", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetLicenseKey_x64(string licenseKey);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "SetLicenseCallback", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetLicenseCallback_x64(CallbackType callback);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "SetActivationMetadata", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetActivationMetadata_x64(string key, string value);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "SetTrialActivationMetadata", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetTrialActivationMetadata_x64(string key, string value);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "SetAppVersion", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetAppVersion_x64(string appVersion);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "SetNetworkProxy", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetNetworkProxy_x64(string proxy);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetProductMetadata", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetProductMetadata_x64(string key, StringBuilder value, int length);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetLicenseMetadata", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseMetadata_x64(string key, StringBuilder value, int length);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetLicenseKey", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseKey_x64(StringBuilder licenseKey, int length);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetLicenseExpiryDate", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseExpiryDate_x64(ref uint expiryDate);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetLicenseUserEmail", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseUserEmail_x64(StringBuilder email, int length);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetLicenseUserName", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseUserName_x64(StringBuilder name, int length);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetLicenseType", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLicenseType_x64(StringBuilder licenseType, int length);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetActivationMetadata", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetActivationMetadata_x64(string key, StringBuilder value, int length);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetTrialActivationMetadata", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetTrialActivationMetadata_x64(string key, StringBuilder value, int length);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetTrialExpiryDate", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetTrialExpiryDate_x64(ref uint trialExpiryDate);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetTrialId", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetTrialId_x64(StringBuilder trialId, int length);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GetLocalTrialExpiryDate", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetLocalTrialExpiryDate_x64(ref uint trialExpiryDate);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "ActivateLicense", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateLicense_x64();
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "ActivateLicenseOffline", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateLicenseOffline_x64(string filePath);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GenerateOfflineActivationRequest", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GenerateOfflineActivationRequest_x64(string filePath);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "DeactivateLicense", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int DeactivateLicense_x64();
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GenerateOfflineDeactivationRequest", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GenerateOfflineDeactivationRequest_x64(string filePath);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "IsLicenseGenuine", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int IsLicenseGenuine_x64();
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "IsLicenseValid", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int IsLicenseValid_x64();
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "ActivateTrial", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateTrial_x64();
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "ActivateTrialOffline", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateTrialOffline_x64(string filePath);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "GenerateOfflineTrialActivationRequest", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GenerateOfflineTrialActivationRequest_x64(string filePath);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "IsTrialGenuine", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int IsTrialGenuine_x64();
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "ActivateLocalTrial", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ActivateLocalTrial_x64(uint trialLength);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "IsLocalTrialGenuine", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int IsLocalTrialGenuine_x64();
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "ExtendLocalTrial", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int ExtendLocalTrial_x64(uint trialExtensionLength);
+
+            [DllImport(DLL_FILE_NAME_X64, CharSet = CharSet.Unicode, EntryPoint = "Reset", CallingConvention = CallingConvention.Cdecl)]
+            public static extern int Reset_x64();
+#endif
+        }
+
+        static class NativeOLD {
+            //ADDED FROM THE OLD LEXACTIVATOR
+            [DllImport(DLL_FILE_NAME_OLD, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetVersionGUID(string versionGUID, PermissionFlags flags);
+
+            [DllImport(DLL_FILE_NAME_OLD, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int IsProductGenuine();
+
+            [DllImport(DLL_FILE_NAME_OLD, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetCustomLicenseField(string fieldId, StringBuilder fieldValue, int length);
+
+            [DllImport(DLL_FILE_NAME_OLD, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int GetProductKey(StringBuilder productKey, int length);
+
+            [DllImport(DLL_FILE_NAME_OLD, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int SetProductFile(string filePath);
+
+            [DllImport(DLL_FILE_NAME_OLD, CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int DeactivateProduct();
+        }
+    }
+}
+#endif

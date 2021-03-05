@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1174a7db99b9044a8cfb65c7a2db04, type: 3}
+  m_Name: HotKeys
+  m_EditorClassIdentifier: 
+  _reportingBug: {fileID: 11400000, guid: 06dd8ecb8a2a72349a61444adb41314b, type: 2}
+  _editingPlayerName: {fileID: 11400000, guid: 8f93420c450afaf45bc706531a0aed33, type: 2}
+  _editingTeamName: {fileID: 11400000, guid: f07cc951a4f2f5d45b0c4ceba9408ac1, type: 2}
+  _scanningQRCode: {fileID: 11400000, guid: 7ed32e2fce2103c46be4adc434a0d082, type: 2}
+  _toggleOperatorUI: 103
+  _toggleSpectatorUI: 104
+  _mute: 109

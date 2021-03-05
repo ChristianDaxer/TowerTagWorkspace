@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586de8e5b3af2ba48b44befa9a9951e1, type: 3}
+  m_Name: OculusAchievementKeys
+  m_EditorClassIdentifier: 
+  TutorialDone: ACH_TUT_DONE
+  PlayTime: ACH_HOURS
+  LogInRow: ACH_LOGIN
+  WonSingleMatch: ACH_WIN1
+  WinStreak5: ACH_ROW5
+  WinStreak10: ACH_ROW10
+  Sniper: ACH_SNIPE
+  HealLowPlayers: ACH_EM_DOC
+  Parademic: ACH_PARA
+  ControlFreak: ACH_FREAK
+  VRLegs: ACH_TELE
+  HottestFire: ACH_HOT
+  ColdestIce: ACH_ICE
+  HeadShotsTaken: ACH_HEADR
+  MVP: ACH_VIP
+  Play50: ACH_PLAY50
+  Play100: ACH_PLAY100
+  Play200: ACH_PLAY200
+  Lvl10: ACH_LVL10
+  Lvl20: ACH_LVL20
+  Lvl30: ACH_LVL30

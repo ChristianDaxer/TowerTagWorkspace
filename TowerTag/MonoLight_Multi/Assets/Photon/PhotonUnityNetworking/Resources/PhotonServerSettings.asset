@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
+  m_Name: PhotonServerSettings
+  m_EditorClassIdentifier: 
+  AppSettings:
+    AppIdRealtime: 81d08d16-27b3-4b59-9ae0-774842438288
+    AppIdChat: 
+    AppIdVoice: b8c03042-dcb1-493f-8995-ce8e892886e8
+    AppVersion: 0.2.8_Home_dev
+    UseNameServer: 1
+    FixedRegion: eu
+    Server: 
+    Port: 0
+    Protocol: 0
+    AuthMode: 0
+    EnableLobbyStatistics: 0
+    NetworkLogging: 1
+  DevRegion: 
+  PunLogging: 0
+  EnableSupportLogger: 0
+  RunInBackground: 1
+  StartInOfflineMode: 0
+  RpcList:
+  - AbortMatchVotedReceived
+  - CheckStatus
+  - ClickRpc
+  - DestroyRpc
+  - DisconnectLocalPlayer
+  - HealthChanged
+  - MicInputChangeReceived
+  - OnCountdownAbortedRPC
+  - OnCountdownStartedRPC
+  - OnDeviceIDReceived
+  - OnDeviceRequestReceived
+  - OnGrapplingHookUpdateReceived
+  - OnHubSceneTimerRequested
+  - OnHubSceneTimerTimeReceived
+  - OnHubShieldToggleReceived
+  - OnJoinHubToggleShield
+  - OnMemberIDReceived
+  - OnPlayedMatchReceived
+  - OnReceivedMatchHasFinishedLoading
+  - OnReceivedPlayerStatusFromOwner
+  - OnReceiveSceneHasFinishedLoading
+  - OnReceiveVoiceCommand
+  - OnReceiveWallState
+  - OnSyncRequest
+  - OnUpdateAIParameters
+  - PlayerRevived
+  - ReceiveMatchTimerAsLateJoiner
+  - ReceiveOptionChargeEvent
+  - RequestTeamChange
+  - RpcToggleDirectAdminChat
+  - SendMemberID
+  - TeleportRequestReceivedOnMaster
+  - TimerActivationReceived
+  DisableAutoOpenWizard: 1
+  ShowSettings: 1
+  DevRegionSetOnce: 0

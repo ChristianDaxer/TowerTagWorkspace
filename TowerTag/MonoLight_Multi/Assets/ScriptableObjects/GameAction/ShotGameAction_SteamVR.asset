@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47208484cb4ce8459d116188700ccd0, type: 3}
+  m_Name: ShotGameAction_SteamVR
+  m_EditorClassIdentifier: 
+  _gameActionManager: {fileID: 11400000, guid: d241a6c8b2866094cb4b32f4f36ad56d, type: 2}
+  _optimistic: 1
+  _shotManager: {fileID: 11400000, guid: cd68cf53382dbd24ab8aea8ab3c125a0, type: 2}

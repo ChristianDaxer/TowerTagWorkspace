@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15283b415325cfe42ad870f69b828eb6, type: 3}
+  m_Name: SteamVRPlatformConfig
+  m_EditorClassIdentifier: 
+  _homeType: 1
+  _showTaskDescription: 1
+  reconfigureTasks:
+  - {fileID: 11400000, guid: 84c5d11c6a7198b41951f3f097621529, type: 2}
+  - {fileID: 11400000, guid: e36401a9d0f4cbe4cb6eca46f5b86c2a, type: 2}
+  - {fileID: 11400000, guid: c24b0d0eb625d53449ba0d1321c7efbb, type: 2}
+  - {fileID: 11400000, guid: f8d656b58f18b6341884a451cb1bc91c, type: 2}
+  - {fileID: 11400000, guid: b7dd3838780abed4c9576b739cfd3ff2, type: 2}
+  - {fileID: 11400000, guid: 9fdb0acf4cc6e464888815abb3d086c7, type: 2}
+  - {fileID: 11400000, guid: 425be7f16033bd846b011e237baa70e8, type: 2}

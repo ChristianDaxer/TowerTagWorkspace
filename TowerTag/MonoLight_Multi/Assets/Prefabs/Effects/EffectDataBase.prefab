@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1000012735782490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4000012890809464}
+  - component: {fileID: 114000010655352040}
+  m_Layer: 0
+  m_Name: EffectDataBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012890809464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012735782490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000010655352040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012735782490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2019ed6283b814849bcf359ff8b5d69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _persistent: 0
+  _duplicatePolicy: 0
+  _decalTags:
+  - Dec_Metal
+  - Dec_Player
+  - Dec_Glass
+  - ExplodingAvatar
+  - Dec_Energy
+  - Dec_FriendlyFire
+  - Dec_RopeCollision
+  _decalPrefabs:
+  - {fileID: 1000012665240664, guid: 6b65c0063e41caa4f9425f93aa40a08f, type: 3}
+  - {fileID: 1000011665261762, guid: 4b91f140754dbb446b8d5711db82dc03, type: 3}
+  - {fileID: 1000013529227692, guid: 71c3a44746e33734caf3cd9ec30651a0, type: 3}
+  - {fileID: 1000011909906286, guid: f7496289262db6040acc344d6cb1d917, type: 3}
+  - {fileID: 1219065864741656, guid: 9b84b92a1c2ad114bb6314cfb5e2d534, type: 3}
+  - {fileID: 1000013519954398, guid: 4f0bc00d23c560f49bcdc3ddeb0f0f95, type: 3}
+  - {fileID: 1000013514725578, guid: 456cb16ed667ff245972a98258c9d376, type: 3}
+  _decalPoolSizes: 140000001400000014000000080000000a0000000100000000000000

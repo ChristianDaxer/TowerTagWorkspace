@@ -1,0 +1,1 @@
+float4 _IndexedEmissionColors[MAX_INSTANCE_COUNT_IN_COMBINED_MESH];

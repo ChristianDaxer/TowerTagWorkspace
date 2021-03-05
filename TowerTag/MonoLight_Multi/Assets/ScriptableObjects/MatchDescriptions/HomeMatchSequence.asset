@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d7b81fecc61904e9f3c68e7989cf80, type: 3}
+  m_Name: HomeMatchSequence
+  m_EditorClassIdentifier: 
+  _sequence:
+  - _matchDescription: {fileID: 11400000, guid: d8aa24c41852de8409536c4618dd27d0,
+      type: 2}
+    _minPlayers: 2
+    _maxPlayers: 6
+  - _matchDescription: {fileID: 11400000, guid: ea0ee46b66ac7394caf21f669ea6a833,
+      type: 2}
+    _minPlayers: 2
+    _maxPlayers: 8
+  - _matchDescription: {fileID: 11400000, guid: a9e718f84eed1834aa42658637b93018,
+      type: 2}
+    _minPlayers: 2
+    _maxPlayers: 4
+  - _matchDescription: {fileID: 11400000, guid: 13efa34ac98b1734f868d6c02b52d63e,
+      type: 2}
+    _minPlayers: 2
+    _maxPlayers: 8
+  - _matchDescription: {fileID: 11400000, guid: f2e2dbdd3e912e94e81313b4f6781b9d,
+      type: 2}
+    _minPlayers: 4
+    _maxPlayers: 6
+  - _matchDescription: {fileID: 11400000, guid: d3235636f3dd7f34abb9796ceddd9bf2,
+      type: 2}
+    _minPlayers: 2
+    _maxPlayers: 2
+  - _matchDescription: {fileID: 11400000, guid: 01b007bdc5c956048b424ba1c301a3d6,
+      type: 2}
+    _minPlayers: 2
+    _maxPlayers: 4
+  - _matchDescription: {fileID: 11400000, guid: 9e460b165bd79724caa8cb6d785b848e,
+      type: 2}
+    _minPlayers: 2
+    _maxPlayers: 6
+  - _matchDescription: {fileID: 11400000, guid: fac5481afde6363478a18c43690fa42e,
+      type: 2}
+    _minPlayers: 4
+    _maxPlayers: 8
+  - _matchDescription: {fileID: 11400000, guid: 092241c681df87648a194cadaaef6679,
+      type: 2}
+    _minPlayers: 4
+    _maxPlayers: 8

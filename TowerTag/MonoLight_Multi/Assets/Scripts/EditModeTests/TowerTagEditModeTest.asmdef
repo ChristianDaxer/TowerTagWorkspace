@@ -1,0 +1,29 @@
+{
+    "name": "TowerTagEditModeTest",
+    "references": [
+        "TowerTag",
+        "PhotonUnityNetworking",
+        "PhotonRealtime",
+        "VRNerdsUtility",
+        "ScriptableObjectEventSystem",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Newtonsoft.Json.dll",
+        "NSubstitute.dll",
+        "Photon3Unity3D.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": []
+}

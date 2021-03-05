@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfb655cc17a5d042b46978ceed53c1b, type: 3}
+  m_Name: Demolitioner
+  m_EditorClassIdentifier: 
+  _displayName: DEMOLITIONER
+  _description: DEALT MOST DAMAGE
+  _icon: {fileID: 21300004, guid: dac5734ec2bcd644782cbd43c7727f92, type: 3}
+  _value: 3
+  _disabledGameModes: 
+  _teamID: -1
+  _minimumLead: 0.01
+  _accuracyImpact: 0
+  _scoreOverOutImpact: 0
+  _assistOverOutImpact: 0
+  _claimsPerSecondImpact: 0
+  _goalPillarsPerSecondImpact: 0
+  _teleportsPerSecondImpact: 0
+  _KillsImpact: 0
+  _AssistsImpact: 0
+  _DeathsImpact: 0
+  _ShotsFiredImpact: 0
+  _HitsDealtImpact: 0
+  _HitsTakenImpact: 0
+  _DamageDealtImpact: 1
+  _DamageTakenImpact: 0
+  _HealthHealedImpact: 0
+  _HealingReceivedImpact: 0
+  _GoalPillarsClaimedImpact: 0
+  _PillarsClaimedImpact: 0
+  _TeleportsImpact: 0
+  _HeadShotsImpact: 0
+  _SniperShotsImpact: 0
+  _DoublesImpact: 0
+  _PlayTimeImpact: 0

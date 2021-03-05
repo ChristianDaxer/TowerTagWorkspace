@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2916071caff7cf4ea4459f01c6b16dd, type: 3}
+  m_Name: ConfigureBuildSceneSettings
+  m_EditorClassIdentifier: 
+  skip: 0
+  sceneReconfigureTasks:
+  - {fileID: 11400000, guid: d57eed4d13e906d4496e93b05fcc1cc6, type: 2}
+  - {fileID: 11400000, guid: e34f93704e0c61a46993cd8463fa3859, type: 2}
+  _serializedSceneTargets: []
+  _serializedComposedSceneTargets:
+  - index: 0
+    sceneComposer: {fileID: 11400000, guid: d7450126802b0564cae6d22606373c48, type: 2}
+  - index: 1
+    sceneComposer: {fileID: 11400000, guid: 0fd3e6735721ec1478c0a660415b829a, type: 2}
+  - index: 2
+    sceneComposer: {fileID: 11400000, guid: 0c805fd349979fe4fa68d29fbb0c4371, type: 2}
+  - index: 3
+    sceneComposer: {fileID: 11400000, guid: c4f50855b6f0a4d4bb987a7849e5cb5b, type: 2}
+  - index: 4
+    sceneComposer: {fileID: 11400000, guid: 1d6d0c7909f6ed24991a7c19be88d705, type: 2}
+  - index: 5
+    sceneComposer: {fileID: 11400000, guid: 0f2c3d269b7a8984a9adfd76aeb61e89, type: 2}
+  - index: 6
+    sceneComposer: {fileID: 11400000, guid: 1d1d15ef5ca45bd4cad42552ee5523d2, type: 2}
+  - index: 7
+    sceneComposer: {fileID: 11400000, guid: 4e07342dbd37b4e489c03aefd2e75b2b, type: 2}
+  - index: 8
+    sceneComposer: {fileID: 11400000, guid: f283778e2d0c38941968ebdea991d3e6, type: 2}
+  - index: 9
+    sceneComposer: {fileID: 11400000, guid: 86b455d3562c20441a6bd5afe7f8113f, type: 2}
+  - index: 10
+    sceneComposer: {fileID: 11400000, guid: 38d2e4f01886dc545a35e8b7e7b077bf, type: 2}
+  - index: 11
+    sceneComposer: {fileID: 11400000, guid: 377f2a48471f23f4b8335be176dd3be1, type: 2}
+  - index: 12
+    sceneComposer: {fileID: 11400000, guid: bdcd693386fb4614d9e67b33fb68d6e4, type: 2}
+  - index: 13
+    sceneComposer: {fileID: 11400000, guid: b4ccc41c4945e3640a0fa43669c23ec7, type: 2}
+  - index: 14
+    sceneComposer: {fileID: 11400000, guid: def79bddccf5fea41ab5b53c6d3517a2, type: 2}
+  - index: 15
+    sceneComposer: {fileID: 11400000, guid: 904f89d048b44fc40b4aa15800a7a0a8, type: 2}

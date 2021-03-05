@@ -1,0 +1,760 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1000010012522438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4000012208123172}
+  - component: {fileID: 114000012306106616}
+  - component: {fileID: 114000014221470720}
+  m_Layer: 0
+  m_Name: SoundDatabase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012208123172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010012522438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000012306106616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010012522438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc05004ed80b2f4a956f006986c92e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sounds:
+  - _name: 02_laser_shot
+    _clip: {fileID: 8300000, guid: 47017276f62f6724da9895be922de72c, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 05_energy_recharge
+    _clip: {fileID: 8300000, guid: 5774831e701aa684296415f7b574b071, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 1
+    _priority: 128
+    _defaultVolume: 0.1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 3}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 06_energy_has_recharged
+    _clip: {fileID: 8300000, guid: b2ff9f3c6d164f4449df759c25b4c526, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 08_metal_got_hit
+    _clip: {fileID: 8300000, guid: 19dbcd1f8cc6d02439247184482a1b4c, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 1
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 09_player_got_hit
+    _clip: {fileID: 8300000, guid: d783393e0ca728e4e9c3d2d6d80a8453, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 10_opponent_got_hit
+    _clip: {fileID: 8300000, guid: 644cd567fac9c7d45acb6fda483a6889, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 1
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 11_glas_got_hit
+    _clip: {fileID: 8300000, guid: 09238de7a35ddac4abdae79da3f32858, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 1
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 13_pillar_top_gets_highlighted
+    _clip: {fileID: 8300000, guid: c348c9090bcfffd4d8d20f2e05216f84, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 1
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 16_rope_shot
+    _clip: {fileID: 8300000, guid: 8406c4be01e4a604ba7433daacd05f1a, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 18_rope_tension
+    _clip: {fileID: 8300000, guid: 41b37ddcdb544544485984b0d6bd70be, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 1
+    _priority: 128
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 2, y: 8}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 20_claim_process
+    _clip: {fileID: 8300000, guid: 5e7a6de987e042248847dc94ebbaa857, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 1
+    _priority: 128
+    _defaultVolume: 0.75
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 3}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 21_claim_process_aborted
+    _clip: {fileID: 8300000, guid: e7e2e941aa65e3b40ba7bb163639dea2, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 1
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 22_teleport_jump
+    _clip: {fileID: 8300000, guid: d8167631d0825c749818a5b886a81c27, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 23_teleport_landing
+    _clip: {fileID: 8300000, guid: d8167631d0825c749818a5b886a81c27, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 31_granate
+    _clip: {fileID: 8300000, guid: 123d22c5252304c4e9854e1158c8ed1c, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 1
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 32_player_dies
+    _clip: {fileID: 8300000, guid: 415625d4042e6544892f32c35cd20260, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 36_score_sound
+    _clip: {fileID: 8300000, guid: da562b20bec79da42b10618ab8e46d50, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 43_AmbientLoop
+    _clip: {fileID: 8300000, guid: 1620b986768ee744c8619445c5ee0b58, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 1
+    _loop: 1
+    _priority: 70
+    _defaultVolume: 0.1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 29_chargePlayer
+    _clip: {fileID: 8300000, guid: 5e7a6de987e042248847dc94ebbaa857, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 1
+    _priority: 128
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 2, y: 6}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 28_ropeHitsPlayer
+    _clip: {fileID: 8300000, guid: 19dbcd1f8cc6d02439247184482a1b4c, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 17_ropeHitsPillar
+    _clip: {fileID: 8300000, guid: 19dbcd1f8cc6d02439247184482a1b4c, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 34_opponent_dies
+    _clip: {fileID: 8300000, guid: 123d22c5252304c4e9854e1158c8ed1c, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 1
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 1
+    _minMaxDistance: {x: 20, y: 150}
+  - _name: 35_claim_process_finished
+    _clip: {fileID: 8300000, guid: 37103f34ccf442e469b1b3b363dd8566, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 0.4
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 0.7
+    _minMaxPitch: {x: 0, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 03_projectile
+    _clip: {fileID: 8300000, guid: 321983475ca116b43be4c79eee24f135, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 70
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 0.8}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 5}
+    _spatialBlend: 1
+    _rolloffMode: 1
+    _minMaxDistance: {x: 15, y: 15}
+  - _name: 37_soundtrack
+    _clip: {fileID: 8300000, guid: dfb4fc99af4a5914bba6efec064508be, type: 3}
+    _outputTo: {fileID: 243000012290260788, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 1
+    _loop: 1
+    _priority: 70
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 5}
+    _spatialBlend: 0
+    _rolloffMode: 1
+    _minMaxDistance: {x: 15, y: 15}
+  - _name: 41_orangeWinByLastPillar
+    _clip: {fileID: 8300000, guid: c0b0f431ff17faa4585125d77f6af1e7, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 70
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 5}
+    _spatialBlend: 0
+    _rolloffMode: 1
+    _minMaxDistance: {x: 15, y: 15}
+  - _name: 41_orangeWinByKills
+    _clip: {fileID: 8300000, guid: c0b0f431ff17faa4585125d77f6af1e7, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 70
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 5}
+    _spatialBlend: 0
+    _rolloffMode: 1
+    _minMaxDistance: {x: 15, y: 15}
+  - _name: 41_orangeWinByKills
+    _clip: {fileID: 8300000, guid: c0b0f431ff17faa4585125d77f6af1e7, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 70
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 5}
+    _spatialBlend: 0
+    _rolloffMode: 1
+    _minMaxDistance: {x: 15, y: 15}
+  - _name: 42_blueWinByLastPillar
+    _clip: {fileID: 8300000, guid: 5b5477f983d073549abc9207b627e01e, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 70
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 5}
+    _spatialBlend: 0
+    _rolloffMode: 1
+    _minMaxDistance: {x: 15, y: 15}
+  - _name: 42_blueWinByKills
+    _clip: {fileID: 8300000, guid: 5b5477f983d073549abc9207b627e01e, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 70
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 5}
+    _spatialBlend: 0
+    _rolloffMode: 1
+    _minMaxDistance: {x: 15, y: 15}
+  - _name: 42_blueWinByKills
+    _clip: {fileID: 8300000, guid: 5b5477f983d073549abc9207b627e01e, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 70
+    _defaultVolume: 0.5
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 5}
+    _spatialBlend: 0
+    _rolloffMode: 1
+    _minMaxDistance: {x: 15, y: 15}
+  - _name: 43_RopeCollision
+    _clip: {fileID: 8300000, guid: 64a3966e1d0945448b7009926b10f964, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 1
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 2.5
+    _minMaxPitch: {x: 1, y: 2.5}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 44_TeamIceScores
+    _clip: {fileID: 8300000, guid: 6810a941b2102e84c88e945d536a06b8, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 45_TeamFireScores
+    _clip: {fileID: 8300000, guid: cb66098f180f65345903a01acb82eaff, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 46_5s_Countdown
+    _clip: {fileID: 8300000, guid: 37143299a23617d44a1dd6960ad1df56, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 47_3s_Countdown
+    _clip: {fileID: 8300000, guid: 3600eb23ffa334545bdfddf6b1a5ae6b, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 48_OneMinuteLeft
+    _clip: {fileID: 8300000, guid: 0d21d4055c9283047b6644df31093305, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 49_Tie
+    _clip: {fileID: 8300000, guid: b6875e1033fd8e84ca77c6bb0d29b194, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 50_YouDied
+    _clip: {fileID: 8300000, guid: c4b475175fef55048a0f3964e79b0680, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 51_TeamFireLostOnePlayer
+    _clip: {fileID: 8300000, guid: 7ef404c5e0e242143ba692b3b4561886, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 52_TeamIceLostOnePlayer
+    _clip: {fileID: 8300000, guid: 36438f145d976694db2690a9cc69c274, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 53_Intro_GoalMode
+    _clip: {fileID: 8300000, guid: ed7436b24cefc3d478baa70695f00463, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 54_IntroTDMMode
+    _clip: {fileID: 8300000, guid: 8cb6edc5d4e28e34bb100a8d2acca85f, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 55_Intro_2_Match
+    _clip: {fileID: 8300000, guid: 1db61b4af1b1c48479dd48cdf717351b, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 56_WelcomeToTT
+    _clip: {fileID: 8300000, guid: 64a3966e1d0945448b7009926b10f964, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 57_Headshot
+    _clip: {fileID: 8300000, guid: f7cebf34f2aa97e4ca418d9c15b4f25d, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 27_WallFallsDown
+    _clip: {fileID: 8300000, guid: 153c2260c55f4bc418db15c988297ef1, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 04_Gun_Shot_Empty
+    _clip: {fileID: 8300000, guid: 0f6aa05e9ea1f1a48bca17ced418e5c3, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 1
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 16_VoteMatchAbortPlusAnnouncer
+    _clip: {fileID: 8300000, guid: d3ff2fea7883a4c49b2bc086da97da24, type: 3}
+    _outputTo: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+  - _name: 17_VoteMatchAbortPling
+    _clip: {fileID: 8300000, guid: a49dec9b7b2818448b956b3a5af021c3, type: 3}
+    _outputTo: {fileID: 243000010913871922, guid: 8db7a6d567b49f44981252dacf6b758a,
+      type: 2}
+    _playOnAwake: 0
+    _loop: 0
+    _priority: 128
+    _defaultVolume: 1
+    _minMaxVolume: {x: 0, y: 1}
+    _defaultPitch: 1
+    _minMaxPitch: {x: 1, y: 1}
+    _spatialBlend: 0
+    _rolloffMode: 0
+    _minMaxDistance: {x: 1, y: 150}
+--- !u!114 &114000014221470720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010012522438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e050b7a0481c7a24da32987eadbb7732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hotKeys: {fileID: 11400000, guid: 5842efe68b3062946a5e119ad55d7409, type: 2}

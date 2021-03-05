@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61fbd88a0501a2429d030393376e40b, type: 3}
+  m_Name: ShootBotSequence2_steamvr
+  m_EditorClassIdentifier: 
+  _timeTillInfoPinSpawns: 4
+  _timeTillVideoExplainerSpawns: 10
+  _infoPinPrefab: {fileID: 8737187563173836608, guid: 6296b042668e3ea4aaa91253beded881,
+    type: 3}
+  _videoPrefab: {fileID: 5263931748352953113, guid: 35629df3f3ddb364e93b8d6a7bd255d7,
+    type: 3}
+  _shootEnemyText: SHOOT ME
+  _nextPillarText: MOVE HERE
+  _canBotShoot: 1
+  _botLevel: 1
+  _shootBotHint: {fileID: 8300000, guid: aa917ccf6c43cc54bb2f5f2014203142, type: 3}
+  _mixer: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a, type: 2}

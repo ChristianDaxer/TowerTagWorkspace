@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac5cd2da7844f324d94c58fa14c45f0c, type: 3}
+  m_Name: FootStepSequence_steamvr
+  m_EditorClassIdentifier: 
+  _footPrintsPrefab: {fileID: 9171001691802623045, guid: 26bb3f8807d66f643a6851b4825771dd,
+    type: 3}
+  _timeUntilInfoPinSpawns: 2
+  _collisionLayer:
+    serializedVersion: 2
+    m_Bits: 134217728
+  _footprintsHint: {fileID: 8300000, guid: 47e8ea1ac6ecf8b46a6839cf768f275f, type: 3}
+  _hintMixer: {fileID: 243000013346425020, guid: 8db7a6d567b49f44981252dacf6b758a,
+    type: 2}

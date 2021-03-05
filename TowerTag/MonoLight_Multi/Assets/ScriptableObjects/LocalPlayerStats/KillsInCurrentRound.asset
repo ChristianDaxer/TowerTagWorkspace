@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff38ea1a33a8e644ba5cf1df39863882, type: 3}
+  m_Name: KillsInCurrentRound
+  m_EditorClassIdentifier: 
+  _debug: 0
+  _value: 1
+  _localPlayer: {fileID: 11400000, guid: 7e44ff82da7c02f4bb5b4a3764c685a1, type: 2}
+  _hitGameAction: {fileID: 11400000, guid: 63b4601d0c8d6ab46bee2d45c5174efa, type: 2}

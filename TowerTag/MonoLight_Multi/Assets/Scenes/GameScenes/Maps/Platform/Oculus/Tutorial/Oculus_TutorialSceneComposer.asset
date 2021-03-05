@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d053427773233a3428f999754eb1aa70, type: 3}
+  m_Name: Oculus_TutorialSceneComposer
+  m_EditorClassIdentifier: 
+  compositionName: Oculus_Tutorial
+  scenes:
+  - {fileID: 102900000, guid: ee5955137dfcdf94fa667e0997daedc7, type: 3}
+  - {fileID: 102900000, guid: 564dba9b96cc0504e8f84dd9b16cad2b, type: 3}
+  - {fileID: 102900000, guid: f004ede87fb4f6c468153418bca4ed2a, type: 3}

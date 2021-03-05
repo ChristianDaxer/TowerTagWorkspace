@@ -1,0 +1,1 @@
+ cm log --fp cs:4727 --itemformat="{revid}|{path}{newline}" | grep .exr | sed 's/\\/\//g' | sed 's/ /\\ /g' | sed 's/|/ /g' | xargs -n 2 sh -c 'echo cm undelete revid:"$0" \"$1\";cm undelete revid:"$0" "$1"'

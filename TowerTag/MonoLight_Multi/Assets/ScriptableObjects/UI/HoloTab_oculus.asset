@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49294618d28bbf944a49454e4a660122, type: 3}
+  m_Name: HoloTab_oculus
+  m_EditorClassIdentifier: 
+  _activeMaterial: {fileID: 2100000, guid: 6e1c96852f6adbe4a8643cddc4b81965, type: 2}
+  _inactiveMaterial: {fileID: 2100000, guid: fde14f7b9730dff41af451c6440896a9, type: 2}
+  _activeImage: {fileID: 21300000, guid: a208db091f21ca445a6559decf549f1c, type: 3}
+  _inactiveImage: {fileID: 21300000, guid: 74bda38c51163f34faa4555ea16d0785, type: 3}
+  _innerTabXPadding: 50
+  _innerTabYPadding: 20

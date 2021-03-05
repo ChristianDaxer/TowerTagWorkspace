@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8faeb86a932d454d9ac5af3e28e9786, type: 3}
+  m_Name: EasyBot
+  m_EditorClassIdentifier: 
+  _enemyAttractiveness: 2
+  _enemyBaseAttractiveness: 1
+  _movementSpeed: 1
+  _rotationSpeed: 100
+  _towerHuggingMin: 0.4
+  _towerHuggingMax: 0.45
+  _reactionTime: 0.7
+  _memoryTimeSpan: 10
+  _recognizeOccupiedEnemyPillars: 0
+  _focusLowHealthEnemy: 0
+  _lowHealthThreshold: 0
+  _minShootFrequency: 3
+  _maxShootFrequency: 6
+  _aimImprecision: 0.03
+  _aimCorrectionFactor: 1.6
+  _headTiltAmount: 10
+  _recoil: 0.3
+  _shootDownWalls: 1
+  _suppressingFire: 1
+  _shootChance: 0.7
+  _jumpChance: 0.4
+  _counterFireChance: 0.6
+  _fleeChance: 0.6
+  _hideChance: 0.5

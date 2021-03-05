@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7264998424257661136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7055977530192072596}
+  m_Layer: 0
+  m_Name: Particles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7055977530192072596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7264998424257661136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4521244021892603850}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4517280330236038600
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7055977530192072596}
+    m_Modifications:
+    - target: {fileID: 1000013808538860, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012049601026, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012049601026, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012049601026, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012049601026, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012049601026, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012049601026, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012049601026, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012049601026, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.18431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.18823531
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5283019
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.4261303
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5224363
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000013169089298, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 199000010961438478, guid: 9de33005d01472a4fbe9d74ce99995d3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 859f24a48c0d8ea4bb65c00099015916, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9de33005d01472a4fbe9d74ce99995d3, type: 3}
+--- !u!4 &4521244021892603850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000012049601026, guid: 9de33005d01472a4fbe9d74ce99995d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4517280330236038600}
+  m_PrefabAsset: {fileID: 0}

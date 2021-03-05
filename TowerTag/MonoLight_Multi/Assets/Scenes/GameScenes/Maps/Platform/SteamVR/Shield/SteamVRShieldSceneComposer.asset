@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d053427773233a3428f999754eb1aa70, type: 3}
+  m_Name: SteamVRShieldSceneComposer
+  m_EditorClassIdentifier: 
+  compositionName: SteamVR_4v4_DM_Shield
+  scenes:
+  - {fileID: 102900000, guid: 47a793935ae3296498082b529f346d04, type: 3}
+  - {fileID: 102900000, guid: 786ce402e09a86e418ced57464e5dde1, type: 3}
+  - {fileID: 102900000, guid: 0c512b6d62fab61409adcc36580c2a4a, type: 3}
