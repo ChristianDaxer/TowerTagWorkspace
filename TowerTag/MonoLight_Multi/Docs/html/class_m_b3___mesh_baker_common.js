@@ -1,0 +1,28 @@
+var class_m_b3___mesh_baker_common =
+[
+    [ "_ValidateForUpdateSkinnedMeshBounds", "class_m_b3___mesh_baker_common.html#ae7bc5e00f51fbaa2bb2df5cc78bb9d51", null ],
+    [ "AddDeleteGameObjects", "class_m_b3___mesh_baker_common.html#a354d6701196a3fb7bfa68f46675c91d0", null ],
+    [ "AddDeleteGameObjectsByID", "class_m_b3___mesh_baker_common.html#a914cfaf797acb0f137aebd8dfa26f8d2", null ],
+    [ "Apply", "class_m_b3___mesh_baker_common.html#a414d6262ab94397254b0a5e5b9c94283", null ],
+    [ "Apply", "class_m_b3___mesh_baker_common.html#aa33f9ee60ba28e96a624511e337c5999", null ],
+    [ "ClearMesh", "class_m_b3___mesh_baker_common.html#ac1c35d07919d788ad60c591d34872b6d", null ],
+    [ "CombinedMeshContains", "class_m_b3___mesh_baker_common.html#ad3a1ac42267498f88afee8ec2f58894d", null ],
+    [ "DestroyMesh", "class_m_b3___mesh_baker_common.html#a471a0b13dfb869bdfbb5e97d9fd79567", null ],
+    [ "DestroyMeshEditor", "class_m_b3___mesh_baker_common.html#aafc2b3275406407d6ecb2716c0b10e4b", null ],
+    [ "EnableDisableSourceObjectRenderers", "class_m_b3___mesh_baker_common.html#ab3a33ffd5869911136224d1d22a461b2", null ],
+    [ "GetNumObjectsInCombined", "class_m_b3___mesh_baker_common.html#afc67d86bacfc8bab27f23afe79d42b74", null ],
+    [ "GetNumVerticesFor", "class_m_b3___mesh_baker_common.html#a76f1bd3cf85c01eeec54e557ba21a015", null ],
+    [ "GetObjectsToCombine", "class_m_b3___mesh_baker_common.html#a8c28c2a684d52244734d7877cc918733", null ],
+    [ "GetTextureBaker", "class_m_b3___mesh_baker_common.html#a321d8f01b93a9c32c7a6e47011bc4302", null ],
+    [ "UpdateGameObjects", "class_m_b3___mesh_baker_common.html#a79028b4be6e87e053a3ef63cc472754a", null ],
+    [ "UpdateSkinnedMeshApproximateBounds", "class_m_b3___mesh_baker_common.html#a38a468d80c0482c2fab97ece033c1fb2", null ],
+    [ "UpdateSkinnedMeshApproximateBoundsFromBones", "class_m_b3___mesh_baker_common.html#a9e914331643d50e167b66964ac5ae7d3", null ],
+    [ "UpdateSkinnedMeshApproximateBoundsFromBounds", "class_m_b3___mesh_baker_common.html#ad8ad39b8a3e2f02a02c63c740243e878", null ],
+    [ "bakeAssetsInPlaceFolderPath", "class_m_b3___mesh_baker_common.html#a824ca57ea6482f92a732fa4f3c173033", null ],
+    [ "clearBuffersAfterBake", "class_m_b3___mesh_baker_common.html#a220215e0d27faeabce60451e153690b1", null ],
+    [ "objsToMesh", "class_m_b3___mesh_baker_common.html#ab36637dbab547273b1d22fc90fc66e73", null ],
+    [ "resultPrefab", "class_m_b3___mesh_baker_common.html#a9869670fa89c024f3801f7692155eb61", null ],
+    [ "useObjsToMeshFromTexBaker", "class_m_b3___mesh_baker_common.html#a439e2e6cbe654f7c5c859b7f0be0d261", null ],
+    [ "meshCombiner", "class_m_b3___mesh_baker_common.html#a7b3753d117e386b0562b82f3f050c9e1", null ],
+    [ "textureBakeResults", "class_m_b3___mesh_baker_common.html#a80dd5d5a8bd1d59a61c9b07a441f1f20", null ]
+];

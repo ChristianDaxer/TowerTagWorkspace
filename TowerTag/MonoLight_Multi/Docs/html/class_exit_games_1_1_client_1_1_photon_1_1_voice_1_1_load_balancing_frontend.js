@@ -1,0 +1,25 @@
+var class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend =
+[
+    [ "LoadBalancingFrontend", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#a16b2051e50e04805ae05ca2ed5e50708", null ],
+    [ "AssignChannel", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#ae9a381857bdd7518c32cd726a5132907", null ],
+    [ "ChangeAudioGroups", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#aafb7aa200e0765ee4df694c510d0e83a", null ],
+    [ "ChannelIdStr", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#a7670eda02ed1fd907ee99187ba85f876", null ],
+    [ "Dispose", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#a8c427486f02b1ce8df230f937954d2fd", null ],
+    [ "IsChannelJoined", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#abd73961f0e182de1379f6d2ac1d9f98d", null ],
+    [ "LogDebug", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#ae04931463be50155e8a0dfde03f5c9fd", null ],
+    [ "LogError", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#aba2c451f2b238da2c637a1578c769ad5", null ],
+    [ "LogInfo", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#a56876f387b193799860835d624b96a1b", null ],
+    [ "LogWarning", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#ae3404a57cca87c14619cb578f241fc5e", null ],
+    [ "PlayerIdStr", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#ac7e14fe11419dbc666dbe62f39d8db1c", null ],
+    [ "SendDebugEchoVoicesInfo", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#a247bd0af2ee63c829be452b60953ac60", null ],
+    [ "SendFrame", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#ae6a4c1de2ddaefa870cc47df0d12fad8", null ],
+    [ "SendVoiceRemove", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#a94a6a03c5f7db063cb16e74bab02f0f2", null ],
+    [ "SendVoicesInfo", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#a0e7c72064186040e3aa3a0f7ea7e5e5b", null ],
+    [ "Service", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#aee2e38d08ca33bfc0a8e4903edae0184", null ],
+    [ "SetDebugEchoMode", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#ad2d682d850563b644dab3ba3502e6c4a", null ],
+    [ "voiceClient", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#a744b257c347a92b9d6c2a044c89989a6", null ],
+    [ "GlobalAudioGroup", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#ac4439ea8fba08e379d25f3c18ee83b46", null ],
+    [ "OnEventAction", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#ac545dbbc3d8d7fb43d74a1b6dc20e033", null ],
+    [ "OnStateChangeAction", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#aeac36ac9134343682942657036b37aeb", null ],
+    [ "VoiceClient", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_load_balancing_frontend.html#a7816ac244a2b5f7c5740b85e9b235f34", null ]
+];

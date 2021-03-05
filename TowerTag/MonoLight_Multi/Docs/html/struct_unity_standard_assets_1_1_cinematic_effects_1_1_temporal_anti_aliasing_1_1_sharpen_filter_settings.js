@@ -1,0 +1,4 @@
+var struct_unity_standard_assets_1_1_cinematic_effects_1_1_temporal_anti_aliasing_1_1_sharpen_filter_settings =
+[
+    [ "amount", "struct_unity_standard_assets_1_1_cinematic_effects_1_1_temporal_anti_aliasing_1_1_sharpen_filter_settings.html#a848111322c9cac1168624e82e2523119", null ]
+];

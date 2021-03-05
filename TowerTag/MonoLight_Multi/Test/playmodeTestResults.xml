@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="129" result="Failed(Child)" total="129" passed="128" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:44Z" duration="4,2725225">
+  <test-suite type="TestSuite" id="1000" name="Tower Tag" fullname="Tower Tag" runstate="Runnable" testcasecount="129" result="Failed" site="Child" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:44Z" duration="4.272523" total="129" passed="128" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1097" name="SOESTest.dll" fullname="D:/PlasticSCM/Workspaces/TowerTag/MonoLight_Multi/Library/ScriptAssemblies/SOESTest.dll" runstate="Runnable" testcasecount="83" result="Failed" site="Child" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:41Z" duration="1.141360" total="83" passed="82" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="40888" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1098" name="SOEventSystem" fullname="SOEventSystem" runstate="Runnable" testcasecount="83" result="Failed" site="Child" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:41Z" duration="0.964967" total="83" passed="82" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1099" name="Tests" fullname="SOEventSystem.Tests" runstate="Runnable" testcasecount="83" result="Failed" site="Child" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:41Z" duration="0.835554" total="83" passed="82" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="AddressableAssetTest" fullname="SOEventSystem.Tests.AddressableAssetTest" classname="SOEventSystem.Tests.AddressableAssetTest" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.049085" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="ShouldRegister" fullname="SOEventSystem.Tests.AddressableAssetTest.ShouldRegister" methodname="ShouldRegister" classname="SOEventSystem.Tests.AddressableAssetTest" runstate="Runnable" seed="1739157156" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.019544" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="ShouldUnregister" fullname="SOEventSystem.Tests.AddressableAssetTest.ShouldUnregister" methodname="ShouldUnregister" classname="SOEventSystem.Tests.AddressableAssetTest" runstate="Runnable" seed="1043203905" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.014544" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1004" name="ButtonEventTriggerTest" fullname="SOEventSystem.Tests.ButtonEventTriggerTest" classname="SOEventSystem.Tests.ButtonEventTriggerTest" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.106884" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1007" name="ShouldNotThrowWithoutSharedEvent" fullname="SOEventSystem.Tests.ButtonEventTriggerTest.ShouldNotThrowWithoutSharedEvent" methodname="ShouldNotThrowWithoutSharedEvent" classname="SOEventSystem.Tests.ButtonEventTriggerTest" runstate="Runnable" seed="1693579893" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.019008" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="ShouldNotTriggerEventAfterANewOneWasAssigned" fullname="SOEventSystem.Tests.ButtonEventTriggerTest.ShouldNotTriggerEventAfterANewOneWasAssigned" methodname="ShouldNotTriggerEventAfterANewOneWasAssigned" classname="SOEventSystem.Tests.ButtonEventTriggerTest" runstate="Runnable" seed="232596904" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.036580" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="ShouldNotTriggerEventAfterItWasUnassigned" fullname="SOEventSystem.Tests.ButtonEventTriggerTest.ShouldNotTriggerEventAfterItWasUnassigned" methodname="ShouldNotTriggerEventAfterItWasUnassigned" classname="SOEventSystem.Tests.ButtonEventTriggerTest" runstate="Runnable" seed="824213136" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.013390" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="ShouldRequireButtonComponent" fullname="SOEventSystem.Tests.ButtonEventTriggerTest.ShouldRequireButtonComponent" methodname="ShouldRequireButtonComponent" classname="SOEventSystem.Tests.ButtonEventTriggerTest" runstate="Runnable" seed="1404875937" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.016203" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="ShouldTriggerSharedEventOnClick" fullname="SOEventSystem.Tests.ButtonEventTriggerTest.ShouldTriggerSharedEventOnClick" methodname="ShouldTriggerSharedEventOnClick" classname="SOEventSystem.Tests.ButtonEventTriggerTest" runstate="Runnable" seed="1580485065" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.017025" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1010" name="SerializedSharedVariableTest" fullname="SOEventSystem.Tests.SerializedSharedVariableTest" classname="SOEventSystem.Tests.SerializedSharedVariableTest" runstate="Runnable" testcasecount="4" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.070435" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1012" name="ShouldDeserialize" fullname="SOEventSystem.Tests.SerializedSharedVariableTest.ShouldDeserialize" methodname="ShouldDeserialize" classname="SOEventSystem.Tests.SerializedSharedVariableTest" runstate="Runnable" seed="1284139788" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.022955" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1013" name="ShouldRegister" fullname="SOEventSystem.Tests.SerializedSharedVariableTest.ShouldRegister" methodname="ShouldRegister" classname="SOEventSystem.Tests.SerializedSharedVariableTest" runstate="Runnable" seed="400069739" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.008930" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="ShouldSerializeAutomatically" fullname="SOEventSystem.Tests.SerializedSharedVariableTest.ShouldSerializeAutomatically" methodname="ShouldSerializeAutomatically" classname="SOEventSystem.Tests.SerializedSharedVariableTest" runstate="Runnable" seed="269910502" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.009484" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1014" name="ShouldUnregister" fullname="SOEventSystem.Tests.SerializedSharedVariableTest.ShouldUnregister" methodname="ShouldUnregister" classname="SOEventSystem.Tests.SerializedSharedVariableTest" runstate="Runnable" seed="1561592531" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.025343" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1015" name="SharedBoolDependentTest" fullname="SOEventSystem.Tests.SharedBoolDependentTest" classname="SOEventSystem.Tests.SharedBoolDependentTest" runstate="Runnable" testcasecount="6" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.064291" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1021" name="ShouldActivateTargetWhenFalse" fullname="SOEventSystem.Tests.SharedBoolDependentTest.ShouldActivateTargetWhenFalse" methodname="ShouldActivateTargetWhenFalse" classname="SOEventSystem.Tests.SharedBoolDependentTest" runstate="Runnable" seed="721923888" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.013513" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1019" name="ShouldActivateTargetWhenTrue" fullname="SOEventSystem.Tests.SharedBoolDependentTest.ShouldActivateTargetWhenTrue" methodname="ShouldActivateTargetWhenTrue" classname="SOEventSystem.Tests.SharedBoolDependentTest" runstate="Runnable" seed="1832368108" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.009318" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="ShouldDeactiveTargetWhenFalse" fullname="SOEventSystem.Tests.SharedBoolDependentTest.ShouldDeactiveTargetWhenFalse" methodname="ShouldDeactiveTargetWhenFalse" classname="SOEventSystem.Tests.SharedBoolDependentTest" runstate="Runnable" seed="437142327" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.009443" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1020" name="ShouldDeactiveTargetWhenTrue" fullname="SOEventSystem.Tests.SharedBoolDependentTest.ShouldDeactiveTargetWhenTrue" methodname="ShouldDeactiveTargetWhenTrue" classname="SOEventSystem.Tests.SharedBoolDependentTest" runstate="Runnable" seed="403031596" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.009392" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1017" name="ShouldToggleBackAndForthWithBool" fullname="SOEventSystem.Tests.SharedBoolDependentTest.ShouldToggleBackAndForthWithBool" methodname="ShouldToggleBackAndForthWithBool" classname="SOEventSystem.Tests.SharedBoolDependentTest" runstate="Runnable" seed="1657314410" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.009412" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1018" name="ShouldToggleBackAndForthWithPolicy" fullname="SOEventSystem.Tests.SharedBoolDependentTest.ShouldToggleBackAndForthWithPolicy" methodname="ShouldToggleBackAndForthWithPolicy" classname="SOEventSystem.Tests.SharedBoolDependentTest" runstate="Runnable" seed="2058850560" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.008333" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1022" name="SharedEventTest" fullname="SOEventSystem.Tests.SharedEventTest" classname="SOEventSystem.Tests.SharedEventTest" runstate="Runnable" testcasecount="7" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.020922" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1024" name="ShouldBeCastToFalseWhenNull" fullname="SOEventSystem.Tests.SharedEventTest.ShouldBeCastToFalseWhenNull" methodname="ShouldBeCastToFalseWhenNull" classname="SOEventSystem.Tests.SharedEventTest" runstate="Runnable" seed="970926926" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.002369" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1025" name="ShouldBeCastToTrueWhenNotNull" fullname="SOEventSystem.Tests.SharedEventTest.ShouldBeCastToTrueWhenNotNull" methodname="ShouldBeCastToTrueWhenNotNull" classname="SOEventSystem.Tests.SharedEventTest" runstate="Runnable" seed="1113049406" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000563" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1023" name="ShouldBeCreatable" fullname="SOEventSystem.Tests.SharedEventTest.ShouldBeCreatable" methodname="ShouldBeCreatable" classname="SOEventSystem.Tests.SharedEventTest" runstate="Runnable" seed="1973194985" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000395" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1028" name="ShouldLogWhenDebugFlagIsSet" fullname="SOEventSystem.Tests.SharedEventTest.ShouldLogWhenDebugFlagIsSet" methodname="ShouldLogWhenDebugFlagIsSet" classname="SOEventSystem.Tests.SharedEventTest" runstate="Runnable" seed="10415114" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.006693" asserts="0">
+              <properties />
+              <output><![CDATA[SOEventSystem.Tests.SharedEventTest triggered blubb
+]]></output>
+            </test-case>
+            <test-case id="1029" name="ShouldNotLogByDefault" fullname="SOEventSystem.Tests.SharedEventTest.ShouldNotLogByDefault" methodname="ShouldNotLogByDefault" classname="SOEventSystem.Tests.SharedEventTest" runstate="Runnable" seed="965724595" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000510" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1027" name="ShouldTriggerEvent" fullname="SOEventSystem.Tests.SharedEventTest.ShouldTriggerEvent" methodname="ShouldTriggerEvent" classname="SOEventSystem.Tests.SharedEventTest" runstate="Runnable" seed="740419856" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.005609" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1026" name="ShouldTriggerEventWithoutListeners" fullname="SOEventSystem.Tests.SharedEventTest.ShouldTriggerEventWithoutListeners" methodname="ShouldTriggerEventWithoutListeners" classname="SOEventSystem.Tests.SharedEventTest" runstate="Runnable" seed="594999520" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000512" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1030" name="SharedIntTest" fullname="SOEventSystem.Tests.SharedIntTest" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" testcasecount="11" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.016040" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1036" name="ShouldBeCastableToInt" fullname="SOEventSystem.Tests.SharedIntTest.ShouldBeCastableToInt" methodname="ShouldBeCastableToInt" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="1580773917" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.001818" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1031" name="ShouldBeCastToFalseWhenNull" fullname="SOEventSystem.Tests.SharedIntTest.ShouldBeCastToFalseWhenNull" methodname="ShouldBeCastToFalseWhenNull" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="450532683" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000479" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1033" name="ShouldBeCastToTrueWhenNotNull" fullname="SOEventSystem.Tests.SharedIntTest.ShouldBeCastToTrueWhenNotNull" methodname="ShouldBeCastToTrueWhenNotNull" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="1692806563" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000646" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1032" name="ShouldBeCreatable" fullname="SOEventSystem.Tests.SharedIntTest.ShouldBeCreatable" methodname="ShouldBeCreatable" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="1883938070" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000583" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1034" name="ShouldHaveDefaultValueAfterCreation" fullname="SOEventSystem.Tests.SharedIntTest.ShouldHaveDefaultValueAfterCreation" methodname="ShouldHaveDefaultValueAfterCreation" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="840241867" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000535" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1035" name="ShouldHoldSetValue" fullname="SOEventSystem.Tests.SharedIntTest.ShouldHoldSetValue" methodname="ShouldHoldSetValue" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="372745613" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000520" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1038" name="ShouldNotRaiseChangeEventOnSetUnchanged" fullname="SOEventSystem.Tests.SharedIntTest.ShouldNotRaiseChangeEventOnSetUnchanged" methodname="ShouldNotRaiseChangeEventOnSetUnchanged" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="2057849377" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000837" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1037" name="ShouldRaiseChangeEvent" fullname="SOEventSystem.Tests.SharedIntTest.ShouldRaiseChangeEvent" methodname="ShouldRaiseChangeEvent" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="132374678" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.001153" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1041" name="ShouldRaiseChangeEventOnValueChange" fullname="SOEventSystem.Tests.SharedIntTest.ShouldRaiseChangeEventOnValueChange" methodname="ShouldRaiseChangeEventOnValueChange" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="552152249" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.001193" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1040" name="ShouldRaiseSetEventOnSetUnchanged" fullname="SOEventSystem.Tests.SharedIntTest.ShouldRaiseSetEventOnSetUnchanged" methodname="ShouldRaiseSetEventOnSetUnchanged" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="356474897" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.001152" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1039" name="ShouldRaiseSetEventOnValueChange" fullname="SOEventSystem.Tests.SharedIntTest.ShouldRaiseSetEventOnValueChange" methodname="ShouldRaiseSetEventOnValueChange" classname="SOEventSystem.Tests.SharedIntTest" runstate="Runnable" seed="478917538" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000997" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1042" name="SharedListTest" fullname="SOEventSystem.Tests.SharedListTest" classname="SOEventSystem.Tests.SharedListTest" runstate="Runnable" testcasecount="7" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:41Z" duration="0.014507" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1044" name="ShouldAddItem" fullname="SOEventSystem.Tests.SharedListTest.ShouldAddItem" methodname="ShouldAddItem" classname="SOEventSystem.Tests.SharedListTest" runstate="Runnable" seed="1944375161" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.003427" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1043" name="ShouldBeEmptyAfterCreation" fullname="SOEventSystem.Tests.SharedListTest.ShouldBeEmptyAfterCreation" methodname="ShouldBeEmptyAfterCreation" classname="SOEventSystem.Tests.SharedListTest" runstate="Runnable" seed="111581473" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.001165" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1046" name="ShouldClear" fullname="SOEventSystem.Tests.SharedListTest.ShouldClear" methodname="ShouldClear" classname="SOEventSystem.Tests.SharedListTest" runstate="Runnable" seed="851327447" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000892" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1047" name="ShouldInsertItem" fullname="SOEventSystem.Tests.SharedListTest.ShouldInsertItem" methodname="ShouldInsertItem" classname="SOEventSystem.Tests.SharedListTest" runstate="Runnable" seed="488986430" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.000986" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1048" name="ShouldRaiseEventOnItemAdd" fullname="SOEventSystem.Tests.SharedListTest.ShouldRaiseEventOnItemAdd" methodname="ShouldRaiseEventOnItemAdd" classname="SOEventSystem.Tests.SharedListTest" runstate="Runnable" seed="1544752658" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:40Z" duration="0.001672" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1049" name="ShouldRaiseEventOnItemRemove" fullname="SOEventSystem.Tests.SharedListTest.ShouldRaiseEventOnItemRemove" methodname="ShouldRaiseEventOnItemRemove" classname="SOEventSystem.Tests.SharedListTest" runstate="Runnable" seed="809309523" result="Passed" start-time="2019-04-04 14:38:40Z" end-time="2019-04-04 14:38:41Z" duration="0.001757" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1045" name="ShouldRemoveItem" fullname="SOEventSystem.Tests.SharedListTest.ShouldRemoveItem" methodname="ShouldRemoveItem" classname="SOEventSystem.Tests.SharedListTest" runstate="Runnable" seed="1287318880" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000793" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1050" name="SharedReferenceTest" fullname="SOEventSystem.Tests.SharedReferenceTest" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" testcasecount="10" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.012260" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1053" name="ShouldImplicitlyCastPrivateValue" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldImplicitlyCastPrivateValue" methodname="ShouldImplicitlyCastPrivateValue" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="780242888" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000824" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1056" name="ShouldImplicitlyCastSharedValue" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldImplicitlyCastSharedValue" methodname="ShouldImplicitlyCastSharedValue" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="1845337381" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.001183" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1058" name="ShouldInitializeSharedVariable" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldInitializeSharedVariable" methodname="ShouldInitializeSharedVariable" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="1090162847" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000715" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1059" name="ShouldNotChangePrivateValueWhenUsingShared" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldNotChangePrivateValueWhenUsingShared" methodname="ShouldNotChangePrivateValueWhenUsingShared" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="1040842142" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000614" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1060" name="ShouldNotChangeSharedValueWhenUsingPrivate" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldNotChangeSharedValueWhenUsingPrivate" methodname="ShouldNotChangeSharedValueWhenUsingPrivate" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="923527711" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000663" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1057" name="ShouldReturnConfiguredValue" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldReturnConfiguredValue" methodname="ShouldReturnConfiguredValue" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="176986331" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000690" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1051" name="ShouldReturnPrivateValue" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldReturnPrivateValue" methodname="ShouldReturnPrivateValue" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="82981876" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000395" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1055" name="ShouldReturnSharedValue" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldReturnSharedValue" methodname="ShouldReturnSharedValue" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="938205097" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000631" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1052" name="ShouldSetPrivateValue" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldSetPrivateValue" methodname="ShouldSetPrivateValue" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="1723810093" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000357" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1054" name="ShouldSetSharedValue" fullname="SOEventSystem.Tests.SharedReferenceTest.ShouldSetSharedValue" methodname="ShouldSetSharedValue" classname="SOEventSystem.Tests.SharedReferenceTest" runstate="Runnable" seed="530512876" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000616" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1061" name="SharedSingletonTest" fullname="SOEventSystem.Tests.SharedSingletonTest" classname="SOEventSystem.Tests.SharedSingletonTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.072483" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1063" name="ShouldLoadSingletonViaSceneLoad" fullname="SOEventSystem.Tests.SharedSingletonTest.ShouldLoadSingletonViaSceneLoad" methodname="ShouldLoadSingletonViaSceneLoad" classname="SOEventSystem.Tests.SharedSingletonTest" runstate="Runnable" seed="1588195143" result="Failed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.012644" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'SingletonTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[0x0000000141417F08 (Unity) StackWalker::GetCurrentCallstack
+0x000000014141E3B6 (Unity) StackWalker::ShowCallstack
+0x0000000141301C3B (Unity) GetStacktrace
+0x000000014014346E (Unity) DebugStringToFile
+0x00000001409C4F85 (Unity) RuntimeSceneManager::LoadSceneAsyncByNameOrBuildIndex
+0x0000000140B617D6 (Unity) SceneManagerBindings::LoadSceneAsyncNameIndexInternal
+0x000000014180B9D7 (Unity) SceneManager_CUSTOM_LoadSceneAsyncNameIndexInternal_Injected
+0x00000000540ECABB (Mono JIT Code) (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager:LoadSceneAsyncNameIndexInternal_Injected (string,int,UnityEngine.SceneManagement.LoadSceneParameters&,bool)
+0x00000000540EC97B (Mono JIT Code) UnityEngine.SceneManagement.SceneManager:LoadSceneAsyncNameIndexInternal (string,int,UnityEngine.SceneManagement.LoadSceneParameters,bool)
+0x00000000540EC89B (Mono JIT Code) [SceneManager.cs:180] UnityEngine.SceneManagement.SceneManager:LoadSceneAsync (string,UnityEngine.SceneManagement.LoadSceneParameters)
+0x00000000540EC643 (Mono JIT Code) [SceneManager.cs:168] UnityEngine.SceneManagement.SceneManager:LoadSceneAsync (string,UnityEngine.SceneManagement.LoadSceneMode)
+0x00000000540EBEC3 (Mono JIT Code) [SharedSingletonTest.cs:39] SOEventSystem.Tests.SharedSingletonTest/<ShouldLoadSingletonViaSceneLoad>d__3:MoveNext ()
+0x00000000531A1BA4 (Mono JIT Code) [TestEnumerator.cs:29] UnityEngine.TestTools.TestEnumerator/<Execute>c__Iterator0:MoveNext ()
+0x000000005219C84C (Mono JIT Code) [EnumerableTestMethodCommand.cs:36] UnityEngine.TestTools.EnumerableTestMethodCommand/<ExecuteEnumerable>c__Iterator0:MoveNext ()
+0x000000005219B6EE (Mono JIT Code) [UnityLogCheckDelegatingCommand.cs:67] UnityEngine.TestRunner.NUnitExtensions.Runner.UnityLogCheckDelegatingCommand/<ExecuteEnumerable>c__Iterator0:MoveNext ()
+0x0000000052196518 (Mono JIT Code) [SetUpTearDownCommand.cs:55] UnityEngine.TestTools.SetUpTearDownCommand/<ExecuteEnumerable>c__Iterator0:MoveNext ()
+0x0000000052193E4D (Mono JIT Code) [EnumerableSetUpTearDownCommand.cs:101] UnityEngine.TestTools.EnumerableSetUpTearDownCommand/<ExecuteEnumerable>c__Iterator0:MoveNext ()
+0x000000004BEE6F00 (Mono JIT Code) [Coroutines.cs:17] UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+0x000000004BEE70F0 (Mono JIT Code) (wrapper runtime-invoke) <Module>:runtime_invoke_void_object_intptr (object,intptr,intptr,intptr)
+0x00007FF9CE59BE6B (mono-2.0-bdwgc) [mini-runtime.c:2809] mono_jit_runtime_invoke
+0x00007FF9CE521E32 (mono-2.0-bdwgc) [object.c:2919] do_runtime_invoke
+0x00007FF9CE52AE3F (mono-2.0-bdwgc) [object.c:2966] mono_runtime_invoke
+0x0000000140C03F0A (Unity) scripting_method_invoke
+0x0000000140BF44DA (Unity) ScriptingInvocation::Invoke
+0x0000000140BC7EB5 (Unity) Coroutine::Run
+0x00000001406F542E (Unity) DelayedCallManager::Update
+0x0000000140961CEC (Unity) `InitPlayerLoopCallbacks'::`2'::UpdateScriptRunDelayedDynamicFrameRateRegistrator::Forward
+0x00000001409608C7 (Unity) ExecutePlayerLoop
+0x0000000140960993 (Unity) ExecutePlayerLoop
+0x0000000140963C51 (Unity) PlayerLoop
+0x000000014134042F (Unity) PlayerLoopController::UpdateScene
+0x000000014133E9E0 (Unity) Application::TickTimer
+0x000000014149AC0B (Unity) MainMessageLoop
+0x000000014149C8A6 (Unity) WinMain
+0x0000000142486CEA (Unity) __scrt_common_main_seh
+0x00007FFA3D6D3DC4 (KERNEL32) BaseThreadInitThunk
+0x00007FFA3FB23691 (ntdll) RtlUserThreadStart
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'SingletonTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1065" name="ShouldLogWarningForMultipleInstances" fullname="SOEventSystem.Tests.SharedSingletonTest.ShouldLogWarningForMultipleInstances" methodname="ShouldLogWarningForMultipleInstances" classname="SOEventSystem.Tests.SharedSingletonTest" runstate="Runnable" seed="1110376879" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.022611" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[There are multiple instances of singleton type SOEventSystem.Tests.TestSingleton. Returning a random instance.
+]]></output>
+            </test-case>
+            <test-case id="1064" name="ShouldReturnDynamicallyCreatedInstance" fullname="SOEventSystem.Tests.SharedSingletonTest.ShouldReturnDynamicallyCreatedInstance" methodname="ShouldReturnDynamicallyCreatedInstance" classname="SOEventSystem.Tests.SharedSingletonTest" runstate="Runnable" seed="2066671538" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.024282" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1062" name="ShouldReturnNullSingletonInstance" fullname="SOEventSystem.Tests.SharedSingletonTest.ShouldReturnNullSingletonInstance" methodname="ShouldReturnNullSingletonInstance" classname="SOEventSystem.Tests.SharedSingletonTest" runstate="Runnable" seed="1217754364" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.004385" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1066" name="SharedStringTest" fullname="SOEventSystem.Tests.SharedStringTest" classname="SOEventSystem.Tests.SharedStringTest" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.003512" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1067" name="ShouldSetValue" fullname="SOEventSystem.Tests.SharedStringTest.ShouldSetValue" methodname="ShouldSetValue" classname="SOEventSystem.Tests.SharedStringTest" runstate="Runnable" seed="1539840065" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000975" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1068" name="ShouldTriggerChangeEventWhenValueChanged" fullname="SOEventSystem.Tests.SharedStringTest.ShouldTriggerChangeEventWhenValueChanged" methodname="ShouldTriggerChangeEventWhenValueChanged" classname="SOEventSystem.Tests.SharedStringTest" runstate="Runnable" seed="412473842" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.001054" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1069" name="SharedVariableDependentTest" fullname="SOEventSystem.Tests.SharedVariableDependentTest" classname="SOEventSystem.Tests.SharedVariableDependentTest" runstate="Runnable" testcasecount="7" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.132272" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1070" name="ShouldActivateOnStart" fullname="SOEventSystem.Tests.SharedVariableDependentTest.ShouldActivateOnStart" methodname="ShouldActivateOnStart" classname="SOEventSystem.Tests.SharedVariableDependentTest" runstate="Runnable" seed="95079850" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.018654" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1072" name="ShouldActivateWhenValueChangedToContained" fullname="SOEventSystem.Tests.SharedVariableDependentTest.ShouldActivateWhenValueChangedToContained" methodname="ShouldActivateWhenValueChangedToContained" classname="SOEventSystem.Tests.SharedVariableDependentTest" runstate="Runnable" seed="1884359059" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.016133" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1074" name="ShouldActivateWhenValueChangedToNotContained" fullname="SOEventSystem.Tests.SharedVariableDependentTest.ShouldActivateWhenValueChangedToNotContained" methodname="ShouldActivateWhenValueChangedToNotContained" classname="SOEventSystem.Tests.SharedVariableDependentTest" runstate="Runnable" seed="53495718" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.016377" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1071" name="ShouldDeactivateOnStart" fullname="SOEventSystem.Tests.SharedVariableDependentTest.ShouldDeactivateOnStart" methodname="ShouldDeactivateOnStart" classname="SOEventSystem.Tests.SharedVariableDependentTest" runstate="Runnable" seed="872354058" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.017362" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1073" name="ShouldDeactivateWhenValueChangedToContained" fullname="SOEventSystem.Tests.SharedVariableDependentTest.ShouldDeactivateWhenValueChangedToContained" methodname="ShouldDeactivateWhenValueChangedToContained" classname="SOEventSystem.Tests.SharedVariableDependentTest" runstate="Runnable" seed="1548835417" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.017433" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1075" name="ShouldDeactivateWhenValueChangedToNotContained" fullname="SOEventSystem.Tests.SharedVariableDependentTest.ShouldDeactivateWhenValueChangedToNotContained" methodname="ShouldDeactivateWhenValueChangedToNotContained" classname="SOEventSystem.Tests.SharedVariableDependentTest" runstate="Runnable" seed="773532980" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.020319" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1076" name="ShouldHandleNullControlledObject" fullname="SOEventSystem.Tests.SharedVariableDependentTest.ShouldHandleNullControlledObject" methodname="ShouldHandleNullControlledObject" classname="SOEventSystem.Tests.SharedVariableDependentTest" runstate="Runnable" seed="73059125" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.020207" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1077" name="SharedVariableListenerTest" fullname="SOEventSystem.Tests.SharedVariableListenerTest" classname="SOEventSystem.Tests.SharedVariableListenerTest" runstate="Runnable" testcasecount="6" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.157756" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1078" name="ShouldNotRespondAtAll" fullname="SOEventSystem.Tests.SharedVariableListenerTest.ShouldNotRespondAtAll" methodname="ShouldNotRespondAtAll" classname="SOEventSystem.Tests.SharedVariableListenerTest" runstate="Runnable" seed="653032677" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.022012" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1080" name="ShouldNotRespondToChangesOfPreviouslyListenedToVariable" fullname="SOEventSystem.Tests.SharedVariableListenerTest.ShouldNotRespondToChangesOfPreviouslyListenedToVariable" methodname="ShouldNotRespondToChangesOfPreviouslyListenedToVariable" classname="SOEventSystem.Tests.SharedVariableListenerTest" runstate="Runnable" seed="2121500895" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.026506" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1082" name="ShouldNotRespondToSetUnchangedWhenListeningToChanges" fullname="SOEventSystem.Tests.SharedVariableListenerTest.ShouldNotRespondToSetUnchangedWhenListeningToChanges" methodname="ShouldNotRespondToSetUnchangedWhenListeningToChanges" classname="SOEventSystem.Tests.SharedVariableListenerTest" runstate="Runnable" seed="42974834" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.025114" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1079" name="ShouldRespondToChanges" fullname="SOEventSystem.Tests.SharedVariableListenerTest.ShouldRespondToChanges" methodname="ShouldRespondToChanges" classname="SOEventSystem.Tests.SharedVariableListenerTest" runstate="Runnable" seed="1932889375" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.025227" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1081" name="ShouldRespondToChangesWhenListeningToSet" fullname="SOEventSystem.Tests.SharedVariableListenerTest.ShouldRespondToChangesWhenListeningToSet" methodname="ShouldRespondToChangesWhenListeningToSet" classname="SOEventSystem.Tests.SharedVariableListenerTest" runstate="Runnable" seed="2109943941" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.028440" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+            <test-case id="1083" name="ShouldRespondToSet" fullname="SOEventSystem.Tests.SharedVariableListenerTest.ShouldRespondToSet" methodname="ShouldRespondToSet" classname="SOEventSystem.Tests.SharedVariableListenerTest" runstate="Runnable" seed="1578482099" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.025369" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1084" name="SharedVariableTest" fullname="SOEventSystem.Tests.SharedVariableTest" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" testcasecount="12" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.025819" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1088" name="ShouldBeCastableToTypeOfValue" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldBeCastableToTypeOfValue" methodname="ShouldBeCastableToTypeOfValue" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="1444313309" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000983" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1085" name="ShouldBeCreatable" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldBeCreatable" methodname="ShouldBeCreatable" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="1612274162" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000642" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1096" name="ShouldCreate" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldCreate" methodname="ShouldCreate" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="62146926" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.001069" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1095" name="ShouldDefaultToValueDefault" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldDefaultToValueDefault" methodname="ShouldDefaultToValueDefault" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="1531359111" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.001112" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1087" name="ShouldHaveSetValue" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldHaveSetValue" methodname="ShouldHaveSetValue" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="1401047174" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000977" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1086" name="ShouldHaveValueNullByDefault" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldHaveValueNullByDefault" methodname="ShouldHaveValueNullByDefault" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="1297250744" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.000882" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1092" name="ShouldLogWhenDebugFlagIsChanged" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldLogWhenDebugFlagIsChanged" methodname="ShouldLogWhenDebugFlagIsChanged" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="1995693965" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.003651" asserts="0">
+              <properties />
+              <output><![CDATA[SOEventSystem.Tests.SharedVariableTest changed blubb to SOEventSystem.Tests.TestClass
+]]></output>
+            </test-case>
+            <test-case id="1093" name="ShouldLogWhenDebugFlagIsSetToUnchanged" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldLogWhenDebugFlagIsSetToUnchanged" methodname="ShouldLogWhenDebugFlagIsSetToUnchanged" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="1176414128" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.003581" asserts="0">
+              <properties />
+              <output><![CDATA[SOEventSystem.Tests.SharedVariableTest set blubb to the same value SOEventSystem.Tests.TestClass
+]]></output>
+            </test-case>
+            <test-case id="1094" name="ShouldNotLogByDefault" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldNotLogByDefault" methodname="ShouldNotLogByDefault" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="126355392" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.001362" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1091" name="ShouldNotRaiseChangeEventOnSetUnchanged" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldNotRaiseChangeEventOnSetUnchanged" methodname="ShouldNotRaiseChangeEventOnSetUnchanged" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="785323745" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.001249" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1089" name="ShouldRaiseChangeEventOnSet" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldRaiseChangeEventOnSet" methodname="ShouldRaiseChangeEventOnSet" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="1051151563" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.001610" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1090" name="ShouldRaiseChangeEventOnValueChange" fullname="SOEventSystem.Tests.SharedVariableTest.ShouldRaiseChangeEventOnValueChange" methodname="ShouldRaiseChangeEventOnValueChange" classname="SOEventSystem.Tests.SharedVariableTest" runstate="Runnable" seed="847141356" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.001429" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1133" name="TowerTagTests.dll" fullname="D:/PlasticSCM/Workspaces/TowerTag/MonoLight_Multi/Library/ScriptAssemblies/TowerTagTests.dll" runstate="Runnable" testcasecount="23" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:44Z" duration="2.605445" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="40888" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+      </properties>
+      <test-suite type="TestFixture" id="1105" name="CommandLineArgumentsProcessorTest" fullname="CommandLineArgumentsProcessorTest" classname="CommandLineArgumentsProcessorTest" runstate="Runnable" testcasecount="6" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.037086" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1111" name="ShouldLogWarningForConflictingSettings" fullname="CommandLineArgumentsProcessorTest.ShouldLogWarningForConflictingSettings" methodname="ShouldLogWarningForConflictingSettings" classname="CommandLineArgumentsProcessorTest" runstate="Runnable" seed="1683510330" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.006981" asserts="0">
+          <properties />
+          <output><![CDATA[14:38:41.967: Conflicting settings for controller type
+]]></output>
+        </test-case>
+        <test-case id="1108" name="ShouldSetControllerTypeAdmin" fullname="CommandLineArgumentsProcessorTest.ShouldSetControllerTypeAdmin" methodname="ShouldSetControllerTypeAdmin" classname="CommandLineArgumentsProcessorTest" runstate="Runnable" seed="184335256" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.005151" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1106" name="ShouldSetControllerTypeAI" fullname="CommandLineArgumentsProcessorTest.ShouldSetControllerTypeAI" methodname="ShouldSetControllerTypeAI" classname="CommandLineArgumentsProcessorTest" runstate="Runnable" seed="1312403746" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.004555" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1109" name="ShouldSetControllerTypeFPS" fullname="CommandLineArgumentsProcessorTest.ShouldSetControllerTypeFPS" methodname="ShouldSetControllerTypeFPS" classname="CommandLineArgumentsProcessorTest" runstate="Runnable" seed="520098611" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.004539" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1110" name="ShouldSetControllerTypePOController" fullname="CommandLineArgumentsProcessorTest.ShouldSetControllerTypePOController" methodname="ShouldSetControllerTypePOController" classname="CommandLineArgumentsProcessorTest" runstate="Runnable" seed="1356237542" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.004520" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1107" name="ShouldSetControllerTypeVR" fullname="CommandLineArgumentsProcessorTest.ShouldSetControllerTypeVR" methodname="ShouldSetControllerTypeVR" classname="CommandLineArgumentsProcessorTest" runstate="Runnable" seed="2103750503" result="Passed" start-time="2019-04-04 14:38:41Z" end-time="2019-04-04 14:38:41Z" duration="0.004462" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1112" name="ConfigurationManagerTest" fullname="ConfigurationManagerTest" classname="ConfigurationManagerTest" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.061437" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1114" name="ShouldWriteAndReadConfigurationFromFile" fullname="ConfigurationManagerTest.ShouldWriteAndReadConfigurationFromFile" methodname="ShouldWriteAndReadConfigurationFromFile" classname="ConfigurationManagerTest" runstate="Runnable" seed="913436678" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.057412" asserts="0">
+          <properties />
+          <output><![CDATA[14:38:42.004: Creating new config file: Config.xml
+]]></output>
+        </test-case>
+        <test-case id="1113" name="ShouldWriteConfigurationToFile" fullname="ConfigurationManagerTest.ShouldWriteConfigurationToFile" methodname="ShouldWriteConfigurationToFile" classname="ConfigurationManagerTest" runstate="Runnable" seed="685490488" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.001891" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1117" name="MuteTest" fullname="MuteTest" classname="MuteTest" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.033689" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1118" name="ShouldToggleMute" fullname="MuteTest.ShouldToggleMute" methodname="ShouldToggleMute" classname="MuteTest" runstate="Runnable" seed="455100002" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.014597" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1119" name="ShouldToggleMuteOff" fullname="MuteTest.ShouldToggleMuteOff" methodname="ShouldToggleMuteOff" classname="MuteTest" runstate="Runnable" seed="1423605928" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.017360" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1115" name="SharedControllerTypeTest" fullname="SharedControllerTypeTest" classname="SharedControllerTypeTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.005586" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1116" name="ShouldReturnNullSingletonInstance" fullname="SharedControllerTypeTest.ShouldReturnNullSingletonInstance" methodname="ShouldReturnNullSingletonInstance" classname="SharedControllerTypeTest" runstate="Runnable" seed="1726370410" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.000913" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestSuite" id="1134" name="Test" fullname="Test" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.092409" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1129" name="CreateTournamentDTOTest" fullname="Test.CreateTournamentDTOTest" classname="Test.CreateTournamentDTOTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.075092" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1130" name="ShouldSerialize" fullname="Test.CreateTournamentDTOTest.ShouldSerialize" methodname="ShouldSerialize" classname="Test.CreateTournamentDTOTest" runstate="Runnable" seed="1631777973" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.066694" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1131" name="MatchDTOTest" fullname="Test.MatchDTOTest" classname="Test.MatchDTOTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.011886" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1132" name="shouldSerialize" fullname="Test.MatchDTOTest.shouldSerialize" methodname="shouldSerialize" classname="Test.MatchDTOTest" runstate="Runnable" seed="1647754264" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.010842" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="1100" name="TestBitSerializer" fullname="TestBitSerializer" classname="TestBitSerializer" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:44Z" duration="2.288181" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1101" name="TestBitSerializerwithStrings" fullname="TestBitSerializer.TestBitSerializerwithStrings" methodname="TestBitSerializerwithStrings" classname="TestBitSerializer" runstate="Runnable" seed="871345464" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:42Z" duration="0.001753" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1102" name="TestBitSerializerwithUnCompressedInt" fullname="TestBitSerializer.TestBitSerializerwithUnCompressedInt" methodname="TestBitSerializerwithUnCompressedInt" classname="TestBitSerializer" runstate="Runnable" seed="1889819289" result="Passed" start-time="2019-04-04 14:38:42Z" end-time="2019-04-04 14:38:44Z" duration="2.284939" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1103" name="TestBitSerializerSimpleWithBitWriterNonAllocBuffer" fullname="TestBitSerializerSimpleWithBitWriterNonAllocBuffer" classname="TestBitSerializerSimpleWithBitWriterNonAllocBuffer" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.004294" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1104" name="TestBitSerializerSimpleWithBitWriterNonAllocBufferSimplePasses" fullname="TestBitSerializerSimpleWithBitWriterNonAllocBuffer.TestBitSerializerSimpleWithBitWriterNonAllocBufferSimplePasses" methodname="TestBitSerializerSimpleWithBitWriterNonAllocBufferSimplePasses" classname="TestBitSerializerSimpleWithBitWriterNonAllocBuffer" runstate="Runnable" seed="1275753551" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.002873" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1120" name="TestTimeDiffFromServerTimeStamp" fullname="TestTimeDiffFromServerTimeStamp" classname="TestTimeDiffFromServerTimeStamp" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.052159" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1122" name="TestTimeDiffFromServerTimeStamp_TimeSpans" fullname="TestTimeDiffFromServerTimeStamp.TestTimeDiffFromServerTimeStamp_TimeSpans" methodname="TestTimeDiffFromServerTimeStamp_TimeSpans" classname="TestTimeDiffFromServerTimeStamp" runstate="Runnable" seed="1934235329" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.037111" asserts="0">
+          <properties />
+          <output><![CDATA[AddToTimestamp: new: 2005000 old: 5000 diff: 2000
+AddToTimestamp: new: -2145483649 old: 2147483647 diff: 2000
+AddToTimestamp: new: -2145484649 old: 2147482647 diff: 2000
+AddToTimestamp: new: -2145483648 old: -2147483648 diff: 2000
+AddToTimestamp: new: -2145482648 old: -2147482648 diff: 2000
+AddToTimestamp: new: -49995000 old: 5000 diff: -50000
+AddToTimestamp: new: 2097483647 old: 2147483647 diff: -50000
+AddToTimestamp: new: 2097482647 old: 2147482647 diff: -50000
+AddToTimestamp: new: 2097483648 old: -2147483648 diff: -50000
+AddToTimestamp: new: 2097484648 old: -2147482648 diff: -50000
+SubtractFromTimestamp: new: -1995000 old: 5000 diff: -2000
+SubtractFromTimestamp: new: 2145483647 old: 2147483647 diff: -2000
+SubtractFromTimestamp: new: 2145482647 old: 2147482647 diff: -2000
+SubtractFromTimestamp: new: 2145483648 old: -2147483648 diff: -2000
+SubtractFromTimestamp: new: 2145484648 old: -2147482648 diff: -2000
+SubtractFromTimestamp: new: 50005000 old: 5000 diff: 50000
+SubtractFromTimestamp: new: -2097483649 old: 2147483647 diff: 50000
+SubtractFromTimestamp: new: -2097484649 old: 2147482647 diff: 50000
+SubtractFromTimestamp: new: -2097483648 old: -2147483648 diff: 50000
+SubtractFromTimestamp: new: -2097482648 old: -2147482648 diff: 50000
+]]></output>
+        </test-case>
+        <test-case id="1121" name="TestTimeDiffFromServerTimeStampSimplePasses" fullname="TestTimeDiffFromServerTimeStamp.TestTimeDiffFromServerTimeStampSimplePasses" methodname="TestTimeDiffFromServerTimeStampSimplePasses" classname="TestTimeDiffFromServerTimeStamp" runstate="Runnable" seed="1238479012" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.011488" asserts="0">
+          <properties />
+          <output><![CDATA[TimeDiff: new: -2147483648 old: 2147483647 diff: 0,001
+TimeDiff: new: 1500 old: 1000 diff: 0,5000
+TimeDiff: new: -2147483148 old: 2147483147 diff: 1,001
+TimeDiff: new: -2147482148 old: 2147483147 diff: 2,001
+TimeDiff: new: 1000 old: 1500 diff: -0,5000
+TimeDiff: new: 2147483147 old: -2147482148 diff: -2,001
+]]></output>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1123" name="TupleTest" fullname="TupleTest" classname="TupleTest" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.005419" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1127" name="TupleEqualityIsNameIndependent" fullname="TupleTest.TupleEqualityIsNameIndependent" methodname="TupleEqualityIsNameIndependent" classname="TupleTest" runstate="Runnable" seed="801370462" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.001031" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1124" name="TupleShouldBeEditable" fullname="TupleTest.TupleShouldBeEditable" methodname="TupleShouldBeEditable" classname="TupleTest" runstate="Runnable" seed="1716719486" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.000412" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1125" name="TupleShouldPrintPretty" fullname="TupleTest.TupleShouldPrintPretty" methodname="TupleShouldPrintPretty" classname="TupleTest" runstate="Runnable" seed="1856821" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.000517" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1126" name="TuplesShouldBeEqual" fullname="TupleTest.TuplesShouldBeEqual" methodname="TuplesShouldBeEqual" classname="TupleTest" runstate="Runnable" seed="557538400" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.000346" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1128" name="UnnamedTuplesShouldNotBeEqual" fullname="TupleTest.UnnamedTuplesShouldNotBeEqual" methodname="UnnamedTuplesShouldNotBeEqual" classname="TupleTest" runstate="Runnable" seed="208664338" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.000598" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1162" name="VRNerdsUtilityTest.dll" fullname="D:/PlasticSCM/Workspaces/TowerTag/MonoLight_Multi/Library/ScriptAssemblies/VRNerdsUtilityTest.dll" runstate="Runnable" testcasecount="23" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.222383" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="40888" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+      </properties>
+      <test-suite type="TestSuite" id="1163" name="VRNerdsUtilities" fullname="VRNerdsUtilities" runstate="Runnable" testcasecount="23" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.181796" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1164" name="Tests" fullname="VRNerdsUtilities.Tests" runstate="Runnable" testcasecount="23" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.144807" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1135" name="BoundedMapTest" fullname="VRNerdsUtilities.Tests.BoundedMapTest" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" testcasecount="11" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.032987" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+]]></output>
+            <test-case id="1137" name="ShouldAddItem" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldAddItem" methodname="ShouldAddItem" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="1604077740" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.002587" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1142" name="ShouldAddViaBrackets" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldAddViaBrackets" methodname="ShouldAddViaBrackets" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="1429396947" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.001883" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1140" name="ShouldClear" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldClear" methodname="ShouldClear" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="1063043869" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.001370" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1136" name="ShouldCreate" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldCreate" methodname="ShouldCreate" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="28754472" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.001191" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1146" name="ShouldFailTryingGet" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldFailTryingGet" methodname="ShouldFailTryingGet" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="2016507458" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.002223" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1144" name="ShouldHandleNullValues" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldHandleNullValues" methodname="ShouldHandleNullValues" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="1274411257" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.002306" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1138" name="ShouldNotCreateWithNegativeBounds" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldNotCreateWithNegativeBounds" methodname="ShouldNotCreateWithNegativeBounds" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="509297790" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.002049" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+            <test-case id="1141" name="ShouldRemoveItem" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldRemoveItem" methodname="ShouldRemoveItem" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="1510522442" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.001806" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1139" name="ShouldStayInBounds" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldStayInBounds" methodname="ShouldStayInBounds" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="1829407640" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.001291" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1145" name="ShouldSucceedTryingGet" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldSucceedTryingGet" methodname="ShouldSucceedTryingGet" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="2108005810" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.001253" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1143" name="ShouldThrowKeyNotFoundException" fullname="VRNerdsUtilities.Tests.BoundedMapTest.ShouldThrowKeyNotFoundException" methodname="ShouldThrowKeyNotFoundException" classname="VRNerdsUtilities.Tests.BoundedMapTest" runstate="Runnable" seed="1378095258" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.001781" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1147" name="EnumerableExtensionTest" fullname="VRNerdsUtilities.Tests.EnumerableExtensionTest" classname="VRNerdsUtilities.Tests.EnumerableExtensionTest" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.003810" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1149" name="ShouldApplyLazily" fullname="VRNerdsUtilities.Tests.EnumerableExtensionTest.ShouldApplyLazily" methodname="ShouldApplyLazily" classname="VRNerdsUtilities.Tests.EnumerableExtensionTest" runstate="Runnable" seed="561612669" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.001685" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1148" name="ShouldExecuteActionWithForEach" fullname="VRNerdsUtilities.Tests.EnumerableExtensionTest.ShouldExecuteActionWithForEach" methodname="ShouldExecuteActionWithForEach" classname="VRNerdsUtilities.Tests.EnumerableExtensionTest" runstate="Runnable" seed="1822152952" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.000521" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1150" name="ExtendedDebugTest" fullname="VRNerdsUtilities.Tests.ExtendedDebugTest" classname="VRNerdsUtilities.Tests.ExtendedDebugTest" runstate="Runnable" testcasecount="7" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.030222" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1156" name="ShouldLogErrorWithTimestamp" fullname="VRNerdsUtilities.Tests.ExtendedDebugTest.ShouldLogErrorWithTimestamp" methodname="ShouldLogErrorWithTimestamp" classname="VRNerdsUtilities.Tests.ExtendedDebugTest" runstate="Runnable" seed="2108371173" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.006499" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[14:38:44.672: Test
+]]></output>
+            </test-case>
+            <test-case id="1157" name="ShouldLogFormat" fullname="VRNerdsUtilities.Tests.ExtendedDebugTest.ShouldLogFormat" methodname="ShouldLogFormat" classname="VRNerdsUtilities.Tests.ExtendedDebugTest" runstate="Runnable" seed="800486463" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.006031" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[14:38:44.679: test xxx
+]]></output>
+            </test-case>
+            <test-case id="1155" name="ShouldLogWarningWithTimestamp" fullname="VRNerdsUtilities.Tests.ExtendedDebugTest.ShouldLogWarningWithTimestamp" methodname="ShouldLogWarningWithTimestamp" classname="VRNerdsUtilities.Tests.ExtendedDebugTest" runstate="Runnable" seed="210254760" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.006396" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[14:38:44.686: Test
+]]></output>
+            </test-case>
+            <test-case id="1154" name="ShouldLogWithTimestamp" fullname="VRNerdsUtilities.Tests.ExtendedDebugTest.ShouldLogWithTimestamp" methodname="ShouldLogWithTimestamp" classname="VRNerdsUtilities.Tests.ExtendedDebugTest" runstate="Runnable" seed="1680851077" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.005515" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[14:38:44.692: Test
+]]></output>
+            </test-case>
+            <test-case id="1152" name="ShouldReturnIsDebugBuild" fullname="VRNerdsUtilities.Tests.ExtendedDebugTest.ShouldReturnIsDebugBuild" methodname="ShouldReturnIsDebugBuild" classname="VRNerdsUtilities.Tests.ExtendedDebugTest" runstate="Runnable" seed="245293570" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.000575" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1153" name="ShouldReturnIsDeveloperConsoleVisible" fullname="VRNerdsUtilities.Tests.ExtendedDebugTest.ShouldReturnIsDeveloperConsoleVisible" methodname="ShouldReturnIsDeveloperConsoleVisible" classname="VRNerdsUtilities.Tests.ExtendedDebugTest" runstate="Runnable" seed="1657798788" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.000455" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1151" name="ShouldReturnLogger" fullname="VRNerdsUtilities.Tests.ExtendedDebugTest.ShouldReturnLogger" methodname="ShouldReturnLogger" classname="VRNerdsUtilities.Tests.ExtendedDebugTest" runstate="Runnable" seed="773576248" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.000350" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1158" name="SingletonMonoBehaviourTest" fullname="VRNerdsUtilities.Tests.SingletonMonoBehaviourTest" classname="VRNerdsUtilities.Tests.SingletonMonoBehaviourTest" runstate="Runnable" testcasecount="3" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.050713" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1159" name="ShouldAutoCreate" fullname="VRNerdsUtilities.Tests.SingletonMonoBehaviourTest.ShouldAutoCreate" methodname="ShouldAutoCreate" classname="VRNerdsUtilities.Tests.SingletonMonoBehaviourTest" runstate="Runnable" seed="444889133" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.004366" asserts="0">
+              <properties />
+              <output><![CDATA[14:38:44.705: An instance of VRNerdsUtilities.Tests.DummySingletonMonoBehaviour was automatically created in the scene.
+]]></output>
+            </test-case>
+            <test-case id="1161" name="ShouldDestroySecondInstanceByDefault" fullname="VRNerdsUtilities.Tests.SingletonMonoBehaviourTest.ShouldDestroySecondInstanceByDefault" methodname="ShouldDestroySecondInstanceByDefault" classname="VRNerdsUtilities.Tests.SingletonMonoBehaviourTest" runstate="Runnable" seed="1996932844" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.023530" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+              <output><![CDATA[14:38:44.725: An instance of VRNerdsUtilities.Tests.DummySingletonMonoBehaviour is already set.
+]]></output>
+            </test-case>
+            <test-case id="1160" name="ShouldFindInstanceInScene" fullname="VRNerdsUtilities.Tests.SingletonMonoBehaviourTest.ShouldFindInstanceInScene" methodname="ShouldFindInstanceInScene" classname="VRNerdsUtilities.Tests.SingletonMonoBehaviourTest" runstate="Runnable" seed="544913587" result="Passed" start-time="2019-04-04 14:38:44Z" end-time="2019-04-04 14:38:44Z" duration="0.020267" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+              </properties>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

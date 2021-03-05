@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0,1949144">
+  <test-suite type="TestSuite" id="1000" name="Tower Tag" fullname="Tower Tag" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.194914" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1005" name="TowerTagAPITest.dll" fullname="D:/PlasticSCM/Workspaces/TowerTag/MonoLight_Multi/Library/ScriptAssemblies/TowerTagAPITest.dll" runstate="Runnable" testcasecount="3" result="Passed" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.149464" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34296" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+      </properties>
+      <test-suite type="TestSuite" id="1006" name="TowerTagAPIClient" fullname="TowerTagAPIClient" runstate="Runnable" testcasecount="3" result="Passed" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.141855" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="SerializationTest" fullname="TowerTagAPIClient.SerializationTest" classname="TowerTagAPIClient.SerializationTest" runstate="Runnable" testcasecount="3" result="Passed" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.130324" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1004" name="ShouldSerializeDictionary" fullname="TowerTagAPIClient.SerializationTest.ShouldSerializeDictionary" methodname="ShouldSerializeDictionary" classname="TowerTagAPIClient.SerializationTest" runstate="Runnable" seed="554045943" result="Passed" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.056080" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1002" name="ShouldSerializeMatch" fullname="TowerTagAPIClient.SerializationTest.ShouldSerializeMatch" methodname="ShouldSerializeMatch" classname="TowerTagAPIClient.SerializationTest" runstate="Runnable" seed="23151030" result="Passed" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.053365" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1003" name="ShouldSerializeMatchPlayerPerformance" fullname="TowerTagAPIClient.SerializationTest.ShouldSerializeMatchPlayerPerformance" methodname="ShouldSerializeMatchPlayerPerformance" classname="TowerTagAPIClient.SerializationTest" runstate="Runnable" seed="1106235791" result="Passed" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.000369" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1009" name="TowerTagUnitTest.dll" fullname="D:/PlasticSCM/Workspaces/TowerTag/MonoLight_Multi/Library/ScriptAssemblies/TowerTagUnitTest.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.016165" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34296" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1007" name="BuildIndexTest" fullname="BuildIndexTest" classname="BuildIndexTest" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.013447" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1008" name="ShouldStartInLicenseActivationScene" fullname="BuildIndexTest.ShouldStartInLicenseActivationScene" methodname="ShouldStartInLicenseActivationScene" classname="BuildIndexTest" runstate="Runnable" seed="717411650" result="Failed" start-time="2019-04-04 14:39:03Z" end-time="2019-04-04 14:39:03Z" duration="0.008009" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[  Expected string length 18 but was 0. Strings differ at index 0.
+  Expected: "License Activation"
+  But was:  <string.Empty>
+  -----------^
+]]></message>
+            <stack-trace><![CDATA[at BuildIndexTest.ShouldStartInLicenseActivationScene () [0x00001] in D:\PlasticSCM\Workspaces\TowerTag\MonoLight_Multi\Assets\Scripts\Tests\UnitTests\BuildIndexTest.cs:7
+]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

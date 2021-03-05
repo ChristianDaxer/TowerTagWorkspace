@@ -1,0 +1,27 @@
+var class_serializable_render_settings =
+[
+    [ "ambientEquatorColor", "class_serializable_render_settings.html#a4ab83b1ec5e60e06257e20520ae9c3ab", null ],
+    [ "ambientGroundColor", "class_serializable_render_settings.html#a4555ddefe87d1bb56083bf2b4a4abac0", null ],
+    [ "ambientIntensity", "class_serializable_render_settings.html#a491cd523c01ff732a4991db5d89ea0c9", null ],
+    [ "ambientLight", "class_serializable_render_settings.html#a3896262c5cae0818b7f8a2013e7112a6", null ],
+    [ "ambientMode", "class_serializable_render_settings.html#a43c5cc20abe42b61f33c977f293911e8", null ],
+    [ "ambientProbe", "class_serializable_render_settings.html#a6f1d4db4517eeba6bea2a73222ca7e1e", null ],
+    [ "ambientSkyColor", "class_serializable_render_settings.html#a83cbfd2d9f65506c98a0f1dd318f8a68", null ],
+    [ "customReflection", "class_serializable_render_settings.html#a566e4c0752ee88e6f45b9943ec000aa0", null ],
+    [ "defaultReflectionMode", "class_serializable_render_settings.html#a245b98d5e377f50bbb81da6b5d1dc348", null ],
+    [ "defaultReflectionResolution", "class_serializable_render_settings.html#aeff89bfeaea56377d201e516fffd1647", null ],
+    [ "flareFadeSpeed", "class_serializable_render_settings.html#a621c3b3f8aefbedd78294d59163bd889", null ],
+    [ "flareStrength", "class_serializable_render_settings.html#ab723aa766b9b44710aa76e0adece78fc", null ],
+    [ "fog", "class_serializable_render_settings.html#a03b0e9199717dc6c92d6a3abc28a0406", null ],
+    [ "fogColor", "class_serializable_render_settings.html#a25698ce794151d74f4e6eb90840a1697", null ],
+    [ "fogDensity", "class_serializable_render_settings.html#ad620afc2426fc3ec66925b3df946a2a7", null ],
+    [ "fogEndDistance", "class_serializable_render_settings.html#a6b6a02874101a3f3236d2f1794e42947", null ],
+    [ "fogMode", "class_serializable_render_settings.html#ae6770e95c3af287472934d81930dbafb", null ],
+    [ "fogStartDistance", "class_serializable_render_settings.html#a12b0103dbf68de2d8cfc1e3a2b67c9cb", null ],
+    [ "haloStrength", "class_serializable_render_settings.html#af16e204f217e91328c28b5b4ecac34db", null ],
+    [ "reflectionBounces", "class_serializable_render_settings.html#aca8932de7c09e1555047d240501626da", null ],
+    [ "reflectionIntensity", "class_serializable_render_settings.html#a7536e95a5a1c043cf839e8f25241f517", null ],
+    [ "skybox", "class_serializable_render_settings.html#ad5487958435a21e965b5eec4e54ac180", null ],
+    [ "subtractiveShadowColor", "class_serializable_render_settings.html#a2f052c27740997732f8e968493f05af2", null ],
+    [ "sun", "class_serializable_render_settings.html#aaa5e466681ebcefd5499149fb7d62553", null ]
+];

@@ -1,0 +1,5 @@
+var class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_buffer_reader_push_adapter_async_pool_float_to_short =
+[
+    [ "BufferReaderPushAdapterAsyncPoolFloatToShort", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_buffer_reader_push_adapter_async_pool_float_to_short.html#a21e791e3efe61bb3f2564746788809e1", null ],
+    [ "Service", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_buffer_reader_push_adapter_async_pool_float_to_short.html#a043161fe108702557121642f5f33cf8e", null ]
+];

@@ -1,0 +1,26 @@
+var class_f_p_s_counter =
+[
+    [ "ResetFrameCounter", "class_f_p_s_counter.html#a9375dd5af88ec6f34beb30d7d9bcd734", null ],
+    [ "SetActive", "class_f_p_s_counter.html#a2ac4e36228466ada45c8e4d8f735e6b8", null ],
+    [ "currentFPSText", "class_f_p_s_counter.html#ab049daf6043344da5cea22a336ad24a7", null ],
+    [ "currentFrameTimeText", "class_f_p_s_counter.html#aa3fb551b46acb91168bb4328e398ff4b", null ],
+    [ "minFramerate", "class_f_p_s_counter.html#ac8e0dc0a84ec99405fc41d174cb3f728", null ],
+    [ "switchActiveInputButtonName", "class_f_p_s_counter.html#afdfda4e9f3a8f55f14d66b2466128ce7", null ],
+    [ "targetFPSText", "class_f_p_s_counter.html#a62ea4f67b34399427cca4f12cc87cf8d", null ],
+    [ "targetFrameRate", "class_f_p_s_counter.html#af84d6956a4208af376a033ab304c9c40", null ],
+    [ "uiParent", "class_f_p_s_counter.html#a88a93142a6a096147ba9fae8aa1b61b9", null ],
+    [ "averageDeltaTime_Analytic", "class_f_p_s_counter.html#ac6a5144e969de4b889bdad85c086de66", null ],
+    [ "averageDeltaTime_Iterative", "class_f_p_s_counter.html#a3e6d7c04c286a2abe2b6f8e302f10f85", null ],
+    [ "averageFPS_Analytic", "class_f_p_s_counter.html#ad76a3ef8881d236f58ba63802621d670", null ],
+    [ "averageFPS_Iterative", "class_f_p_s_counter.html#a86197b234a4236a059126902706200b8", null ],
+    [ "currentFPS", "class_f_p_s_counter.html#a69f1418a1a496b69b84097e9d8bff193", null ],
+    [ "instance", "class_f_p_s_counter.html#a839be922882b079e6975e4aef7f04759", null ],
+    [ "maxDeltaTime", "class_f_p_s_counter.html#a2caddad94ec0cc4c9b75914b44fa910d", null ],
+    [ "maxFPS", "class_f_p_s_counter.html#a861042507f7db4afbbe217b4edb62628", null ],
+    [ "minDeltaTime", "class_f_p_s_counter.html#a17fd940191d8145376717bede4d7cdaf", null ],
+    [ "minFPS", "class_f_p_s_counter.html#aa5473e17e8e3c77e244e9082a6b2feb4", null ],
+    [ "numberOfFramesUnderMinFramerate", "class_f_p_s_counter.html#a09709fbb3cc704afcae4b9878af16d56", null ],
+    [ "numberOfFramesUnderTargetFramerate", "class_f_p_s_counter.html#a2c6c3924fa8627863ed9af57ce8babc3", null ],
+    [ "sampleCount", "class_f_p_s_counter.html#adc298ef24ca3cea28ec8dc73f3f0b3af", null ],
+    [ "smoothedFPSValue", "class_f_p_s_counter.html#ab9ea0d49ac2a8c7f0c8b7f89c89e95c5", null ]
+];

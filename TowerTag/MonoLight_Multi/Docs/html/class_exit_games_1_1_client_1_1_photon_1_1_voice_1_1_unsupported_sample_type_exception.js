@@ -1,0 +1,4 @@
+var class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_unsupported_sample_type_exception =
+[
+    [ "UnsupportedSampleTypeException", "class_exit_games_1_1_client_1_1_photon_1_1_voice_1_1_unsupported_sample_type_exception.html#a9c2c053e2ab0da44fb229f8a51183e49", null ]
+];

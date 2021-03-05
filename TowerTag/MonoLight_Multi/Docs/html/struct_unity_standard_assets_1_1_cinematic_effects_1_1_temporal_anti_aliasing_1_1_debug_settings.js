@@ -1,0 +1,4 @@
+var struct_unity_standard_assets_1_1_cinematic_effects_1_1_temporal_anti_aliasing_1_1_debug_settings =
+[
+    [ "forceRepaint", "struct_unity_standard_assets_1_1_cinematic_effects_1_1_temporal_anti_aliasing_1_1_debug_settings.html#aac063049e5e5e556c2395562844f7a0e", null ]
+];

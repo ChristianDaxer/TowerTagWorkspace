@@ -1,0 +1,4 @@
+var struct_unity_standard_assets_1_1_cinematic_effects_1_1_screen_space_reflection_1_1_screen_edge_mask =
+[
+    [ "intensity", "struct_unity_standard_assets_1_1_cinematic_effects_1_1_screen_space_reflection_1_1_screen_edge_mask.html#a4fefda1d1fb8ca4fa8a5ff537dbf0bfd", null ]
+];

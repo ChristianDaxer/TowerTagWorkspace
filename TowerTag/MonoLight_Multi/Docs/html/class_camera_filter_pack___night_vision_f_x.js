@@ -1,0 +1,35 @@
+var class_camera_filter_pack___night_vision_f_x =
+[
+    [ "preset", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3", [
+      [ "Night_Vision_Personalized", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3aae4f87c94fa0a7ce14aee991266a4697", null ],
+      [ "Night_Vision_FX", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3a100229123c9607bc1c423bbd73085a5b", null ],
+      [ "Night_Vision_Classic", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3a25e21abb26f7b1c810d3a7df6a4ba8c6", null ],
+      [ "Night_Vision_Full", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3ada70cfde1c882c5abfedcb3d76c2cac3", null ],
+      [ "Night_Vision_Dark", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3a537ea40c87597e8ac96d6ef3e4ec413c", null ],
+      [ "Night_Vision_Sharp", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3a5deff784333fd5980ea737abf77e8fbd", null ],
+      [ "Night_Vision_BlueSky", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3aab81f6cc6123b404a064de63cb96de07", null ],
+      [ "Night_Vision_Low_Light", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3a043aaa30707b0d15b5604e2adea80918", null ],
+      [ "Night_Vision_Pinky", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3a91d9fa11319c66fc3e24f1ca69295a25", null ],
+      [ "Night_Vision_RedBurn", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3aa9c28b162c7e0b6ffd68c21acdf52c74", null ],
+      [ "Night_Vision_PurpleShadow", "class_camera_filter_pack___night_vision_f_x.html#a1a1544e8735ad88935dbd2ad893839b3a3f0811de31fc0a1add4244bb79b633dc", null ]
+    ] ],
+    [ "_Binocular_Dist", "class_camera_filter_pack___night_vision_f_x.html#a99c3ebecff27206db1ac2cc0b99c8155", null ],
+    [ "_Binocular_Size", "class_camera_filter_pack___night_vision_f_x.html#aabfe2857223106cc81e0a15a8f0b8b21", null ],
+    [ "_Binocular_Smooth", "class_camera_filter_pack___night_vision_f_x.html#adb9179a59fb84a099df49764ee10b96c", null ],
+    [ "Color_B", "class_camera_filter_pack___night_vision_f_x.html#af206b0a1c6f804f13d116074f7cb89a2", null ],
+    [ "Color_G", "class_camera_filter_pack___night_vision_f_x.html#a7280be725b48a13606c404d2933c4c72", null ],
+    [ "Color_R", "class_camera_filter_pack___night_vision_f_x.html#aa9ea463ca171e688595e11f23e38a6db", null ],
+    [ "Distortion", "class_camera_filter_pack___night_vision_f_x.html#a6783f7a9f7e9d64581cf283e15880565", null ],
+    [ "Greenness", "class_camera_filter_pack___night_vision_f_x.html#a1d60786efcf9b1659592ac29a43c59a2", null ],
+    [ "Intensity", "class_camera_filter_pack___night_vision_f_x.html#ae13473bc11d6aa9707449c771a3214ad", null ],
+    [ "Light", "class_camera_filter_pack___night_vision_f_x.html#a57ee2638411361942da39193119e04ac", null ],
+    [ "Light2", "class_camera_filter_pack___night_vision_f_x.html#a4be070112047706e848c960ffa7506bb", null ],
+    [ "Line", "class_camera_filter_pack___night_vision_f_x.html#a35fcaf1f921ebe63807433f7535b77c1", null ],
+    [ "Noise", "class_camera_filter_pack___night_vision_f_x.html#a3d44ba5801269bd4e4373c5e07e4c777", null ],
+    [ "OnOff", "class_camera_filter_pack___night_vision_f_x.html#ab810c2dbc0e154f78535c4e8a46c621c", null ],
+    [ "Preset", "class_camera_filter_pack___night_vision_f_x.html#a28360165164af4c443de8ebf50769fc1", null ],
+    [ "SCShader", "class_camera_filter_pack___night_vision_f_x.html#a3e7c84684ef3aa443450740db5163d2a", null ],
+    [ "Vignette", "class_camera_filter_pack___night_vision_f_x.html#a945f313b3e97578827ebfdaf061d88f0", null ],
+    [ "Vignette_Alpha", "class_camera_filter_pack___night_vision_f_x.html#acf3c062edf1d5c6c5dc6ee0d8c38de98", null ],
+    [ "material", "class_camera_filter_pack___night_vision_f_x.html#a5158e9f9ad74a2a24c0029d291eb9844", null ]
+];

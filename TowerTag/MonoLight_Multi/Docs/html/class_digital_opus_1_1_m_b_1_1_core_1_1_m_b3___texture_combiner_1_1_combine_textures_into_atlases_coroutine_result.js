@@ -1,0 +1,5 @@
+var class_digital_opus_1_1_m_b_1_1_core_1_1_m_b3___texture_combiner_1_1_combine_textures_into_atlases_coroutine_result =
+[
+    [ "isFinished", "class_digital_opus_1_1_m_b_1_1_core_1_1_m_b3___texture_combiner_1_1_combine_textures_into_atlases_coroutine_result.html#ac18dedc109432834e7d84d6b64aa04fc", null ],
+    [ "success", "class_digital_opus_1_1_m_b_1_1_core_1_1_m_b3___texture_combiner_1_1_combine_textures_into_atlases_coroutine_result.html#aa483c43d44822a16736d85791ce71749", null ]
+];
