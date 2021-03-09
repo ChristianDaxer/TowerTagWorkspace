@@ -1,0 +1,887 @@
+###########################################################
+##     SPREE Interactive SDK Version 4.0.26-RC           ##
+##          Release Update - December, 16 2020           ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.7 SDK AND PUI >= 4.0.0 ON THE HEADSET << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed calibration offsets due to pico recline mode (3dof)
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Improved behaviour on tracking loss (6dof)
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Simulation does not work on some networks
+Excessive error logging by pico under some conditions
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.25-RC           ##
+##          Release Update - December, 9 2020            ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.7 SDK AND PUI >= 4.0.0 ON THE HEADSET << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed inside-out pose using wrong head offset
+Fixed drift detection being triggered on standing completely still
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Adjusted timeouts for tracking reset and drift detection
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Simulation does not work on some networks
+Excessive error logging by pico under some conditions
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.24-RC           ##
+##          Release Update - December, 7 2020            ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.7 SDK AND PUI >= 4.0.0 ON THE HEADSET << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed seethrough camera freezing after taking off the headset
+Changed the way the app is closed for more consistent behaviour
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Improved UI on MDSP crash
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Simulation does not work on some networks
+Excessive error logging by pico under some conditions
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.23-RC           ##
+##          Release Update - December, 4 2020            ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.7 SDK AND PUI >= 4.0.0 ON THE HEADSET << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed attemting to reset tracking on G2
+Fixed height behaviour in WASD move
+Fixed DisableOnRelease to run in Awake
+Fixed some UI texts using 2 lines
+
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Added correct neck model transformations
+Removed some large and unused files
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+Added 3dof compatibility mode
+Added automatic switching to 3dof mode on MDSP crash
+Added restart of application on tracking crash
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Simulation does not work on some networks
+Excessive error logging by pico under some conditions
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.22-RC           ##
+##          Release Update - November, 9 2020            ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.7 SDK AND PUI 4.0.0 ON THE HEADSET << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed seethrough not being available on Neo 2 with firmware 4.0.0
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Improved UI look and information
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+Added restarting of the headset tracking on crash or when creating disjointed maps
+This should automatically recover on "Movement tracking lost" and "Recovering movement tracking" popups
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Simulation does not work on some networks
+Excessive error logging by pico under some conditions
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.21-RC           ##
+##          Release Update - October, 5 2020             ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.6 SDK << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed starting inside-out sender multiple times
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Improved latency related behaviour of orientation recalibration
+Improved neo 2 behaviour on tracking loss and regain
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+Added latency related behaviour to simulation
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Neo 2 tracking might crash (qualcomm issue)
+Simulation does not work on some networks
+Excessive error logging by pico under some conditions
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.20-RC           ##
+##          Release Update - September, 29 2020          ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.6 SDK << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed inside-out pose not being sent
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Neo 2 tracking might crash (qualcomm issue)
+Simulation does not work on some networks
+Gimbal lock in orientation recalibration
+Excessive error logging by pico under some conditions
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.19-RC           ##
+##          Release Update - September, 26 2020          ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.6 SDK << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed short text popup on entering seethrough
+Fixed head correction being considered too late when calculation inside-out error
+Fixed inside-out positions being sent on crash, pause or sleep
+Fixed enemy lerp and spawn
+Fixed micro stutter on orientation recalibration
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Improved behaviour of inside-out pose synchronisation
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Neo 2 tracking might crash (qualcomm issue)
+Simulation does not work on some networks
+Gimbal lock in orientation recalibration
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.27-RC           ##
+##          Release Update - September, 17 2020           ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.6 SDK << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed short text popup on entering seethrough
+Fixed head correction being considered too late when calculation inside-out error
+Fixed inside-out positions being sent on crash, pause or sleep
+Fixed enemy lerp and spawn
+Fixed micro stutter on orientation recalibration
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Improved behaviour of inside-out pose synchronisation
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Neo 2 tracking might crash (qualcomm issue)
+Simulation does not work on some networks
+Gimbal lock in orientation recalibration
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.18-RC           ##
+##          Release Update - September, 17 2020           ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed attempting to download config when in simulation mode
+ServerSimulator now correctly sets simulation
+Fixed simulateOnPlayer not working with pico sdk 2.8.6
+Fixed HeadRotation script overwriting parent positioner even when set manually
+Added missing function description to GetPlayerName()
+Removed BroadcastReceiver warning
+Fixed routine error when simulating
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+Added seethrough on neo 2
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.17-RC           ##
+##          Release Update - September, 1 2020           ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed possiblity of calibration running on inside-out orientation instead of external orientation
+Fixed play area settings to be properly added to simulated poses
+Fixed play name not being available for id 1
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+Neo 2: Camera seethrough is not available
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.16-RC           ##
+##          Release Update - May, 26 2020                ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed bundle id not displaying correctly on windows builds (has to be given manually over api now)
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+PlayerList and OptionalData are now available for the highscore api instead of List<> and Dictionary<>
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+Neo 2: Camera seethrough is not available yet
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.15-RC           ##
+##          Release Update - May, 19 2020               ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed highscore remote endpoint
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+Neo 2: Camera seethrough is not available yet
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.14-RC           ##
+##          Release Update - March, 6 2020               ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed QR calibration being selected
+Fixed typos
+Removed shadows from standard rotation enemy
+Removed stop sign on pico goblin 2 headset
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Added height recalibration
+Added event for inside out tracking availability change
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+Neo 2: Camera seethrough is not available yet
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.13-Beta         ##
+##          Release Update - March, 5 2020               ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed controllerwalk error log
+Removed some unnecessary logs
+Fixed own external position timing out on io devices
+Fixed broadcast crash while debugging
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Changed battery indicator to be displayed below 10%
+Increased configserver ping timeout
+Added warning when own position has timed out on io devices
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+Neo 2: Camera seethrough is not available yet
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.12-Beta         ##
+##          Release Update - February, 25 2020           ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Removed some unnecessary debug logs
+Fixed some version numbers and imports
+Fixed inside-out backchannel to be shut down properly
+Fixed broadcast receiver to be shut down properly
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Made ringbuffer thread safe
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.7-Beta          ##
+##          Release Update - February, 25 2020           ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed server connection check
+Fixed some UI behavior
+Fixed some apis names
+Fixed standard enemy height
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Small changes in pose calibration
+Improved neo 2 security
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+Added quick guide
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.1-Beta          ##
+##          Release Update - February, 25 2020           ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed simulation sockets exlusive use error
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Improved UI element locations and resolution
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+###########################################################
+##     SPREE Interactive SDK Version 4.0.0-Beta          ##
+##          Release Update - February, 25 2020           ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed simulation
+Correct interface is now selected if there are multiple active connections
+Fixed ForceNoGui and ForceNoCamera behaviour
+Fixed tracking availability check on Neo 2
+Fixed head transform on Goblin 2
+
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Improved inside-out pose correction on large errors
+Reworked camera and gui display
+Improved boundary box display
+
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+Added support for Pico Neo 2 inside-out headset
+Added player names to SDK
+Added game end api
+Added simulation tools to release
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+
+########################################
+##     HolodeckVR Unity SDK 3.4.0f1   ##
+## Release Update - August, 14 2019   ##
+########################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the HolodeckVR Unity SDK.
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed a bug regarding special tags.
+Removed a bug while error in Network with Debug Overflow.
+Stabalized internal thread managment.
+Removed Issue with MainLoopHook
+Fixed another Bug
+
+
+
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Improved Example Scene with Procedural Environment.
+Improved Connection Status.
+Cleaned up some messie scripts.
+Made Camera and Bounding Box Visible trough objects trough ne shader.
+
+
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+Holodeck.GeneralAPI.Start() not needed anymore for remote control of the app (Stopping) will be called on scene load in any case.
+
+The DebugPositionGenerator can now be used to simulate POsitions over network with the Functions SimulatePositionserver(true) and SendNetworkSimulationDataPackage() an example is given in the Folder "HolodeckSimulationExample".
+
+Introduced Name getting fuctions in General API
+
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Pico Goblin 2
+----------------------
+The proximity sensor is unreliable, what means that if you put on or off the HMD no event can be detected. 
+Due to this Config-Server changes need a restart of the app on Pico devices and are not applied by just 
+remounting the HMD.
+
+
+
+########################################
+##     HolodeckVR Unity SDK 3.3.1     ##
+## Release Update - January, 04 2019  ##
+########################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the HolodeckVR Unity SDK.
+
+*************************************
+*************** FIXES ***************
+*************************************
+Naming Conventions
+------------------
+Fixed some class and method names due to conventions, as well as type o's and camel-casing
+This affects:
+	- xxxAPI classes
+	- small amount of methods
+If you change the SDK in an existing project this can cause some easy to fix compiler errors. Just replace the method or class names.
+We apologize for the inconvenience.
+
+Calibration
+-----------
+Race condition on calibration is fixed and the correct calibration type (permanent, qr or manual) is now selected reliable.
+
+Bounding Box
+------------
+Translating the Safety Area in the configuration server in point 1 prevented the security door from opening even if the player
+was inside the tracked area.
+
+Emulated Orientation
+--------------------
+The bool emulatedOrientation inside the PlayerPositioner script now wont work on Android devices. This is important because the player 
+calibration is not working if the bool is set to TRUE. But on Windows devices it can be useful to emulate the orientation, e.g. in case
+of observer applications.
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+
+Permanent Calibration
+---------------------
+If the players rotation is way to much out of the calibration value it took too much time to calculate the correct orientation.
+If the discalibration value is too large the orientation is set to the correct value in zero seconds.
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+PICO Goblin 2 support added: For further instructions please have a look into the PicoBasicSzeneSetup.pdf you can find inside the documents folder.
+
+#####################################
+##    HolodeckVR Unity SDK 3.2.1   ##
+## Release Update - August 9, 2018 ##
+#####################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the HolodeckVR Unity SDK.
+
+*************************************
+*************** FIXES ***************
+*************************************
+
+Multicast-Bug
+-------------
+FIXED: Windows Operating Systems lost the connection to the Multicast Group. Data transfer for input devices changed 
+       to Broadcast what is now working for Android, as well as for Windows.
+
+Key Not Found Exception
+-----------------------
+FIXED: OptimizedConcurrentDictionary throwed an Exception after putting off the headset. This caused Exceptions in the 
+       LocalPositionManager and in the PermanentOrientationCalibration. 
+
+PlayerPositioner
+----------------
+FIXED: Deactivating and reactivating the PlayerPositioner during runtime caused several issues. 
+       All enemies were spawned in a second instance. 
+       The player itself was spawned as an enemie, too. 
+       Special-Typed-Objects were spawned twice.
+
+Special-Typed-Objects Rotation
+------------------------------
+FIXED: In the case of 6DOF-Tracking Special-Typed-Objects hadn't the trackers rotation automatically.
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+
+Not available in this release update
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+Not available in this release update
+
+########################################
+##     HolodeckVR Unity SDK 3.3.0     ##
+## Release Update - December, 14 2018 ##
+########################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the HolodeckVR Unity SDK.
+
+*************************************
+*************** FIXES ***************
+*************************************
+
+Enemies Despawn And Changes
+---------------------------
+If user disposes the HMD and Holodeck.Stop() is called all enemies are despawned and the keylist is cleared. Changing an ID to an special typed object
+during runtime can now be seen by the user after he puts the HMD on again.
+
+Special Typed Objects Rotation
+------------------------------
+The rotation of special typed objects is now working correct. The developer can decicde by himself if he wants the rotation to be applied to the object
+or not, by using the provided boolean "ApplyRotation" in the object positioner script.
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+
+- Improved Internal Handling
+- Optimized Some Garbage Collection Details
+- Added Key Perfomance Indicators To DebugAPI (AveragePackageDelta, PackageCountLastSecond, WorstcasePackagedelay)
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+Oculus Head Correction
+-----------------------
+If you are using our SDK in combination with an Oculus device, like Gear VR, the head movement now compensates the camera manipulation by Oculus.
+The example is implemented in the PlayerPositioner script in line 77. Just call the CalculateDistance(Transform _t) method in IDApi script and handover
+your MainCamera-Transform. Add the returned value to your head transforms position.
+
+DebugApi Log Added
+-----------------------
+You can use the Holodeck Internal Logging System wich is Introduces with this Release. You can choose the LogTarget with the Holodeck.LogTarget Enum.
+	NOLogging = 0,
+        Unity = 1,
+        File = 2,
+        Network = 4,
+        Textoutput = 8
+could also be combined with Bitwise AND (Holodeck.LogTarget.File & Holodeck.LogTarget.Network).
+Currently only Unity is supportet. With SetLogLevel can the Log Level Be Selected Planned is like 3 Level 0 for only Important Messsages, 1 for Check Routines, 2 Full Log. A Log Message can Be written with 
+DebugApi.Log(string message, UnityEngine.LogType enum). 

@@ -1,0 +1,11 @@
+/******************************************************************************
+ * Copyright (C) Holodeck VR GmbH 2017 - 2020.                                *
+ * SPREE Interactive SDK Version 4.0.27-RC                                    *
+ ******************************************************************************/
+
+ 1. Using LWRP / URP
+	Please Replace the Shaders of the Bounding Box on the WallMeterialA and WallMaterialB in Holoeck/Examples/Assets/Materials with the Shader HD_Boundingbox.shadergraph in Holodeck/Plugin/Resources/Models/Materials
+	Please Peplace the Shader of the Seetrough on the Material seetrough in Holodeck/Plugin/Resources/Materials with the PBR Seetrough shader in Holodeck/Plugin/Resources/Models/Materials
+
+2. GUI Stuttering Pico
+	To prevent stuttering Gui on Pico set Fixed Timestamp to 1/72 ( or Targetframerate)  in Project Settings -> Time 

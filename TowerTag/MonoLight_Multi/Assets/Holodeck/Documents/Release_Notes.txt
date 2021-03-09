@@ -1,0 +1,36 @@
+###########################################################
+##     SPREE Interactive SDK Version 4.0.27-RC           ##
+##          Release Update - January, 18 2020            ##
+###########################################################
+
+How to Use the Release Notes
+----------------------------
+The release notes give you brief, high-level descriptions of new features and enhancements to existing features. 
+If anything changes you will also get setup information, implementation tips to help you get started, and best
+practices to ensure your continued success using the SPREE Interactive Unity SDK.
+
+>> THIS REQUIRES THE PICO 2.8.7 SDK AND PUI >= 4.0.0 ON THE HEADSET << 
+
+
+*************************************
+*************** FIXES ***************
+*************************************
+Fixed to run with recline mode disabled
+Fixed neck model when running outside out recline mode
+Fixed null exception in network simulation when stopping the game
+
+*************************************
+*********** IMPROVEMENTS ************
+*************************************
+Enemies are now tracked at their neck position
+Reworked orientation calibration to work more reliably
+
+*************************************
+*********** INTRODUCING *************
+*************************************
+
+**************************************
+*********** KNOWN ISSUES *************
+**************************************
+Simulation does not work on some networks
+Excessive error logging by pico under some conditions
