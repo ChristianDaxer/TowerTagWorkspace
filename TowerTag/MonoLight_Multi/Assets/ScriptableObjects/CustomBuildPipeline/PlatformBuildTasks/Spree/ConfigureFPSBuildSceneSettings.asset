@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2916071caff7cf4ea4459f01c6b16dd, type: 3}
+  m_Name: ConfigureFPSBuildSceneSettings
+  m_EditorClassIdentifier: 
+  skip: 0
+  sceneReconfigureTasks:
+  - {fileID: 11400000, guid: da34df211c5f70e4184dec133e36b87a, type: 2}
+  - {fileID: 11400000, guid: 98a3588f5e5a9df4eb9ab0a3179f4ae0, type: 2}
+  _serializedSceneTargets: []
+  _serializedComposedSceneTargets:
+  - index: 0
+    sceneComposer: {fileID: 11400000, guid: b52d28f33a8bbe244bc9900450d9de6f, type: 2}
